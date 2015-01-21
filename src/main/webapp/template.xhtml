@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:t="http://myfaces.apache.org/tomahawk" 
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <title>Dashboard- <ui:insert name="title" /></title>
+        <ui:insert name="headers" />
+    </h:head>
+    <h:body>
+        <h:outputStylesheet library="css" name="style.css"/>
+        <t:div id="header">
+            <t:div id="informationbar">
+            </t:div>
+            <h:form>
+                <p:growl id="messages"/>
+                <p:menubar id="menu" autoDisplay="false">  
+                    <p:menuitem value="Home" url="adashboard.jsf" icon="ui-icon-home" />
+                </p:menubar>               
+            </h:form>
+        </t:div>
+        <t:div id="content">    
+            <ui:insert name="content" />
+        </t:div> 
+        <t:div id="footer">
+            <t:div id="footerbar"> </t:div>
+            <t:div id="colophon">
+                <p>Agile Dashboard - tency.de</p>
+            </t:div>
+        </t:div>
+    </h:body>
+</html>
