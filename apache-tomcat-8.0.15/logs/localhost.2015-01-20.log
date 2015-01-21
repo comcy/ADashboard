@@ -1,0 +1,76 @@
+20-Jan-2015 00:35:46.864 SEVERE [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log StandardWrapper.Throwable
+ java.lang.IllegalStateException: No Factories configured for this Application. This happens if the faces-initialization does not work at all - make sure that you properly include all configuration settings necessary for a basic faces application and that all the necessary libs are included. Also check the logging output of your web application and your container for any exceptions!
+If you did that and find nothing, the mistake might be due to the fact that you use some special web-containers which do not support registering context-listeners via TLD files and a context listener is not setup in your web.xml.
+A typical config looks like this;
+<listener>
+  <listener-class>org.apache.myfaces.webapp.StartupServletContextListener</listener-class>
+</listener>
+
+	at javax.faces.FactoryFinder._getFactory(FactoryFinder.java:286)
+	at javax.faces.FactoryFinder.getFactory(FactoryFinder.java:206)
+	at javax.faces.webapp.FacesServlet.init(FacesServlet.java:116)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1241)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1154)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1041)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4944)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5230)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:714)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:581)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1683)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+20-Jan-2015 00:35:46.865 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.loadOnStartup Servlet /spoverwaltung threw load() exception
+ java.lang.IllegalStateException: No Factories configured for this Application. This happens if the faces-initialization does not work at all - make sure that you properly include all configuration settings necessary for a basic faces application and that all the necessary libs are included. Also check the logging output of your web application and your container for any exceptions!
+If you did that and find nothing, the mistake might be due to the fact that you use some special web-containers which do not support registering context-listeners via TLD files and a context listener is not setup in your web.xml.
+A typical config looks like this;
+<listener>
+  <listener-class>org.apache.myfaces.webapp.StartupServletContextListener</listener-class>
+</listener>
+
+	at javax.faces.FactoryFinder._getFactory(FactoryFinder.java:286)
+	at javax.faces.FactoryFinder.getFactory(FactoryFinder.java:206)
+	at javax.faces.webapp.FacesServlet.init(FacesServlet.java:116)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1241)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1154)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1041)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4944)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5230)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:714)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:581)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1683)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+20-Jan-2015 00:35:48.036 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+20-Jan-2015 00:35:48.036 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+20-Jan-2015 00:39:30.329 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+20-Jan-2015 00:39:30.330 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+20-Jan-2015 00:39:51.531 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+20-Jan-2015 00:39:51.531 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+20-Jan-2015 00:51:11.899 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+20-Jan-2015 00:51:11.899 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+20-Jan-2015 00:53:47.977 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+20-Jan-2015 00:53:47.977 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+20-Jan-2015 00:55:13.450 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+20-Jan-2015 00:55:13.450 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+20-Jan-2015 01:30:45.097 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+20-Jan-2015 01:30:45.102 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+20-Jan-2015 01:42:23.028 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+20-Jan-2015 01:42:23.028 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+20-Jan-2015 20:22:37.467 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+20-Jan-2015 20:22:37.471 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+20-Jan-2015 22:54:40.955 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+20-Jan-2015 22:54:40.955 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
