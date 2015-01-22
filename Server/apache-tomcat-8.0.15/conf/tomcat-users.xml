@@ -33,7 +33,7 @@
   <user username="both" password="tomcat" roles="tomcat,role1"/>
   <user username="role1" password="tomcat" roles="role1"/>
 -->
-    <user password="devbox" roles="manager-script,admin" username="developer"/>
     <user password="admin" roles="admin" username="admin"/>
     <user password="user" roles="user" username="user"/>
+    <user password="devbox" roles="manager-script,admin" username="developer"/>
 </tomcat-users>

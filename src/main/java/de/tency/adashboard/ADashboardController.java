@@ -35,7 +35,7 @@ public class ADashboardController {
      * Link back to home
      */
     public String goHome() {
-        return "adashboard";
+        return "home";
     }
 
     /**
@@ -45,7 +45,7 @@ public class ADashboardController {
         ExternalContext ec = FacesContext.getCurrentInstance()
                 .getExternalContext();
         ec.invalidateSession();
-        ec.redirect("adashboard.jsf");
+        ec.redirect("home.jsf");
 
         return null;
     }

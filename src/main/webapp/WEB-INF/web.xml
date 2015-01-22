@@ -104,7 +104,7 @@
         <display-name>security-constraint</display-name>
         <web-resource-collection>
             <web-resource-name>sposys</web-resource-name>
-            <url-pattern>/adashboard.jsf</url-pattern>
+            <url-pattern>/home.jsf</url-pattern>
             <url-pattern>/template.jsf</url-pattern>
         </web-resource-collection>
         <auth-constraint>

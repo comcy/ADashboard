@@ -1834,3 +1834,1084 @@ A typical config looks like this;
 
 21-Jan-2015 23:09:04.982 INFO [http-nio-8080-exec-15] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/dev/DevServer/src/apache-tomcat-8.0.15/conf/Catalina/localhost/dashboard.xml has finished in 1,918 ms
 21-Jan-2015 23:09:04.989 INFO [http-nio-8080-exec-22] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/dashboard]] after start() had already been called. The second call will be ignored.
+21-Jan-2015 23:35:06.393 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.15
+21-Jan-2015 23:35:06.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 2 2014 19:25:20 UTC
+21-Jan-2015 23:35:06.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.15.0
+21-Jan-2015 23:35:06.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+21-Jan-2015 23:35:06.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.13.0-40-generic
+21-Jan-2015 23:35:06.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+21-Jan-2015 23:35:06.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JAVA_HOME:             /usr/lib/jvm/java-7-openjdk-amd64/jre
+21-Jan-2015 23:35:06.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.7.0_65-b32
+21-Jan-2015 23:35:06.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+21-Jan-2015 23:35:06.397 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15
+21-Jan-2015 23:35:06.397 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15
+21-Jan-2015 23:35:06.397 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/conf/logging.properties
+21-Jan-2015 23:35:06.398 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Jan-2015 23:35:06.398 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1|DEVBox
+21-Jan-2015 23:35:06.398 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/endorsed
+21-Jan-2015 23:35:06.398 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15
+21-Jan-2015 23:35:06.398 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15
+21-Jan-2015 23:35:06.399 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/temp
+21-Jan-2015 23:35:06.399 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/i386::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+21-Jan-2015 23:35:06.518 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+21-Jan-2015 23:35:06.550 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+21-Jan-2015 23:35:06.559 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+21-Jan-2015 23:35:06.561 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+21-Jan-2015 23:35:06.584 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1169 ms
+21-Jan-2015 23:35:06.655 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+21-Jan-2015 23:35:06.655 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.15
+21-Jan-2015 23:35:06.683 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/conf/Catalina/localhost/spoverwaltung.xml
+21-Jan-2015 23:35:06.777 WARNING [localhost-startStop-1] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+21-Jan-2015 23:35:11.122 INFO [localhost-startStop-1] null.null Reading standard config META-INF/standard-faces-config.xml
+21-Jan-2015 23:35:11.450 INFO [localhost-startStop-1] org.apache.myfaces.config.DefaultFacesConfigurationProvider.getWebAppFacesConfig Reading config /WEB-INF/faces-config.xml
+21-Jan-2015 23:35:12.211 INFO [localhost-startStop-1] org.apache.myfaces.config.DefaultFacesConfigurationProvider.getClassloaderFacesConfig Reading config : jar:file:/home/dev/NetBeansProjects/SPOSys/target/sposys/WEB-INF/lib/primefaces-extensions-3.0.0.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:35:12.221 INFO [localhost-startStop-1] org.apache.myfaces.config.DefaultFacesConfigurationProvider.getClassloaderFacesConfig Reading config : jar:file:/home/dev/NetBeansProjects/SPOSys/target/sposys/WEB-INF/lib/primefaces-5.1.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:35:12.246 INFO [localhost-startStop-1] null.null Reading config : jar:file:/home/dev/NetBeansProjects/SPOSys/target/sposys/WEB-INF/lib/tomahawk20-1.1.14.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:35:12.277 INFO [localhost-startStop-1] null.null Artifact 'myfaces-api' was found in version '2.1.7' from path 'file:/home/dev/NetBeansProjects/SPOSys/target/sposys/WEB-INF/lib/myfaces-api-2.1.7.jar'
+21-Jan-2015 23:35:12.278 INFO [localhost-startStop-1] null.null Artifact 'myfaces-impl' was found in version '2.1.7' from path 'file:/home/dev/NetBeansProjects/SPOSys/target/sposys/WEB-INF/lib/myfaces-impl-2.1.7.jar'
+21-Jan-2015 23:35:12.278 INFO [localhost-startStop-1] null.null Artifact 'tomahawk20' was found in version '1.1.14' from path 'file:/home/dev/NetBeansProjects/SPOSys/target/sposys/WEB-INF/lib/tomahawk20-1.1.14.jar'
+21-Jan-2015 23:35:12.338 INFO [localhost-startStop-1] org.apache.myfaces.util.ExternalSpecifications.isBeanValidationAvailable MyFaces Bean Validation support disabled
+21-Jan-2015 23:35:12.534 WARNING [localhost-startStop-1] org.apache.myfaces.config.FacesConfigurator.configureRuntimeConfig More than one managed bean w/ the name of 'controller' - only keeping the last 
+21-Jan-2015 23:35:12.545 INFO [localhost-startStop-1] org.apache.myfaces.config.FacesConfigurator.handleSerialFactory Serialization provider : class org.apache.myfaces.shared_impl.util.serial.DefaultSerialFactory
+21-Jan-2015 23:35:12.549 INFO [localhost-startStop-1] org.apache.myfaces.config.annotation.DefaultLifecycleProviderFactory.getLifecycleProvider Using LifecycleProvider org.apache.myfaces.config.annotation.Tomcat7AnnotationLifecycleProvider
+21-Jan-2015 23:35:12.569 INFO [localhost-startStop-1] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 5.1
+21-Jan-2015 23:35:12.570 INFO [localhost-startStop-1] org.primefaces.extensions.application.PostConstructApplicationEventListener.processEvent Running on PrimeFaces Extensions 3.0.0
+21-Jan-2015 23:35:12.570 INFO [localhost-startStop-1] org.apache.myfaces.webapp.AbstractFacesInitializer.initFaces ServletContext initialized.
+21-Jan-2015 23:35:12.573 INFO [localhost-startStop-1] null.null Starting up Tomahawk on the RI-JSF-Implementation.
+21-Jan-2015 23:35:12.573 INFO [localhost-startStop-1] null.null Scanning for context init parameters not defined. It is not necessary to define them all into your web.xml, they are just provided here for informative purposes. To disable this messages set org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS config param to 'false'
+21-Jan-2015 23:35:12.573 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.RESOURCE_EXCLUDES' found, using default value '.class .jsp .jspx .properties .xhtml .groovy'.
+21-Jan-2015 23:35:12.575 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.FULL_STATE_SAVING_VIEW_IDS' found.
+21-Jan-2015 23:35:12.575 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.PARTIAL_STATE_SAVING' found, using default value 'true (false with 1.2 webapps)'.
+21-Jan-2015 23:35:12.575 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.DEFAULT_SUFFIX' found, using default value '.xhtml .view.xml .jsp'.
+21-Jan-2015 23:35:12.576 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.FACELETS_SUFFIX' found, using default value '.xhtml'.
+21-Jan-2015 23:35:12.576 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.FACELETS_VIEW_MAPPINGS' found.
+21-Jan-2015 23:35:12.576 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.HONOR_CURRENT_COMPONENT_ATTRIBUTES' found, using default value 'false'.
+21-Jan-2015 23:35:12.576 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.VALIDATE_EMPTY_FIELDS' found, using default value 'auto'.
+21-Jan-2015 23:35:12.576 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.ENUM_CONVERTER_ALLOW_STRING_PASSTROUGH' found, using default value 'false'.
+21-Jan-2015 23:35:12.577 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.validator.DISABLE_DEFAULT_BEAN_VALIDATOR' found, using default value 'true'.
+21-Jan-2015 23:35:12.577 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.CONFIG_FILES' found.
+21-Jan-2015 23:35:12.577 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.LIFECYCLE_ID' found.
+21-Jan-2015 23:35:12.577 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.ERROR_HANDLER' found.
+21-Jan-2015 23:35:12.577 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:35:12.578 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:35:12.578 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.PRETTY_HTML' found, using default value 'true'.
+21-Jan-2015 23:35:12.578 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.ALLOW_JAVASCRIPT' found, using default value 'true'.
+21-Jan-2015 23:35:12.578 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.CONFIG_REFRESH_PERIOD' found, using default value '2'.
+21-Jan-2015 23:35:12.578 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.VIEWSTATE_JAVASCRIPT' found, using default value 'false'.
+21-Jan-2015 23:35:12.579 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.RENDER_VIEWSTATE_ID' found, using default value 'true'.
+21-Jan-2015 23:35:12.579 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.STRICT_XHTML_LINKS' found, using default value 'true'.
+21-Jan-2015 23:35:12.579 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.RENDER_CLEAR_JAVASCRIPT_FOR_BUTTON' found, using default value 'false'.
+21-Jan-2015 23:35:12.579 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.RENDER_HIDDEN_FIELDS_FOR_LINK_PARAMS' found, using default value 'false'.
+21-Jan-2015 23:35:12.579 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.SAVE_FORM_SUBMIT_LINK_IE' found, using default value 'false'.
+21-Jan-2015 23:35:12.580 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.DELEGATE_FACES_SERVLET' found.
+21-Jan-2015 23:35:12.580 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS' found, using default value 'auto'.
+21-Jan-2015 23:35:12.580 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS_PRESERVE_STATE' found, using default value 'false'.
+21-Jan-2015 23:35:12.580 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.VALIDATE_XML' found.
+21-Jan-2015 23:35:12.580 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.WRAP_SCRIPT_CONTENT_WITH_XML_COMMENT_TAG' found, using default value 'true'.
+21-Jan-2015 23:35:12.581 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.RENDER_FORM_SUBMIT_SCRIPT_INLINE' found, using default value 'false'.
+21-Jan-2015 23:35:12.581 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.DEBUG_PHASE_LISTENER' found.
+21-Jan-2015 23:35:12.581 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.STRICT_JSF_2_REFRESH_TARGET_AJAX' found, using default value 'false'.
+21-Jan-2015 23:35:12.581 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.STRICT_JSF_2_CC_EL_RESOLVER' found, using default value 'false'.
+21-Jan-2015 23:35:12.581 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.DEFAULT_RESPONSE_WRITER_CONTENT_TYPE_MODE' found, using default value 'text/html'.
+21-Jan-2015 23:35:12.581 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.VIEW_UNIQUE_IDS_CACHE_ENABLED' found, using default value 'false'.
+21-Jan-2015 23:35:12.582 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.COMPONENT_UNIQUE_IDS_CACHE_SIZE' found, using default value '100'.
+21-Jan-2015 23:35:12.582 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.SUPPORT_JSP_AND_FACES_EL' found, using default value 'true'.
+21-Jan-2015 23:35:12.582 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.FLASH_SCOPE_DISABLED' found, using default value 'false'.
+21-Jan-2015 23:35:12.582 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.RESOURCE_MAX_TIME_EXPIRES' found, using default value '604800000'.
+21-Jan-2015 23:35:12.582 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:35:12.583 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:35:12.583 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.USE_ENCRYPTION' found, using default value 'true'.
+21-Jan-2015 23:35:12.583 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.SECRET' found.
+21-Jan-2015 23:35:12.583 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.ALGORITHM' found, using default value 'DES'.
+21-Jan-2015 23:35:12.583 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.SECRET.CACHE' found.
+21-Jan-2015 23:35:12.584 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.ALGORITHM.IV' found.
+21-Jan-2015 23:35:12.584 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.ALGORITHM.PARAMETERS' found, using default value 'ECB/PKCS5Padding'.
+21-Jan-2015 23:35:12.584 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.SERIAL_FACTORY' found.
+21-Jan-2015 23:35:12.584 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.COMPRESS_STATE_IN_CLIENT' found, using default value 'false'.
+21-Jan-2015 23:35:12.584 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.MAC_ALGORITHM' found, using default value 'HmacSHA1'.
+21-Jan-2015 23:35:12.585 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.MAC_SECRET' found.
+21-Jan-2015 23:35:12.585 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.MAC_SECRET.CACHE' found.
+21-Jan-2015 23:35:12.585 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.DATETIMECONVERTER_DEFAULT_TIMEZONE_IS_SYSTEM_TIMEZONE' found, using default value 'false'.
+21-Jan-2015 23:35:12.585 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.LAZY_LOAD_CONFIG_OBJECTS' found, using default value 'true'.
+21-Jan-2015 23:35:12.585 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.STRICT_JSF_2_ALLOW_SLASH_LIBRARY_NAME' found, using default value 'false'.
+21-Jan-2015 23:35:12.585 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.VALIDATE' found, using default value 'false'.
+21-Jan-2015 23:35:12.586 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.config.annotation.LifecycleProvider' found.
+21-Jan-2015 23:35:12.586 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.EL_RESOLVER_COMPARATOR' found.
+21-Jan-2015 23:35:12.586 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.EL_RESOLVER_PREDICATE' found.
+21-Jan-2015 23:35:12.586 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:35:12.587 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:35:12.587 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.ERROR_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-error.xml'.
+21-Jan-2015 23:35:12.587 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.DEBUG_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-debug.xml'.
+21-Jan-2015 23:35:12.587 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.ERROR_HANDLING' found, using default value 'false, on Development Project stage: true'.
+21-Jan-2015 23:35:12.588 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.NUMBER_OF_SEQUENTIAL_VIEWS_IN_SESSION' found.
+21-Jan-2015 23:35:12.588 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.CACHE_OLD_VIEWS_IN_SESSION_MODE' found, using default value 'off'.
+21-Jan-2015 23:35:12.588 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.USE_FLASH_SCOPE_PURGE_VIEWS_IN_SESSION' found, using default value 'false'.
+21-Jan-2015 23:35:12.588 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.HANDLE_STATE_CACHING_MECHANICS' found, using default value 'true'.
+21-Jan-2015 23:35:12.589 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.USE_MULTIPLE_JS_FILES_FOR_JSF_UNCOMPRESSED_JS' found, using default value 'false'.
+21-Jan-2015 23:35:12.589 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.JSF_JS_MODE' found, using default value 'normal'.
+21-Jan-2015 23:35:12.589 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.SERVICE_PROVIDER_FINDER' found.
+21-Jan-2015 23:35:12.589 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.DISABLE_FACELET_JSF_VIEWHANDLER' found, using default value 'false'.
+21-Jan-2015 23:35:12.589 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.SAVE_STATE_WITH_VISIT_TREE_ON_PSS' found, using default value 'true'.
+21-Jan-2015 23:35:12.590 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.CHECK_ID_PRODUCTION_MODE' found, using default value 'auto'.
+21-Jan-2015 23:35:12.590 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.FACELETS_BUFFER_SIZE' found.
+21-Jan-2015 23:35:12.590 INFO [localhost-startStop-1] null.null No context init parameter 'facelets.BUFFER_SIZE' found.
+21-Jan-2015 23:35:12.590 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.FACELETS_DECORATORS' found.
+21-Jan-2015 23:35:12.590 INFO [localhost-startStop-1] null.null No context init parameter 'facelets.DECORATORS' found.
+21-Jan-2015 23:35:12.591 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.FACELETS_LIBRARIES' found.
+21-Jan-2015 23:35:12.591 INFO [localhost-startStop-1] null.null No context init parameter 'facelets.LIBRARIES' found.
+21-Jan-2015 23:35:12.591 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.FACELETS_REFRESH_PERIOD' found, using default value '-1'.
+21-Jan-2015 23:35:12.591 INFO [localhost-startStop-1] null.null No context init parameter 'facelets.REFRESH_PERIOD' found, using default value '-1'.
+21-Jan-2015 23:35:12.591 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.FACELETS_RESOURCE_RESOLVER' found.
+21-Jan-2015 23:35:12.592 INFO [localhost-startStop-1] null.null No context init parameter 'facelets.RESOURCE_RESOLVER' found.
+21-Jan-2015 23:35:12.592 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.FACELETS_SKIP_COMMENTS' found.
+21-Jan-2015 23:35:12.592 INFO [localhost-startStop-1] null.null No context init parameter 'facelets.SKIP_COMMENTS' found.
+21-Jan-2015 23:35:12.592 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.MARK_INITIAL_STATE_WHEN_APPLY_BUILD_VIEW' found, using default value 'false'.
+21-Jan-2015 23:35:12.592 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.WRAP_TAG_EXCEPTIONS_AS_CONTEXT_AWARE' found, using default value 'true'.
+21-Jan-2015 23:35:12.592 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.CACHE_EL_EXPRESSIONS' found, using default value 'noCache'.
+21-Jan-2015 23:35:12.593 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.EXPRESSION_FACTORY' found.
+21-Jan-2015 23:35:12.593 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.INITIALIZE_ALWAYS_STANDALONE' found, using default value 'false'.
+21-Jan-2015 23:35:12.593 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS' found, using default value 'auto'.
+21-Jan-2015 23:35:12.593 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.FACES_INITIALIZER' found.
+21-Jan-2015 23:35:12.593 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.FACES_INIT_PLUGINS' found.
+21-Jan-2015 23:35:12.593 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RESOURCE_VIRTUAL_PATH' found.
+21-Jan-2015 23:35:12.593 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.DETECT_JAVASCRIPT' found, using default value 'false'.
+21-Jan-2015 23:35:12.593 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.AUTO_SCROLL' found, using default value 'false'.
+21-Jan-2015 23:35:12.593 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ADD_RESOURCE_CLASS' found, using default value 'org.apache.myfaces. renderkit.html.util. DefaultAddResource'.
+21-Jan-2015 23:35:12.593 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CHECK_EXTENSIONS_FILTER' found, using default value 'for JSF 2.0 since 1.1.11 false, otherwise true'.
+21-Jan-2015 23:35:12.593 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.READONLY_AS_DISABLED_FOR_SELECTS' found, using default value 'true'.
+21-Jan-2015 23:35:12.594 WARNING [localhost-startStop-1] org.apache.myfaces.webapp.AbstractFacesInitializer.initFaces 
+
+*******************************************************************
+*** WARNING: Apache MyFaces-2 is running in DEVELOPMENT mode.   ***
+***                                         ^^^^^^^^^^^         ***
+*** Do NOT deploy to your live server(s) without changing this. ***
+*** See Application#getProjectStage() for more information.     ***
+*******************************************************************
+
+21-Jan-2015 23:35:12.670 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/conf/Catalina/localhost/spoverwaltung.xml has finished in 5,987 ms
+21-Jan-2015 23:35:12.681 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/conf/Catalina/localhost/dashboard.xml
+21-Jan-2015 23:35:12.683 WARNING [localhost-startStop-1] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+21-Jan-2015 23:35:14.505 INFO [localhost-startStop-1] null.null Reading standard config META-INF/standard-faces-config.xml
+21-Jan-2015 23:35:14.633 INFO [localhost-startStop-1] org.apache.myfaces.config.DefaultFacesConfigurationProvider.getWebAppFacesConfig Reading config /WEB-INF/faces-config.xml
+21-Jan-2015 23:35:15.006 INFO [localhost-startStop-1] org.apache.myfaces.config.DefaultFacesConfigurationProvider.getClassloaderFacesConfig Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/primefaces-extensions-3.0.0.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:35:15.013 INFO [localhost-startStop-1] org.apache.myfaces.config.DefaultFacesConfigurationProvider.getClassloaderFacesConfig Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/primefaces-5.1.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:35:15.035 INFO [localhost-startStop-1] org.apache.myfaces.config.DefaultFacesConfigurationProvider.getClassloaderFacesConfig Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/tomahawk20-1.1.14.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:35:15.052 INFO [localhost-startStop-1] org.apache.myfaces.config.LogMetaInfUtils.logArtifact Artifact 'myfaces-api' was found in version '2.1.7' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/myfaces-api-2.1.7.jar'
+21-Jan-2015 23:35:15.052 INFO [localhost-startStop-1] org.apache.myfaces.config.LogMetaInfUtils.logArtifact Artifact 'myfaces-impl' was found in version '2.1.7' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/myfaces-impl-2.1.7.jar'
+21-Jan-2015 23:35:15.052 INFO [localhost-startStop-1] org.apache.myfaces.config.LogMetaInfUtils.logArtifact Artifact 'tomahawk20' was found in version '1.1.14' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/tomahawk20-1.1.14.jar'
+21-Jan-2015 23:35:15.099 INFO [localhost-startStop-1] null.null MyFaces Bean Validation support disabled
+21-Jan-2015 23:35:15.273 INFO [localhost-startStop-1] org.apache.myfaces.config.FacesConfigurator.handleSerialFactory Serialization provider : class org.apache.myfaces.shared_impl.util.serial.DefaultSerialFactory
+21-Jan-2015 23:35:15.276 INFO [localhost-startStop-1] org.apache.myfaces.config.annotation.DefaultLifecycleProviderFactory.getLifecycleProvider Using LifecycleProvider org.apache.myfaces.config.annotation.Tomcat7AnnotationLifecycleProvider
+21-Jan-2015 23:35:15.283 INFO [localhost-startStop-1] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 5.1
+21-Jan-2015 23:35:15.283 INFO [localhost-startStop-1] org.primefaces.extensions.application.PostConstructApplicationEventListener.processEvent Running on PrimeFaces Extensions 3.0.0
+21-Jan-2015 23:35:15.283 INFO [localhost-startStop-1] org.apache.myfaces.webapp.AbstractFacesInitializer.initFaces ServletContext initialized.
+21-Jan-2015 23:35:15.285 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams Starting up Tomahawk on the RI-JSF-Implementation.
+21-Jan-2015 23:35:15.285 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams Scanning for context init parameters not defined. It is not necessary to define them all into your web.xml, they are just provided here for informative purposes. To disable this messages set org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS config param to 'false'
+21-Jan-2015 23:35:15.285 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.RESOURCE_EXCLUDES' found, using default value '.class .jsp .jspx .properties .xhtml .groovy'.
+21-Jan-2015 23:35:15.286 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FULL_STATE_SAVING_VIEW_IDS' found.
+21-Jan-2015 23:35:15.286 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.PARTIAL_STATE_SAVING' found, using default value 'true (false with 1.2 webapps)'.
+21-Jan-2015 23:35:15.286 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.DEFAULT_SUFFIX' found, using default value '.xhtml .view.xml .jsp'.
+21-Jan-2015 23:35:15.286 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_SUFFIX' found, using default value '.xhtml'.
+21-Jan-2015 23:35:15.287 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.FACELETS_VIEW_MAPPINGS' found.
+21-Jan-2015 23:35:15.287 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.HONOR_CURRENT_COMPONENT_ATTRIBUTES' found, using default value 'false'.
+21-Jan-2015 23:35:15.287 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.VALIDATE_EMPTY_FIELDS' found, using default value 'auto'.
+21-Jan-2015 23:35:15.287 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ENUM_CONVERTER_ALLOW_STRING_PASSTROUGH' found, using default value 'false'.
+21-Jan-2015 23:35:15.287 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.validator.DISABLE_DEFAULT_BEAN_VALIDATOR' found, using default value 'true'.
+21-Jan-2015 23:35:15.287 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.CONFIG_FILES' found.
+21-Jan-2015 23:35:15.287 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.LIFECYCLE_ID' found.
+21-Jan-2015 23:35:15.287 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ERROR_HANDLER' found.
+21-Jan-2015 23:35:15.288 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:35:15.288 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:35:15.288 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.PRETTY_HTML' found, using default value 'true'.
+21-Jan-2015 23:35:15.288 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ALLOW_JAVASCRIPT' found, using default value 'true'.
+21-Jan-2015 23:35:15.288 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CONFIG_REFRESH_PERIOD' found, using default value '2'.
+21-Jan-2015 23:35:15.288 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.VIEWSTATE_JAVASCRIPT' found, using default value 'false'.
+21-Jan-2015 23:35:15.288 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RENDER_VIEWSTATE_ID' found, using default value 'true'.
+21-Jan-2015 23:35:15.289 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.STRICT_XHTML_LINKS' found, using default value 'true'.
+21-Jan-2015 23:35:15.289 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RENDER_CLEAR_JAVASCRIPT_FOR_BUTTON' found, using default value 'false'.
+21-Jan-2015 23:35:15.289 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.RENDER_HIDDEN_FIELDS_FOR_LINK_PARAMS' found, using default value 'false'.
+21-Jan-2015 23:35:15.289 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.SAVE_FORM_SUBMIT_LINK_IE' found, using default value 'false'.
+21-Jan-2015 23:35:15.289 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.DELEGATE_FACES_SERVLET' found.
+21-Jan-2015 23:35:15.289 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS' found, using default value 'auto'.
+21-Jan-2015 23:35:15.289 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS_PRESERVE_STATE' found, using default value 'false'.
+21-Jan-2015 23:35:15.290 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.VALIDATE_XML' found.
+21-Jan-2015 23:35:15.290 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.WRAP_SCRIPT_CONTENT_WITH_XML_COMMENT_TAG' found, using default value 'true'.
+21-Jan-2015 23:35:15.290 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RENDER_FORM_SUBMIT_SCRIPT_INLINE' found, using default value 'false'.
+21-Jan-2015 23:35:15.290 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.DEBUG_PHASE_LISTENER' found.
+21-Jan-2015 23:35:15.290 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.STRICT_JSF_2_REFRESH_TARGET_AJAX' found, using default value 'false'.
+21-Jan-2015 23:35:15.290 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.STRICT_JSF_2_CC_EL_RESOLVER' found, using default value 'false'.
+21-Jan-2015 23:35:15.290 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.DEFAULT_RESPONSE_WRITER_CONTENT_TYPE_MODE' found, using default value 'text/html'.
+21-Jan-2015 23:35:15.290 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.VIEW_UNIQUE_IDS_CACHE_ENABLED' found, using default value 'false'.
+21-Jan-2015 23:35:15.290 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.COMPONENT_UNIQUE_IDS_CACHE_SIZE' found, using default value '100'.
+21-Jan-2015 23:35:15.291 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.SUPPORT_JSP_AND_FACES_EL' found, using default value 'true'.
+21-Jan-2015 23:35:15.291 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.FLASH_SCOPE_DISABLED' found, using default value 'false'.
+21-Jan-2015 23:35:15.291 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RESOURCE_MAX_TIME_EXPIRES' found, using default value '604800000'.
+21-Jan-2015 23:35:15.291 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:35:15.291 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:35:15.291 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.USE_ENCRYPTION' found, using default value 'true'.
+21-Jan-2015 23:35:15.291 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.SECRET' found.
+21-Jan-2015 23:35:15.292 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ALGORITHM' found, using default value 'DES'.
+21-Jan-2015 23:35:15.292 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.SECRET.CACHE' found.
+21-Jan-2015 23:35:15.292 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ALGORITHM.IV' found.
+21-Jan-2015 23:35:15.292 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ALGORITHM.PARAMETERS' found, using default value 'ECB/PKCS5Padding'.
+21-Jan-2015 23:35:15.292 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.SERIAL_FACTORY' found.
+21-Jan-2015 23:35:15.292 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.COMPRESS_STATE_IN_CLIENT' found, using default value 'false'.
+21-Jan-2015 23:35:15.292 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.MAC_ALGORITHM' found, using default value 'HmacSHA1'.
+21-Jan-2015 23:35:15.292 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.MAC_SECRET' found.
+21-Jan-2015 23:35:15.293 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.MAC_SECRET.CACHE' found.
+21-Jan-2015 23:35:15.293 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.DATETIMECONVERTER_DEFAULT_TIMEZONE_IS_SYSTEM_TIMEZONE' found, using default value 'false'.
+21-Jan-2015 23:35:15.293 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.LAZY_LOAD_CONFIG_OBJECTS' found, using default value 'true'.
+21-Jan-2015 23:35:15.293 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.STRICT_JSF_2_ALLOW_SLASH_LIBRARY_NAME' found, using default value 'false'.
+21-Jan-2015 23:35:15.293 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.VALIDATE' found, using default value 'false'.
+21-Jan-2015 23:35:15.293 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.config.annotation.LifecycleProvider' found.
+21-Jan-2015 23:35:15.293 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.EL_RESOLVER_COMPARATOR' found.
+21-Jan-2015 23:35:15.293 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.EL_RESOLVER_PREDICATE' found.
+21-Jan-2015 23:35:15.293 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:35:15.294 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:35:15.294 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ERROR_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-error.xml'.
+21-Jan-2015 23:35:15.294 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.DEBUG_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-debug.xml'.
+21-Jan-2015 23:35:15.294 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ERROR_HANDLING' found, using default value 'false, on Development Project stage: true'.
+21-Jan-2015 23:35:15.294 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.NUMBER_OF_SEQUENTIAL_VIEWS_IN_SESSION' found.
+21-Jan-2015 23:35:15.294 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CACHE_OLD_VIEWS_IN_SESSION_MODE' found, using default value 'off'.
+21-Jan-2015 23:35:15.294 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.USE_FLASH_SCOPE_PURGE_VIEWS_IN_SESSION' found, using default value 'false'.
+21-Jan-2015 23:35:15.294 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.HANDLE_STATE_CACHING_MECHANICS' found, using default value 'true'.
+21-Jan-2015 23:35:15.295 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.USE_MULTIPLE_JS_FILES_FOR_JSF_UNCOMPRESSED_JS' found, using default value 'false'.
+21-Jan-2015 23:35:15.295 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.JSF_JS_MODE' found, using default value 'normal'.
+21-Jan-2015 23:35:15.295 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.SERVICE_PROVIDER_FINDER' found.
+21-Jan-2015 23:35:15.295 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.DISABLE_FACELET_JSF_VIEWHANDLER' found, using default value 'false'.
+21-Jan-2015 23:35:15.295 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.SAVE_STATE_WITH_VISIT_TREE_ON_PSS' found, using default value 'true'.
+21-Jan-2015 23:35:15.295 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.CHECK_ID_PRODUCTION_MODE' found, using default value 'auto'.
+21-Jan-2015 23:35:15.295 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_BUFFER_SIZE' found.
+21-Jan-2015 23:35:15.295 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'facelets.BUFFER_SIZE' found.
+21-Jan-2015 23:35:15.295 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.FACELETS_DECORATORS' found.
+21-Jan-2015 23:35:15.296 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'facelets.DECORATORS' found.
+21-Jan-2015 23:35:15.296 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_LIBRARIES' found.
+21-Jan-2015 23:35:15.296 INFO [localhost-startStop-1] null.null No context init parameter 'facelets.LIBRARIES' found.
+21-Jan-2015 23:35:15.296 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_REFRESH_PERIOD' found, using default value '-1'.
+21-Jan-2015 23:35:15.296 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'facelets.REFRESH_PERIOD' found, using default value '-1'.
+21-Jan-2015 23:35:15.296 INFO [localhost-startStop-1] null.null No context init parameter 'javax.faces.FACELETS_RESOURCE_RESOLVER' found.
+21-Jan-2015 23:35:15.296 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'facelets.RESOURCE_RESOLVER' found.
+21-Jan-2015 23:35:15.297 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_SKIP_COMMENTS' found.
+21-Jan-2015 23:35:15.297 INFO [localhost-startStop-1] null.null No context init parameter 'facelets.SKIP_COMMENTS' found.
+21-Jan-2015 23:35:15.297 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.MARK_INITIAL_STATE_WHEN_APPLY_BUILD_VIEW' found, using default value 'false'.
+21-Jan-2015 23:35:15.297 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.WRAP_TAG_EXCEPTIONS_AS_CONTEXT_AWARE' found, using default value 'true'.
+21-Jan-2015 23:35:15.297 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.CACHE_EL_EXPRESSIONS' found, using default value 'noCache'.
+21-Jan-2015 23:35:15.297 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.EXPRESSION_FACTORY' found.
+21-Jan-2015 23:35:15.297 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.INITIALIZE_ALWAYS_STANDALONE' found, using default value 'false'.
+21-Jan-2015 23:35:15.297 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS' found, using default value 'auto'.
+21-Jan-2015 23:35:15.298 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.FACES_INITIALIZER' found.
+21-Jan-2015 23:35:15.298 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.FACES_INIT_PLUGINS' found.
+21-Jan-2015 23:35:15.298 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.RESOURCE_VIRTUAL_PATH' found.
+21-Jan-2015 23:35:15.298 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.DETECT_JAVASCRIPT' found, using default value 'false'.
+21-Jan-2015 23:35:15.298 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.AUTO_SCROLL' found, using default value 'false'.
+21-Jan-2015 23:35:15.298 INFO [localhost-startStop-1] null.null No context init parameter 'org.apache.myfaces.ADD_RESOURCE_CLASS' found, using default value 'org.apache.myfaces. renderkit.html.util. DefaultAddResource'.
+21-Jan-2015 23:35:15.298 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CHECK_EXTENSIONS_FILTER' found, using default value 'for JSF 2.0 since 1.1.11 false, otherwise true'.
+21-Jan-2015 23:35:15.298 INFO [localhost-startStop-1] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.READONLY_AS_DISABLED_FOR_SELECTS' found, using default value 'true'.
+21-Jan-2015 23:35:15.299 WARNING [localhost-startStop-1] org.apache.myfaces.webapp.AbstractFacesInitializer.initFaces 
+
+*******************************************************************
+*** WARNING: Apache MyFaces-2 is running in DEVELOPMENT mode.   ***
+***                                         ^^^^^^^^^^^         ***
+*** Do NOT deploy to your live server(s) without changing this. ***
+*** See Application#getProjectStage() for more information.     ***
+*******************************************************************
+
+21-Jan-2015 23:35:15.324 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/conf/Catalina/localhost/dashboard.xml has finished in 2,642 ms
+21-Jan-2015 23:35:15.350 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/webapps/manager
+21-Jan-2015 23:35:15.431 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Jan-2015 23:35:15.439 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/webapps/manager has finished in 89 ms
+21-Jan-2015 23:35:15.439 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/webapps/docs
+21-Jan-2015 23:35:15.483 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Jan-2015 23:35:15.485 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/webapps/docs has finished in 46 ms
+21-Jan-2015 23:35:15.485 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/webapps/host-manager
+21-Jan-2015 23:35:15.545 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Jan-2015 23:35:15.550 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/webapps/host-manager has finished in 65 ms
+21-Jan-2015 23:35:15.551 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/webapps/ROOT
+21-Jan-2015 23:35:15.609 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Jan-2015 23:35:15.611 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/webapps/ROOT has finished in 60 ms
+21-Jan-2015 23:35:15.611 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/webapps/examples
+21-Jan-2015 23:35:15.838 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/webapps/examples has finished in 227 ms
+21-Jan-2015 23:35:15.849 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+21-Jan-2015 23:35:15.854 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+21-Jan-2015 23:35:15.855 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 9270 ms
+21-Jan-2015 23:35:16.892 INFO [http-nio-8080-exec-5] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/dashboard]
+21-Jan-2015 23:35:16.922 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/conf/Catalina/localhost/dashboard.xml
+21-Jan-2015 23:35:16.929 WARNING [http-nio-8080-exec-2] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+21-Jan-2015 23:35:18.315 INFO [http-nio-8080-exec-2] org.apache.myfaces.config.DefaultFacesConfigurationProvider.getStandardFacesConfig Reading standard config META-INF/standard-faces-config.xml
+21-Jan-2015 23:35:18.470 INFO [http-nio-8080-exec-2] null.null Reading config /WEB-INF/faces-config.xml
+21-Jan-2015 23:35:18.863 INFO [http-nio-8080-exec-2] org.apache.myfaces.config.DefaultFacesConfigurationProvider.getClassloaderFacesConfig Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/primefaces-extensions-3.0.0.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:35:18.869 INFO [http-nio-8080-exec-2] org.apache.myfaces.config.DefaultFacesConfigurationProvider.getClassloaderFacesConfig Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/primefaces-5.1.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:35:18.889 INFO [http-nio-8080-exec-2] null.null Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/tomahawk20-1.1.14.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:35:18.909 INFO [http-nio-8080-exec-2] null.null Artifact 'myfaces-api' was found in version '2.1.7' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/myfaces-api-2.1.7.jar'
+21-Jan-2015 23:35:18.909 INFO [http-nio-8080-exec-2] null.null Artifact 'myfaces-impl' was found in version '2.1.7' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/myfaces-impl-2.1.7.jar'
+21-Jan-2015 23:35:18.910 INFO [http-nio-8080-exec-2] null.null Artifact 'tomahawk20' was found in version '1.1.14' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/tomahawk20-1.1.14.jar'
+21-Jan-2015 23:35:18.954 INFO [http-nio-8080-exec-2] null.null MyFaces Bean Validation support disabled
+21-Jan-2015 23:35:19.164 INFO [http-nio-8080-exec-2] null.null Serialization provider : class org.apache.myfaces.shared_impl.util.serial.DefaultSerialFactory
+21-Jan-2015 23:35:19.168 INFO [http-nio-8080-exec-2] org.apache.myfaces.config.annotation.DefaultLifecycleProviderFactory.getLifecycleProvider Using LifecycleProvider org.apache.myfaces.config.annotation.Tomcat7AnnotationLifecycleProvider
+21-Jan-2015 23:35:19.177 INFO [http-nio-8080-exec-2] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 5.1
+21-Jan-2015 23:35:19.177 INFO [http-nio-8080-exec-2] org.primefaces.extensions.application.PostConstructApplicationEventListener.processEvent Running on PrimeFaces Extensions 3.0.0
+21-Jan-2015 23:35:19.178 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.AbstractFacesInitializer.initFaces ServletContext initialized.
+21-Jan-2015 23:35:19.180 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams Starting up Tomahawk on the RI-JSF-Implementation.
+21-Jan-2015 23:35:19.180 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams Scanning for context init parameters not defined. It is not necessary to define them all into your web.xml, they are just provided here for informative purposes. To disable this messages set org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS config param to 'false'
+21-Jan-2015 23:35:19.180 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.RESOURCE_EXCLUDES' found, using default value '.class .jsp .jspx .properties .xhtml .groovy'.
+21-Jan-2015 23:35:19.181 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FULL_STATE_SAVING_VIEW_IDS' found.
+21-Jan-2015 23:35:19.181 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.PARTIAL_STATE_SAVING' found, using default value 'true (false with 1.2 webapps)'.
+21-Jan-2015 23:35:19.181 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.DEFAULT_SUFFIX' found, using default value '.xhtml .view.xml .jsp'.
+21-Jan-2015 23:35:19.181 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_SUFFIX' found, using default value '.xhtml'.
+21-Jan-2015 23:35:19.182 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_VIEW_MAPPINGS' found.
+21-Jan-2015 23:35:19.182 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.HONOR_CURRENT_COMPONENT_ATTRIBUTES' found, using default value 'false'.
+21-Jan-2015 23:35:19.182 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.VALIDATE_EMPTY_FIELDS' found, using default value 'auto'.
+21-Jan-2015 23:35:19.182 INFO [http-nio-8080-exec-2] null.null No context init parameter 'org.apache.myfaces.ENUM_CONVERTER_ALLOW_STRING_PASSTROUGH' found, using default value 'false'.
+21-Jan-2015 23:35:19.182 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.validator.DISABLE_DEFAULT_BEAN_VALIDATOR' found, using default value 'true'.
+21-Jan-2015 23:35:19.182 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.CONFIG_FILES' found.
+21-Jan-2015 23:35:19.182 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.LIFECYCLE_ID' found.
+21-Jan-2015 23:35:19.183 INFO [http-nio-8080-exec-2] null.null No context init parameter 'org.apache.myfaces.ERROR_HANDLER' found.
+21-Jan-2015 23:35:19.183 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:35:19.183 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:35:19.183 INFO [http-nio-8080-exec-2] null.null No context init parameter 'org.apache.myfaces.PRETTY_HTML' found, using default value 'true'.
+21-Jan-2015 23:35:19.183 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ALLOW_JAVASCRIPT' found, using default value 'true'.
+21-Jan-2015 23:35:19.183 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CONFIG_REFRESH_PERIOD' found, using default value '2'.
+21-Jan-2015 23:35:19.184 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.VIEWSTATE_JAVASCRIPT' found, using default value 'false'.
+21-Jan-2015 23:35:19.184 INFO [http-nio-8080-exec-2] null.null No context init parameter 'org.apache.myfaces.RENDER_VIEWSTATE_ID' found, using default value 'true'.
+21-Jan-2015 23:35:19.184 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.STRICT_XHTML_LINKS' found, using default value 'true'.
+21-Jan-2015 23:35:19.184 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RENDER_CLEAR_JAVASCRIPT_FOR_BUTTON' found, using default value 'false'.
+21-Jan-2015 23:35:19.184 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RENDER_HIDDEN_FIELDS_FOR_LINK_PARAMS' found, using default value 'false'.
+21-Jan-2015 23:35:19.184 INFO [http-nio-8080-exec-2] null.null No context init parameter 'org.apache.myfaces.SAVE_FORM_SUBMIT_LINK_IE' found, using default value 'false'.
+21-Jan-2015 23:35:19.185 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.DELEGATE_FACES_SERVLET' found.
+21-Jan-2015 23:35:19.185 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS' found, using default value 'auto'.
+21-Jan-2015 23:35:19.185 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS_PRESERVE_STATE' found, using default value 'false'.
+21-Jan-2015 23:35:19.185 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.VALIDATE_XML' found.
+21-Jan-2015 23:35:19.185 INFO [http-nio-8080-exec-2] null.null No context init parameter 'org.apache.myfaces.WRAP_SCRIPT_CONTENT_WITH_XML_COMMENT_TAG' found, using default value 'true'.
+21-Jan-2015 23:35:19.185 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RENDER_FORM_SUBMIT_SCRIPT_INLINE' found, using default value 'false'.
+21-Jan-2015 23:35:19.185 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.DEBUG_PHASE_LISTENER' found.
+21-Jan-2015 23:35:19.185 INFO [http-nio-8080-exec-2] null.null No context init parameter 'org.apache.myfaces.STRICT_JSF_2_REFRESH_TARGET_AJAX' found, using default value 'false'.
+21-Jan-2015 23:35:19.186 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.STRICT_JSF_2_CC_EL_RESOLVER' found, using default value 'false'.
+21-Jan-2015 23:35:19.186 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.DEFAULT_RESPONSE_WRITER_CONTENT_TYPE_MODE' found, using default value 'text/html'.
+21-Jan-2015 23:35:19.186 INFO [http-nio-8080-exec-2] null.null No context init parameter 'org.apache.myfaces.VIEW_UNIQUE_IDS_CACHE_ENABLED' found, using default value 'false'.
+21-Jan-2015 23:35:19.186 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.COMPONENT_UNIQUE_IDS_CACHE_SIZE' found, using default value '100'.
+21-Jan-2015 23:35:19.186 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.SUPPORT_JSP_AND_FACES_EL' found, using default value 'true'.
+21-Jan-2015 23:35:19.186 INFO [http-nio-8080-exec-2] null.null No context init parameter 'org.apache.myfaces.FLASH_SCOPE_DISABLED' found, using default value 'false'.
+21-Jan-2015 23:35:19.187 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RESOURCE_MAX_TIME_EXPIRES' found, using default value '604800000'.
+21-Jan-2015 23:35:19.187 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:35:19.187 INFO [http-nio-8080-exec-2] null.null No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:35:19.187 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.USE_ENCRYPTION' found, using default value 'true'.
+21-Jan-2015 23:35:19.187 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.SECRET' found.
+21-Jan-2015 23:35:19.187 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ALGORITHM' found, using default value 'DES'.
+21-Jan-2015 23:35:19.187 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.SECRET.CACHE' found.
+21-Jan-2015 23:35:19.188 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ALGORITHM.IV' found.
+21-Jan-2015 23:35:19.188 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ALGORITHM.PARAMETERS' found, using default value 'ECB/PKCS5Padding'.
+21-Jan-2015 23:35:19.188 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.SERIAL_FACTORY' found.
+21-Jan-2015 23:35:19.188 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.COMPRESS_STATE_IN_CLIENT' found, using default value 'false'.
+21-Jan-2015 23:35:19.188 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.MAC_ALGORITHM' found, using default value 'HmacSHA1'.
+21-Jan-2015 23:35:19.188 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.MAC_SECRET' found.
+21-Jan-2015 23:35:19.189 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.MAC_SECRET.CACHE' found.
+21-Jan-2015 23:35:19.189 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.DATETIMECONVERTER_DEFAULT_TIMEZONE_IS_SYSTEM_TIMEZONE' found, using default value 'false'.
+21-Jan-2015 23:35:19.189 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.LAZY_LOAD_CONFIG_OBJECTS' found, using default value 'true'.
+21-Jan-2015 23:35:19.189 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.STRICT_JSF_2_ALLOW_SLASH_LIBRARY_NAME' found, using default value 'false'.
+21-Jan-2015 23:35:19.189 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.VALIDATE' found, using default value 'false'.
+21-Jan-2015 23:35:19.189 INFO [http-nio-8080-exec-2] null.null No context init parameter 'org.apache.myfaces.config.annotation.LifecycleProvider' found.
+21-Jan-2015 23:35:19.190 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.EL_RESOLVER_COMPARATOR' found.
+21-Jan-2015 23:35:19.190 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.EL_RESOLVER_PREDICATE' found.
+21-Jan-2015 23:35:19.190 INFO [http-nio-8080-exec-2] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:35:19.190 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:35:19.190 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ERROR_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-error.xml'.
+21-Jan-2015 23:35:19.190 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.DEBUG_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-debug.xml'.
+21-Jan-2015 23:35:19.190 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ERROR_HANDLING' found, using default value 'false, on Development Project stage: true'.
+21-Jan-2015 23:35:19.190 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.NUMBER_OF_SEQUENTIAL_VIEWS_IN_SESSION' found.
+21-Jan-2015 23:35:19.190 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CACHE_OLD_VIEWS_IN_SESSION_MODE' found, using default value 'off'.
+21-Jan-2015 23:35:19.190 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.USE_FLASH_SCOPE_PURGE_VIEWS_IN_SESSION' found, using default value 'false'.
+21-Jan-2015 23:35:19.190 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.HANDLE_STATE_CACHING_MECHANICS' found, using default value 'true'.
+21-Jan-2015 23:35:19.191 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.USE_MULTIPLE_JS_FILES_FOR_JSF_UNCOMPRESSED_JS' found, using default value 'false'.
+21-Jan-2015 23:35:19.191 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.JSF_JS_MODE' found, using default value 'normal'.
+21-Jan-2015 23:35:19.191 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.SERVICE_PROVIDER_FINDER' found.
+21-Jan-2015 23:35:19.191 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.DISABLE_FACELET_JSF_VIEWHANDLER' found, using default value 'false'.
+21-Jan-2015 23:35:19.191 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.SAVE_STATE_WITH_VISIT_TREE_ON_PSS' found, using default value 'true'.
+21-Jan-2015 23:35:19.191 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CHECK_ID_PRODUCTION_MODE' found, using default value 'auto'.
+21-Jan-2015 23:35:19.191 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_BUFFER_SIZE' found.
+21-Jan-2015 23:35:19.191 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'facelets.BUFFER_SIZE' found.
+21-Jan-2015 23:35:19.191 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_DECORATORS' found.
+21-Jan-2015 23:35:19.191 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'facelets.DECORATORS' found.
+21-Jan-2015 23:35:19.191 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_LIBRARIES' found.
+21-Jan-2015 23:35:19.191 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'facelets.LIBRARIES' found.
+21-Jan-2015 23:35:19.191 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_REFRESH_PERIOD' found, using default value '-1'.
+21-Jan-2015 23:35:19.192 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'facelets.REFRESH_PERIOD' found, using default value '-1'.
+21-Jan-2015 23:35:19.192 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_RESOURCE_RESOLVER' found.
+21-Jan-2015 23:35:19.192 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'facelets.RESOURCE_RESOLVER' found.
+21-Jan-2015 23:35:19.192 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_SKIP_COMMENTS' found.
+21-Jan-2015 23:35:19.192 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'facelets.SKIP_COMMENTS' found.
+21-Jan-2015 23:35:19.192 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.MARK_INITIAL_STATE_WHEN_APPLY_BUILD_VIEW' found, using default value 'false'.
+21-Jan-2015 23:35:19.192 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.WRAP_TAG_EXCEPTIONS_AS_CONTEXT_AWARE' found, using default value 'true'.
+21-Jan-2015 23:35:19.192 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CACHE_EL_EXPRESSIONS' found, using default value 'noCache'.
+21-Jan-2015 23:35:19.192 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.EXPRESSION_FACTORY' found.
+21-Jan-2015 23:35:19.192 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.INITIALIZE_ALWAYS_STANDALONE' found, using default value 'false'.
+21-Jan-2015 23:35:19.192 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS' found, using default value 'auto'.
+21-Jan-2015 23:35:19.192 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.FACES_INITIALIZER' found.
+21-Jan-2015 23:35:19.192 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.FACES_INIT_PLUGINS' found.
+21-Jan-2015 23:35:19.192 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RESOURCE_VIRTUAL_PATH' found.
+21-Jan-2015 23:35:19.192 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.DETECT_JAVASCRIPT' found, using default value 'false'.
+21-Jan-2015 23:35:19.192 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.AUTO_SCROLL' found, using default value 'false'.
+21-Jan-2015 23:35:19.192 INFO [http-nio-8080-exec-2] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ADD_RESOURCE_CLASS' found, using default value 'org.apache.myfaces. renderkit.html.util. DefaultAddResource'.
+21-Jan-2015 23:35:19.192 INFO [24] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CHECK_EXTENSIONS_FILTER' found, using default value 'for JSF 2.0 since 1.1.11 false, otherwise true'.
+21-Jan-2015 23:35:19.192 INFO [24] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.READONLY_AS_DISABLED_FOR_SELECTS' found, using default value 'true'.
+21-Jan-2015 23:35:19.192 WARNING [24] org.apache.myfaces.webapp.AbstractFacesInitializer.initFaces 
+
+*******************************************************************
+*** WARNING: Apache MyFaces-2 is running in DEVELOPMENT mode.   ***
+***                                         ^^^^^^^^^^^         ***
+*** Do NOT deploy to your live server(s) without changing this. ***
+*** See Application#getProjectStage() for more information.     ***
+*******************************************************************
+
+21-Jan-2015 23:35:19.210 INFO [24] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/conf/Catalina/localhost/dashboard.xml has finished in 2,287 ms
+21-Jan-2015 23:35:19.224 INFO [http-nio-8080-exec-8] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/dashboard]] after start() had already been called. The second call will be ignored.
+21-Jan-2015 23:40:36.188 INFO [http-nio-8080-exec-15] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/dashboard] has started
+21-Jan-2015 23:40:36.208 SEVERE [http-nio-8080-exec-15] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [dashboard] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@21846632]) and a value of type [org.apache.myfaces.context.servlet.ServletExternalContextImpl] (value [org.apache.myfaces.context.servlet.ServletExternalContextImpl@7b516dce]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+21-Jan-2015 23:40:36.208 SEVERE [http-nio-8080-exec-15] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [dashboard] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@21846632]) and a value of type [org.apache.myfaces.context.servlet.ServletExternalContextImpl] (value [org.apache.myfaces.context.servlet.ServletExternalContextImpl@1f002ea2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+21-Jan-2015 23:40:36.209 SEVERE [http-nio-8080-exec-15] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [dashboard] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@21846632]) and a value of type [org.apache.myfaces.context.servlet.ServletExternalContextImpl] (value [org.apache.myfaces.context.servlet.ServletExternalContextImpl@44f59d94]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+21-Jan-2015 23:40:36.209 SEVERE [http-nio-8080-exec-15] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [dashboard] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@21846632]) and a value of type [org.apache.myfaces.context.servlet.ServletExternalContextImpl] (value [org.apache.myfaces.context.servlet.ServletExternalContextImpl@593c82ea]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+21-Jan-2015 23:40:36.209 SEVERE [http-nio-8080-exec-15] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [dashboard] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@21846632]) and a value of type [org.apache.myfaces.context.servlet.ServletExternalContextImpl] (value [org.apache.myfaces.context.servlet.ServletExternalContextImpl@13b6fe6b]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+21-Jan-2015 23:40:36.210 SEVERE [http-nio-8080-exec-15] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [dashboard] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@21846632]) and a value of type [org.apache.myfaces.context.servlet.ServletExternalContextImpl] (value [org.apache.myfaces.context.servlet.ServletExternalContextImpl@52f92ce9]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+21-Jan-2015 23:40:36.210 SEVERE [http-nio-8080-exec-15] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [dashboard] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@21846632]) and a value of type [org.apache.myfaces.context.servlet.ServletExternalContextImpl] (value [org.apache.myfaces.context.servlet.ServletExternalContextImpl@64f39f8d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+21-Jan-2015 23:40:36.210 SEVERE [http-nio-8080-exec-15] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [dashboard] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@21846632]) and a value of type [org.apache.myfaces.context.servlet.ServletExternalContextImpl] (value [org.apache.myfaces.context.servlet.ServletExternalContextImpl@367015c2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+21-Jan-2015 23:40:36.211 SEVERE [http-nio-8080-exec-15] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [dashboard] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@21846632]) and a value of type [org.apache.myfaces.context.servlet.ServletExternalContextImpl] (value [org.apache.myfaces.context.servlet.ServletExternalContextImpl@78a48f79]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+21-Jan-2015 23:40:36.211 SEVERE [http-nio-8080-exec-15] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [dashboard] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@21846632]) and a value of type [org.apache.myfaces.context.servlet.ServletExternalContextImpl] (value [org.apache.myfaces.context.servlet.ServletExternalContextImpl@7bc78ecf]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+21-Jan-2015 23:40:38.072 INFO [http-nio-8080-exec-15] org.apache.myfaces.config.DefaultFacesConfigurationProvider.getStandardFacesConfig Reading standard config META-INF/standard-faces-config.xml
+21-Jan-2015 23:40:38.198 INFO [http-nio-8080-exec-15] null.null Reading config /WEB-INF/faces-config.xml
+21-Jan-2015 23:40:38.644 INFO [http-nio-8080-exec-15] null.null Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/primefaces-extensions-3.0.0.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:40:38.650 INFO [http-nio-8080-exec-15] null.null Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/primefaces-5.1.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:40:38.671 INFO [http-nio-8080-exec-15] null.null Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/tomahawk20-1.1.14.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:40:38.690 INFO [http-nio-8080-exec-15] null.null Artifact 'myfaces-api' was found in version '2.1.7' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/myfaces-api-2.1.7.jar'
+21-Jan-2015 23:40:38.691 INFO [http-nio-8080-exec-15] null.null Artifact 'myfaces-impl' was found in version '2.1.7' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/myfaces-impl-2.1.7.jar'
+21-Jan-2015 23:40:38.691 INFO [http-nio-8080-exec-15] null.null Artifact 'tomahawk20' was found in version '1.1.14' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/tomahawk20-1.1.14.jar'
+21-Jan-2015 23:40:38.737 INFO [http-nio-8080-exec-15] null.null MyFaces Bean Validation support disabled
+21-Jan-2015 23:40:38.988 INFO [http-nio-8080-exec-15] null.null Serialization provider : class org.apache.myfaces.shared_impl.util.serial.DefaultSerialFactory
+21-Jan-2015 23:40:38.992 INFO [http-nio-8080-exec-15] null.null Using LifecycleProvider org.apache.myfaces.config.annotation.Tomcat7AnnotationLifecycleProvider
+21-Jan-2015 23:40:39.008 INFO [http-nio-8080-exec-15] null.null Running on PrimeFaces 5.1
+21-Jan-2015 23:40:39.009 INFO [http-nio-8080-exec-15] null.null Running on PrimeFaces Extensions 3.0.0
+21-Jan-2015 23:40:39.009 INFO [http-nio-8080-exec-15] null.null ServletContext initialized.
+21-Jan-2015 23:40:39.011 INFO [http-nio-8080-exec-15] null.null Starting up Tomahawk on the RI-JSF-Implementation.
+21-Jan-2015 23:40:39.011 INFO [http-nio-8080-exec-15] null.null Scanning for context init parameters not defined. It is not necessary to define them all into your web.xml, they are just provided here for informative purposes. To disable this messages set org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS config param to 'false'
+21-Jan-2015 23:40:39.012 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.RESOURCE_EXCLUDES' found, using default value '.class .jsp .jspx .properties .xhtml .groovy'.
+21-Jan-2015 23:40:39.013 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.FULL_STATE_SAVING_VIEW_IDS' found.
+21-Jan-2015 23:40:39.013 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.PARTIAL_STATE_SAVING' found, using default value 'true (false with 1.2 webapps)'.
+21-Jan-2015 23:40:39.013 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.DEFAULT_SUFFIX' found, using default value '.xhtml .view.xml .jsp'.
+21-Jan-2015 23:40:39.013 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.FACELETS_SUFFIX' found, using default value '.xhtml'.
+21-Jan-2015 23:40:39.013 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.FACELETS_VIEW_MAPPINGS' found.
+21-Jan-2015 23:40:39.014 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.HONOR_CURRENT_COMPONENT_ATTRIBUTES' found, using default value 'false'.
+21-Jan-2015 23:40:39.014 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.VALIDATE_EMPTY_FIELDS' found, using default value 'auto'.
+21-Jan-2015 23:40:39.014 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.ENUM_CONVERTER_ALLOW_STRING_PASSTROUGH' found, using default value 'false'.
+21-Jan-2015 23:40:39.014 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.validator.DISABLE_DEFAULT_BEAN_VALIDATOR' found, using default value 'true'.
+21-Jan-2015 23:40:39.014 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.CONFIG_FILES' found.
+21-Jan-2015 23:40:39.015 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.LIFECYCLE_ID' found.
+21-Jan-2015 23:40:39.015 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.ERROR_HANDLER' found.
+21-Jan-2015 23:40:39.016 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:40:39.017 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:40:39.017 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.PRETTY_HTML' found, using default value 'true'.
+21-Jan-2015 23:40:39.017 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.ALLOW_JAVASCRIPT' found, using default value 'true'.
+21-Jan-2015 23:40:39.017 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.CONFIG_REFRESH_PERIOD' found, using default value '2'.
+21-Jan-2015 23:40:39.017 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.VIEWSTATE_JAVASCRIPT' found, using default value 'false'.
+21-Jan-2015 23:40:39.018 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.RENDER_VIEWSTATE_ID' found, using default value 'true'.
+21-Jan-2015 23:40:39.018 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.STRICT_XHTML_LINKS' found, using default value 'true'.
+21-Jan-2015 23:40:39.018 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.RENDER_CLEAR_JAVASCRIPT_FOR_BUTTON' found, using default value 'false'.
+21-Jan-2015 23:40:39.018 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.RENDER_HIDDEN_FIELDS_FOR_LINK_PARAMS' found, using default value 'false'.
+21-Jan-2015 23:40:39.018 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.SAVE_FORM_SUBMIT_LINK_IE' found, using default value 'false'.
+21-Jan-2015 23:40:39.018 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.DELEGATE_FACES_SERVLET' found.
+21-Jan-2015 23:40:39.019 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS' found, using default value 'auto'.
+21-Jan-2015 23:40:39.019 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS_PRESERVE_STATE' found, using default value 'false'.
+21-Jan-2015 23:40:39.019 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.VALIDATE_XML' found.
+21-Jan-2015 23:40:39.019 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.WRAP_SCRIPT_CONTENT_WITH_XML_COMMENT_TAG' found, using default value 'true'.
+21-Jan-2015 23:40:39.020 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.RENDER_FORM_SUBMIT_SCRIPT_INLINE' found, using default value 'false'.
+21-Jan-2015 23:40:39.020 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.DEBUG_PHASE_LISTENER' found.
+21-Jan-2015 23:40:39.020 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.STRICT_JSF_2_REFRESH_TARGET_AJAX' found, using default value 'false'.
+21-Jan-2015 23:40:39.020 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.STRICT_JSF_2_CC_EL_RESOLVER' found, using default value 'false'.
+21-Jan-2015 23:40:39.020 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.DEFAULT_RESPONSE_WRITER_CONTENT_TYPE_MODE' found, using default value 'text/html'.
+21-Jan-2015 23:40:39.020 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.VIEW_UNIQUE_IDS_CACHE_ENABLED' found, using default value 'false'.
+21-Jan-2015 23:40:39.021 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.COMPONENT_UNIQUE_IDS_CACHE_SIZE' found, using default value '100'.
+21-Jan-2015 23:40:39.021 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.SUPPORT_JSP_AND_FACES_EL' found, using default value 'true'.
+21-Jan-2015 23:40:39.021 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.FLASH_SCOPE_DISABLED' found, using default value 'false'.
+21-Jan-2015 23:40:39.021 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.RESOURCE_MAX_TIME_EXPIRES' found, using default value '604800000'.
+21-Jan-2015 23:40:39.021 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:40:39.022 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:40:39.022 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.USE_ENCRYPTION' found, using default value 'true'.
+21-Jan-2015 23:40:39.022 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.SECRET' found.
+21-Jan-2015 23:40:39.022 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.ALGORITHM' found, using default value 'DES'.
+21-Jan-2015 23:40:39.022 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.SECRET.CACHE' found.
+21-Jan-2015 23:40:39.022 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.ALGORITHM.IV' found.
+21-Jan-2015 23:40:39.023 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.ALGORITHM.PARAMETERS' found, using default value 'ECB/PKCS5Padding'.
+21-Jan-2015 23:40:39.023 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.SERIAL_FACTORY' found.
+21-Jan-2015 23:40:39.023 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.COMPRESS_STATE_IN_CLIENT' found, using default value 'false'.
+21-Jan-2015 23:40:39.023 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.MAC_ALGORITHM' found, using default value 'HmacSHA1'.
+21-Jan-2015 23:40:39.023 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.MAC_SECRET' found.
+21-Jan-2015 23:40:39.024 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.MAC_SECRET.CACHE' found.
+21-Jan-2015 23:40:39.024 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.DATETIMECONVERTER_DEFAULT_TIMEZONE_IS_SYSTEM_TIMEZONE' found, using default value 'false'.
+21-Jan-2015 23:40:39.024 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.LAZY_LOAD_CONFIG_OBJECTS' found, using default value 'true'.
+21-Jan-2015 23:40:39.024 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.STRICT_JSF_2_ALLOW_SLASH_LIBRARY_NAME' found, using default value 'false'.
+21-Jan-2015 23:40:39.024 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.VALIDATE' found, using default value 'false'.
+21-Jan-2015 23:40:39.024 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.config.annotation.LifecycleProvider' found.
+21-Jan-2015 23:40:39.025 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.EL_RESOLVER_COMPARATOR' found.
+21-Jan-2015 23:40:39.025 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.EL_RESOLVER_PREDICATE' found.
+21-Jan-2015 23:40:39.025 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:40:39.025 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:40:39.025 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.ERROR_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-error.xml'.
+21-Jan-2015 23:40:39.025 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.DEBUG_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-debug.xml'.
+21-Jan-2015 23:40:39.026 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.ERROR_HANDLING' found, using default value 'false, on Development Project stage: true'.
+21-Jan-2015 23:40:39.026 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.NUMBER_OF_SEQUENTIAL_VIEWS_IN_SESSION' found.
+21-Jan-2015 23:40:39.026 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.CACHE_OLD_VIEWS_IN_SESSION_MODE' found, using default value 'off'.
+21-Jan-2015 23:40:39.026 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.USE_FLASH_SCOPE_PURGE_VIEWS_IN_SESSION' found, using default value 'false'.
+21-Jan-2015 23:40:39.027 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.HANDLE_STATE_CACHING_MECHANICS' found, using default value 'true'.
+21-Jan-2015 23:40:39.027 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.USE_MULTIPLE_JS_FILES_FOR_JSF_UNCOMPRESSED_JS' found, using default value 'false'.
+21-Jan-2015 23:40:39.027 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.JSF_JS_MODE' found, using default value 'normal'.
+21-Jan-2015 23:40:39.027 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.SERVICE_PROVIDER_FINDER' found.
+21-Jan-2015 23:40:39.027 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.DISABLE_FACELET_JSF_VIEWHANDLER' found, using default value 'false'.
+21-Jan-2015 23:40:39.028 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.SAVE_STATE_WITH_VISIT_TREE_ON_PSS' found, using default value 'true'.
+21-Jan-2015 23:40:39.028 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.CHECK_ID_PRODUCTION_MODE' found, using default value 'auto'.
+21-Jan-2015 23:40:39.035 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.FACELETS_BUFFER_SIZE' found.
+21-Jan-2015 23:40:39.036 INFO [http-nio-8080-exec-15] null.null No context init parameter 'facelets.BUFFER_SIZE' found.
+21-Jan-2015 23:40:39.037 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.FACELETS_DECORATORS' found.
+21-Jan-2015 23:40:39.037 INFO [http-nio-8080-exec-15] null.null No context init parameter 'facelets.DECORATORS' found.
+21-Jan-2015 23:40:39.037 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.FACELETS_LIBRARIES' found.
+21-Jan-2015 23:40:39.037 INFO [http-nio-8080-exec-15] null.null No context init parameter 'facelets.LIBRARIES' found.
+21-Jan-2015 23:40:39.037 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.FACELETS_REFRESH_PERIOD' found, using default value '-1'.
+21-Jan-2015 23:40:39.038 INFO [http-nio-8080-exec-15] null.null No context init parameter 'facelets.REFRESH_PERIOD' found, using default value '-1'.
+21-Jan-2015 23:40:39.038 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.FACELETS_RESOURCE_RESOLVER' found.
+21-Jan-2015 23:40:39.038 INFO [http-nio-8080-exec-15] null.null No context init parameter 'facelets.RESOURCE_RESOLVER' found.
+21-Jan-2015 23:40:39.038 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.FACELETS_SKIP_COMMENTS' found.
+21-Jan-2015 23:40:39.038 INFO [http-nio-8080-exec-15] null.null No context init parameter 'facelets.SKIP_COMMENTS' found.
+21-Jan-2015 23:40:39.038 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.MARK_INITIAL_STATE_WHEN_APPLY_BUILD_VIEW' found, using default value 'false'.
+21-Jan-2015 23:40:39.039 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.WRAP_TAG_EXCEPTIONS_AS_CONTEXT_AWARE' found, using default value 'true'.
+21-Jan-2015 23:40:39.039 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.CACHE_EL_EXPRESSIONS' found, using default value 'noCache'.
+21-Jan-2015 23:40:39.039 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.EXPRESSION_FACTORY' found.
+21-Jan-2015 23:40:39.039 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.INITIALIZE_ALWAYS_STANDALONE' found, using default value 'false'.
+21-Jan-2015 23:40:39.039 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS' found, using default value 'auto'.
+21-Jan-2015 23:40:39.040 INFO [http-nio-8080-exec-15] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.FACES_INITIALIZER' found.
+21-Jan-2015 23:40:39.040 INFO [http-nio-8080-exec-15] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.FACES_INIT_PLUGINS' found.
+21-Jan-2015 23:40:39.040 INFO [http-nio-8080-exec-15] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RESOURCE_VIRTUAL_PATH' found.
+21-Jan-2015 23:40:39.040 INFO [http-nio-8080-exec-15] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.DETECT_JAVASCRIPT' found, using default value 'false'.
+21-Jan-2015 23:40:39.040 INFO [http-nio-8080-exec-15] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.AUTO_SCROLL' found, using default value 'false'.
+21-Jan-2015 23:40:39.040 INFO [http-nio-8080-exec-15] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ADD_RESOURCE_CLASS' found, using default value 'org.apache.myfaces. renderkit.html.util. DefaultAddResource'.
+21-Jan-2015 23:40:39.040 INFO [http-nio-8080-exec-15] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CHECK_EXTENSIONS_FILTER' found, using default value 'for JSF 2.0 since 1.1.11 false, otherwise true'.
+21-Jan-2015 23:40:39.040 INFO [http-nio-8080-exec-15] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.READONLY_AS_DISABLED_FOR_SELECTS' found, using default value 'true'.
+21-Jan-2015 23:40:39.040 WARNING [http-nio-8080-exec-15] org.apache.myfaces.webapp.AbstractFacesInitializer.initFaces 
+
+*******************************************************************
+*** WARNING: Apache MyFaces-2 is running in DEVELOPMENT mode.   ***
+***                                         ^^^^^^^^^^^         ***
+*** Do NOT deploy to your live server(s) without changing this. ***
+*** See Application#getProjectStage() for more information.     ***
+*******************************************************************
+
+21-Jan-2015 23:40:39.086 INFO [http-nio-8080-exec-15] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/dashboard] is completed
+21-Jan-2015 23:40:40.754 INFO [http-nio-8080-exec-19] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/dashboard] has started
+21-Jan-2015 23:40:42.846 INFO [http-nio-8080-exec-19] org.apache.myfaces.config.DefaultFacesConfigurationProvider.getStandardFacesConfig Reading standard config META-INF/standard-faces-config.xml
+21-Jan-2015 23:40:42.990 INFO [http-nio-8080-exec-19] null.null Reading config /WEB-INF/faces-config.xml
+21-Jan-2015 23:40:43.443 INFO [http-nio-8080-exec-19] null.null Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/primefaces-extensions-3.0.0.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:40:43.460 INFO [http-nio-8080-exec-19] null.null Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/primefaces-5.1.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:40:43.489 INFO [http-nio-8080-exec-19] null.null Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/tomahawk20-1.1.14.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:40:43.537 INFO [http-nio-8080-exec-19] null.null Artifact 'myfaces-api' was found in version '2.1.7' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/myfaces-api-2.1.7.jar'
+21-Jan-2015 23:40:43.537 INFO [http-nio-8080-exec-19] null.null Artifact 'myfaces-impl' was found in version '2.1.7' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/myfaces-impl-2.1.7.jar'
+21-Jan-2015 23:40:43.538 INFO [http-nio-8080-exec-19] null.null Artifact 'tomahawk20' was found in version '1.1.14' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/tomahawk20-1.1.14.jar'
+21-Jan-2015 23:40:43.625 INFO [http-nio-8080-exec-19] null.null MyFaces Bean Validation support disabled
+21-Jan-2015 23:40:43.866 INFO [http-nio-8080-exec-19] null.null Serialization provider : class org.apache.myfaces.shared_impl.util.serial.DefaultSerialFactory
+21-Jan-2015 23:40:43.870 INFO [http-nio-8080-exec-19] null.null Using LifecycleProvider org.apache.myfaces.config.annotation.Tomcat7AnnotationLifecycleProvider
+21-Jan-2015 23:40:43.877 INFO [http-nio-8080-exec-19] null.null Running on PrimeFaces 5.1
+21-Jan-2015 23:40:43.885 INFO [http-nio-8080-exec-19] null.null Running on PrimeFaces Extensions 3.0.0
+21-Jan-2015 23:40:43.885 INFO [http-nio-8080-exec-19] null.null ServletContext initialized.
+21-Jan-2015 23:40:43.887 INFO [http-nio-8080-exec-19] null.null Starting up Tomahawk on the RI-JSF-Implementation.
+21-Jan-2015 23:40:43.895 INFO [http-nio-8080-exec-19] null.null Scanning for context init parameters not defined. It is not necessary to define them all into your web.xml, they are just provided here for informative purposes. To disable this messages set org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS config param to 'false'
+21-Jan-2015 23:40:43.896 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.RESOURCE_EXCLUDES' found, using default value '.class .jsp .jspx .properties .xhtml .groovy'.
+21-Jan-2015 23:40:43.897 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.FULL_STATE_SAVING_VIEW_IDS' found.
+21-Jan-2015 23:40:43.897 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.PARTIAL_STATE_SAVING' found, using default value 'true (false with 1.2 webapps)'.
+21-Jan-2015 23:40:43.897 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.DEFAULT_SUFFIX' found, using default value '.xhtml .view.xml .jsp'.
+21-Jan-2015 23:40:43.897 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.FACELETS_SUFFIX' found, using default value '.xhtml'.
+21-Jan-2015 23:40:43.897 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.FACELETS_VIEW_MAPPINGS' found.
+21-Jan-2015 23:40:43.897 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.HONOR_CURRENT_COMPONENT_ATTRIBUTES' found, using default value 'false'.
+21-Jan-2015 23:40:43.898 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.VALIDATE_EMPTY_FIELDS' found, using default value 'auto'.
+21-Jan-2015 23:40:43.898 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.ENUM_CONVERTER_ALLOW_STRING_PASSTROUGH' found, using default value 'false'.
+21-Jan-2015 23:40:43.898 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.validator.DISABLE_DEFAULT_BEAN_VALIDATOR' found, using default value 'true'.
+21-Jan-2015 23:40:43.898 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.CONFIG_FILES' found.
+21-Jan-2015 23:40:43.898 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.LIFECYCLE_ID' found.
+21-Jan-2015 23:40:43.899 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.ERROR_HANDLER' found.
+21-Jan-2015 23:40:43.899 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:40:43.899 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:40:43.899 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.PRETTY_HTML' found, using default value 'true'.
+21-Jan-2015 23:40:43.899 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.ALLOW_JAVASCRIPT' found, using default value 'true'.
+21-Jan-2015 23:40:43.900 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.CONFIG_REFRESH_PERIOD' found, using default value '2'.
+21-Jan-2015 23:40:43.900 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.VIEWSTATE_JAVASCRIPT' found, using default value 'false'.
+21-Jan-2015 23:40:43.900 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.RENDER_VIEWSTATE_ID' found, using default value 'true'.
+21-Jan-2015 23:40:43.900 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.STRICT_XHTML_LINKS' found, using default value 'true'.
+21-Jan-2015 23:40:43.900 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.RENDER_CLEAR_JAVASCRIPT_FOR_BUTTON' found, using default value 'false'.
+21-Jan-2015 23:40:43.901 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.RENDER_HIDDEN_FIELDS_FOR_LINK_PARAMS' found, using default value 'false'.
+21-Jan-2015 23:40:43.901 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.SAVE_FORM_SUBMIT_LINK_IE' found, using default value 'false'.
+21-Jan-2015 23:40:43.901 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.DELEGATE_FACES_SERVLET' found.
+21-Jan-2015 23:40:43.901 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS' found, using default value 'auto'.
+21-Jan-2015 23:40:43.901 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS_PRESERVE_STATE' found, using default value 'false'.
+21-Jan-2015 23:40:43.902 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.VALIDATE_XML' found.
+21-Jan-2015 23:40:43.902 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.WRAP_SCRIPT_CONTENT_WITH_XML_COMMENT_TAG' found, using default value 'true'.
+21-Jan-2015 23:40:43.902 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.RENDER_FORM_SUBMIT_SCRIPT_INLINE' found, using default value 'false'.
+21-Jan-2015 23:40:43.902 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.DEBUG_PHASE_LISTENER' found.
+21-Jan-2015 23:40:43.902 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.STRICT_JSF_2_REFRESH_TARGET_AJAX' found, using default value 'false'.
+21-Jan-2015 23:40:43.902 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.STRICT_JSF_2_CC_EL_RESOLVER' found, using default value 'false'.
+21-Jan-2015 23:40:43.903 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.DEFAULT_RESPONSE_WRITER_CONTENT_TYPE_MODE' found, using default value 'text/html'.
+21-Jan-2015 23:40:43.907 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.VIEW_UNIQUE_IDS_CACHE_ENABLED' found, using default value 'false'.
+21-Jan-2015 23:40:43.907 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.COMPONENT_UNIQUE_IDS_CACHE_SIZE' found, using default value '100'.
+21-Jan-2015 23:40:43.907 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.SUPPORT_JSP_AND_FACES_EL' found, using default value 'true'.
+21-Jan-2015 23:40:43.907 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.FLASH_SCOPE_DISABLED' found, using default value 'false'.
+21-Jan-2015 23:40:43.908 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.RESOURCE_MAX_TIME_EXPIRES' found, using default value '604800000'.
+21-Jan-2015 23:40:43.908 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:40:43.908 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:40:43.908 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.USE_ENCRYPTION' found, using default value 'true'.
+21-Jan-2015 23:40:43.908 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.SECRET' found.
+21-Jan-2015 23:40:43.909 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.ALGORITHM' found, using default value 'DES'.
+21-Jan-2015 23:40:43.909 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.SECRET.CACHE' found.
+21-Jan-2015 23:40:43.909 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.ALGORITHM.IV' found.
+21-Jan-2015 23:40:43.909 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.ALGORITHM.PARAMETERS' found, using default value 'ECB/PKCS5Padding'.
+21-Jan-2015 23:40:43.909 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.SERIAL_FACTORY' found.
+21-Jan-2015 23:40:43.911 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.COMPRESS_STATE_IN_CLIENT' found, using default value 'false'.
+21-Jan-2015 23:40:43.911 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.MAC_ALGORITHM' found, using default value 'HmacSHA1'.
+21-Jan-2015 23:40:43.911 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.MAC_SECRET' found.
+21-Jan-2015 23:40:43.911 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.MAC_SECRET.CACHE' found.
+21-Jan-2015 23:40:43.912 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.DATETIMECONVERTER_DEFAULT_TIMEZONE_IS_SYSTEM_TIMEZONE' found, using default value 'false'.
+21-Jan-2015 23:40:43.913 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.LAZY_LOAD_CONFIG_OBJECTS' found, using default value 'true'.
+21-Jan-2015 23:40:43.913 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.STRICT_JSF_2_ALLOW_SLASH_LIBRARY_NAME' found, using default value 'false'.
+21-Jan-2015 23:40:43.913 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.VALIDATE' found, using default value 'false'.
+21-Jan-2015 23:40:43.913 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.config.annotation.LifecycleProvider' found.
+21-Jan-2015 23:40:43.914 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.EL_RESOLVER_COMPARATOR' found.
+21-Jan-2015 23:40:43.914 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.EL_RESOLVER_PREDICATE' found.
+21-Jan-2015 23:40:43.914 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:40:43.914 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:40:43.915 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.ERROR_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-error.xml'.
+21-Jan-2015 23:40:43.915 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.DEBUG_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-debug.xml'.
+21-Jan-2015 23:40:43.915 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.ERROR_HANDLING' found, using default value 'false, on Development Project stage: true'.
+21-Jan-2015 23:40:43.915 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.NUMBER_OF_SEQUENTIAL_VIEWS_IN_SESSION' found.
+21-Jan-2015 23:40:43.915 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.CACHE_OLD_VIEWS_IN_SESSION_MODE' found, using default value 'off'.
+21-Jan-2015 23:40:43.916 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.USE_FLASH_SCOPE_PURGE_VIEWS_IN_SESSION' found, using default value 'false'.
+21-Jan-2015 23:40:43.916 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.HANDLE_STATE_CACHING_MECHANICS' found, using default value 'true'.
+21-Jan-2015 23:40:43.916 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.USE_MULTIPLE_JS_FILES_FOR_JSF_UNCOMPRESSED_JS' found, using default value 'false'.
+21-Jan-2015 23:40:43.916 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.JSF_JS_MODE' found, using default value 'normal'.
+21-Jan-2015 23:40:43.916 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.SERVICE_PROVIDER_FINDER' found.
+21-Jan-2015 23:40:43.917 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.DISABLE_FACELET_JSF_VIEWHANDLER' found, using default value 'false'.
+21-Jan-2015 23:40:43.917 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.SAVE_STATE_WITH_VISIT_TREE_ON_PSS' found, using default value 'true'.
+21-Jan-2015 23:40:43.917 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.CHECK_ID_PRODUCTION_MODE' found, using default value 'auto'.
+21-Jan-2015 23:40:43.917 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.FACELETS_BUFFER_SIZE' found.
+21-Jan-2015 23:40:43.917 INFO [http-nio-8080-exec-19] null.null No context init parameter 'facelets.BUFFER_SIZE' found.
+21-Jan-2015 23:40:43.918 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.FACELETS_DECORATORS' found.
+21-Jan-2015 23:40:43.918 INFO [http-nio-8080-exec-19] null.null No context init parameter 'facelets.DECORATORS' found.
+21-Jan-2015 23:40:43.918 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.FACELETS_LIBRARIES' found.
+21-Jan-2015 23:40:43.918 INFO [http-nio-8080-exec-19] null.null No context init parameter 'facelets.LIBRARIES' found.
+21-Jan-2015 23:40:43.918 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.FACELETS_REFRESH_PERIOD' found, using default value '-1'.
+21-Jan-2015 23:40:43.919 INFO [http-nio-8080-exec-19] null.null No context init parameter 'facelets.REFRESH_PERIOD' found, using default value '-1'.
+21-Jan-2015 23:40:43.919 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.FACELETS_RESOURCE_RESOLVER' found.
+21-Jan-2015 23:40:43.919 INFO [http-nio-8080-exec-19] null.null No context init parameter 'facelets.RESOURCE_RESOLVER' found.
+21-Jan-2015 23:40:43.919 INFO [http-nio-8080-exec-19] null.null No context init parameter 'javax.faces.FACELETS_SKIP_COMMENTS' found.
+21-Jan-2015 23:40:43.919 INFO [http-nio-8080-exec-19] null.null No context init parameter 'facelets.SKIP_COMMENTS' found.
+21-Jan-2015 23:40:43.920 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.MARK_INITIAL_STATE_WHEN_APPLY_BUILD_VIEW' found, using default value 'false'.
+21-Jan-2015 23:40:43.920 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.WRAP_TAG_EXCEPTIONS_AS_CONTEXT_AWARE' found, using default value 'true'.
+21-Jan-2015 23:40:43.920 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.CACHE_EL_EXPRESSIONS' found, using default value 'noCache'.
+21-Jan-2015 23:40:43.920 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.EXPRESSION_FACTORY' found.
+21-Jan-2015 23:40:43.920 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.INITIALIZE_ALWAYS_STANDALONE' found, using default value 'false'.
+21-Jan-2015 23:40:43.920 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS' found, using default value 'auto'.
+21-Jan-2015 23:40:43.921 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.FACES_INITIALIZER' found.
+21-Jan-2015 23:40:43.921 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.FACES_INIT_PLUGINS' found.
+21-Jan-2015 23:40:43.921 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.RESOURCE_VIRTUAL_PATH' found.
+21-Jan-2015 23:40:43.921 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.DETECT_JAVASCRIPT' found, using default value 'false'.
+21-Jan-2015 23:40:43.921 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.AUTO_SCROLL' found, using default value 'false'.
+21-Jan-2015 23:40:43.922 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.ADD_RESOURCE_CLASS' found, using default value 'org.apache.myfaces. renderkit.html.util. DefaultAddResource'.
+21-Jan-2015 23:40:43.922 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.CHECK_EXTENSIONS_FILTER' found, using default value 'for JSF 2.0 since 1.1.11 false, otherwise true'.
+21-Jan-2015 23:40:43.922 INFO [http-nio-8080-exec-19] null.null No context init parameter 'org.apache.myfaces.READONLY_AS_DISABLED_FOR_SELECTS' found, using default value 'true'.
+21-Jan-2015 23:40:43.922 WARNING [http-nio-8080-exec-19] null.null 
+
+*******************************************************************
+*** WARNING: Apache MyFaces-2 is running in DEVELOPMENT mode.   ***
+***                                         ^^^^^^^^^^^         ***
+*** Do NOT deploy to your live server(s) without changing this. ***
+*** See Application#getProjectStage() for more information.     ***
+*******************************************************************
+
+21-Jan-2015 23:40:43.949 INFO [http-nio-8080-exec-19] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/dashboard] is completed
+21-Jan-2015 23:41:15.939 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/dashboard]
+21-Jan-2015 23:41:17.244 INFO [http-nio-8080-exec-15] null.null Reading standard config META-INF/standard-faces-config.xml
+21-Jan-2015 23:41:17.817 INFO [http-nio-8080-exec-15] null.null Reading config /WEB-INF/faces-config.xml
+21-Jan-2015 23:41:18.278 INFO [http-nio-8080-exec-15] null.null Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/primefaces-extensions-3.0.0.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:41:18.306 INFO [http-nio-8080-exec-15] null.null Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/primefaces-5.1.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:41:18.335 INFO [http-nio-8080-exec-15] null.null Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/tomahawk20-1.1.14.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:41:18.374 INFO [http-nio-8080-exec-15] null.null Artifact 'myfaces-api' was found in version '2.1.7' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/myfaces-api-2.1.7.jar'
+21-Jan-2015 23:41:18.374 INFO [http-nio-8080-exec-15] null.null Artifact 'myfaces-impl' was found in version '2.1.7' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/myfaces-impl-2.1.7.jar'
+21-Jan-2015 23:41:18.374 INFO [http-nio-8080-exec-15] null.null Artifact 'tomahawk20' was found in version '1.1.14' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/tomahawk20-1.1.14.jar'
+21-Jan-2015 23:41:18.426 INFO [http-nio-8080-exec-15] null.null MyFaces Bean Validation support disabled
+21-Jan-2015 23:41:18.623 INFO [http-nio-8080-exec-15] null.null Serialization provider : class org.apache.myfaces.shared_impl.util.serial.DefaultSerialFactory
+21-Jan-2015 23:41:18.627 INFO [http-nio-8080-exec-15] null.null Using LifecycleProvider org.apache.myfaces.config.annotation.Tomcat7AnnotationLifecycleProvider
+21-Jan-2015 23:41:18.634 INFO [http-nio-8080-exec-15] null.null Running on PrimeFaces 5.1
+21-Jan-2015 23:41:18.634 INFO [http-nio-8080-exec-15] null.null Running on PrimeFaces Extensions 3.0.0
+21-Jan-2015 23:41:18.635 INFO [http-nio-8080-exec-15] null.null ServletContext initialized.
+21-Jan-2015 23:41:18.637 INFO [http-nio-8080-exec-15] null.null Starting up Tomahawk on the RI-JSF-Implementation.
+21-Jan-2015 23:41:18.637 INFO [http-nio-8080-exec-15] null.null Scanning for context init parameters not defined. It is not necessary to define them all into your web.xml, they are just provided here for informative purposes. To disable this messages set org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS config param to 'false'
+21-Jan-2015 23:41:18.637 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.RESOURCE_EXCLUDES' found, using default value '.class .jsp .jspx .properties .xhtml .groovy'.
+21-Jan-2015 23:41:18.641 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.FULL_STATE_SAVING_VIEW_IDS' found.
+21-Jan-2015 23:41:18.645 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.PARTIAL_STATE_SAVING' found, using default value 'true (false with 1.2 webapps)'.
+21-Jan-2015 23:41:18.645 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.DEFAULT_SUFFIX' found, using default value '.xhtml .view.xml .jsp'.
+21-Jan-2015 23:41:18.645 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.FACELETS_SUFFIX' found, using default value '.xhtml'.
+21-Jan-2015 23:41:18.646 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.FACELETS_VIEW_MAPPINGS' found.
+21-Jan-2015 23:41:18.646 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.HONOR_CURRENT_COMPONENT_ATTRIBUTES' found, using default value 'false'.
+21-Jan-2015 23:41:18.646 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.VALIDATE_EMPTY_FIELDS' found, using default value 'auto'.
+21-Jan-2015 23:41:18.647 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.ENUM_CONVERTER_ALLOW_STRING_PASSTROUGH' found, using default value 'false'.
+21-Jan-2015 23:41:18.647 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.validator.DISABLE_DEFAULT_BEAN_VALIDATOR' found, using default value 'true'.
+21-Jan-2015 23:41:18.648 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.CONFIG_FILES' found.
+21-Jan-2015 23:41:18.648 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.LIFECYCLE_ID' found.
+21-Jan-2015 23:41:18.651 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.ERROR_HANDLER' found.
+21-Jan-2015 23:41:18.651 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:41:18.652 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:41:18.652 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.PRETTY_HTML' found, using default value 'true'.
+21-Jan-2015 23:41:18.652 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.ALLOW_JAVASCRIPT' found, using default value 'true'.
+21-Jan-2015 23:41:18.652 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.CONFIG_REFRESH_PERIOD' found, using default value '2'.
+21-Jan-2015 23:41:18.652 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.VIEWSTATE_JAVASCRIPT' found, using default value 'false'.
+21-Jan-2015 23:41:18.653 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.RENDER_VIEWSTATE_ID' found, using default value 'true'.
+21-Jan-2015 23:41:18.653 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.STRICT_XHTML_LINKS' found, using default value 'true'.
+21-Jan-2015 23:41:18.653 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.RENDER_CLEAR_JAVASCRIPT_FOR_BUTTON' found, using default value 'false'.
+21-Jan-2015 23:41:18.653 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.RENDER_HIDDEN_FIELDS_FOR_LINK_PARAMS' found, using default value 'false'.
+21-Jan-2015 23:41:18.653 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.SAVE_FORM_SUBMIT_LINK_IE' found, using default value 'false'.
+21-Jan-2015 23:41:18.654 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.DELEGATE_FACES_SERVLET' found.
+21-Jan-2015 23:41:18.654 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS' found, using default value 'auto'.
+21-Jan-2015 23:41:18.654 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS_PRESERVE_STATE' found, using default value 'false'.
+21-Jan-2015 23:41:18.654 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.VALIDATE_XML' found.
+21-Jan-2015 23:41:18.654 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.WRAP_SCRIPT_CONTENT_WITH_XML_COMMENT_TAG' found, using default value 'true'.
+21-Jan-2015 23:41:18.655 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.RENDER_FORM_SUBMIT_SCRIPT_INLINE' found, using default value 'false'.
+21-Jan-2015 23:41:18.655 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.DEBUG_PHASE_LISTENER' found.
+21-Jan-2015 23:41:18.655 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.STRICT_JSF_2_REFRESH_TARGET_AJAX' found, using default value 'false'.
+21-Jan-2015 23:41:18.655 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.STRICT_JSF_2_CC_EL_RESOLVER' found, using default value 'false'.
+21-Jan-2015 23:41:18.656 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.DEFAULT_RESPONSE_WRITER_CONTENT_TYPE_MODE' found, using default value 'text/html'.
+21-Jan-2015 23:41:18.656 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.VIEW_UNIQUE_IDS_CACHE_ENABLED' found, using default value 'false'.
+21-Jan-2015 23:41:18.656 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.COMPONENT_UNIQUE_IDS_CACHE_SIZE' found, using default value '100'.
+21-Jan-2015 23:41:18.656 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.SUPPORT_JSP_AND_FACES_EL' found, using default value 'true'.
+21-Jan-2015 23:41:18.656 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.FLASH_SCOPE_DISABLED' found, using default value 'false'.
+21-Jan-2015 23:41:18.657 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.RESOURCE_MAX_TIME_EXPIRES' found, using default value '604800000'.
+21-Jan-2015 23:41:18.657 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:41:18.657 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:41:18.657 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.USE_ENCRYPTION' found, using default value 'true'.
+21-Jan-2015 23:41:18.657 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.SECRET' found.
+21-Jan-2015 23:41:18.657 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.ALGORITHM' found, using default value 'DES'.
+21-Jan-2015 23:41:18.658 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.SECRET.CACHE' found.
+21-Jan-2015 23:41:18.658 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.ALGORITHM.IV' found.
+21-Jan-2015 23:41:18.658 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.ALGORITHM.PARAMETERS' found, using default value 'ECB/PKCS5Padding'.
+21-Jan-2015 23:41:18.658 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.SERIAL_FACTORY' found.
+21-Jan-2015 23:41:18.658 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.COMPRESS_STATE_IN_CLIENT' found, using default value 'false'.
+21-Jan-2015 23:41:18.658 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.MAC_ALGORITHM' found, using default value 'HmacSHA1'.
+21-Jan-2015 23:41:18.659 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.MAC_SECRET' found.
+21-Jan-2015 23:41:18.659 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.MAC_SECRET.CACHE' found.
+21-Jan-2015 23:41:18.659 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.DATETIMECONVERTER_DEFAULT_TIMEZONE_IS_SYSTEM_TIMEZONE' found, using default value 'false'.
+21-Jan-2015 23:41:18.659 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.LAZY_LOAD_CONFIG_OBJECTS' found, using default value 'true'.
+21-Jan-2015 23:41:18.659 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.STRICT_JSF_2_ALLOW_SLASH_LIBRARY_NAME' found, using default value 'false'.
+21-Jan-2015 23:41:18.660 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.VALIDATE' found, using default value 'false'.
+21-Jan-2015 23:41:18.660 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.config.annotation.LifecycleProvider' found.
+21-Jan-2015 23:41:18.660 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.EL_RESOLVER_COMPARATOR' found.
+21-Jan-2015 23:41:18.660 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.EL_RESOLVER_PREDICATE' found.
+21-Jan-2015 23:41:18.660 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:41:18.660 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:41:18.661 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.ERROR_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-error.xml'.
+21-Jan-2015 23:41:18.661 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.DEBUG_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-debug.xml'.
+21-Jan-2015 23:41:18.661 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.ERROR_HANDLING' found, using default value 'false, on Development Project stage: true'.
+21-Jan-2015 23:41:18.661 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.NUMBER_OF_SEQUENTIAL_VIEWS_IN_SESSION' found.
+21-Jan-2015 23:41:18.661 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.CACHE_OLD_VIEWS_IN_SESSION_MODE' found, using default value 'off'.
+21-Jan-2015 23:41:18.668 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.USE_FLASH_SCOPE_PURGE_VIEWS_IN_SESSION' found, using default value 'false'.
+21-Jan-2015 23:41:18.669 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.HANDLE_STATE_CACHING_MECHANICS' found, using default value 'true'.
+21-Jan-2015 23:41:18.685 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.USE_MULTIPLE_JS_FILES_FOR_JSF_UNCOMPRESSED_JS' found, using default value 'false'.
+21-Jan-2015 23:41:18.686 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.JSF_JS_MODE' found, using default value 'normal'.
+21-Jan-2015 23:41:18.686 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.SERVICE_PROVIDER_FINDER' found.
+21-Jan-2015 23:41:18.686 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.DISABLE_FACELET_JSF_VIEWHANDLER' found, using default value 'false'.
+21-Jan-2015 23:41:18.686 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.SAVE_STATE_WITH_VISIT_TREE_ON_PSS' found, using default value 'true'.
+21-Jan-2015 23:41:18.686 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.CHECK_ID_PRODUCTION_MODE' found, using default value 'auto'.
+21-Jan-2015 23:41:18.686 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.FACELETS_BUFFER_SIZE' found.
+21-Jan-2015 23:41:18.687 INFO [http-nio-8080-exec-15] null.null No context init parameter 'facelets.BUFFER_SIZE' found.
+21-Jan-2015 23:41:18.687 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.FACELETS_DECORATORS' found.
+21-Jan-2015 23:41:18.687 INFO [http-nio-8080-exec-15] null.null No context init parameter 'facelets.DECORATORS' found.
+21-Jan-2015 23:41:18.687 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.FACELETS_LIBRARIES' found.
+21-Jan-2015 23:41:18.688 INFO [http-nio-8080-exec-15] null.null No context init parameter 'facelets.LIBRARIES' found.
+21-Jan-2015 23:41:18.688 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.FACELETS_REFRESH_PERIOD' found, using default value '-1'.
+21-Jan-2015 23:41:18.688 INFO [http-nio-8080-exec-15] null.null No context init parameter 'facelets.REFRESH_PERIOD' found, using default value '-1'.
+21-Jan-2015 23:41:18.688 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.FACELETS_RESOURCE_RESOLVER' found.
+21-Jan-2015 23:41:18.688 INFO [http-nio-8080-exec-15] null.null No context init parameter 'facelets.RESOURCE_RESOLVER' found.
+21-Jan-2015 23:41:18.688 INFO [http-nio-8080-exec-15] null.null No context init parameter 'javax.faces.FACELETS_SKIP_COMMENTS' found.
+21-Jan-2015 23:41:18.688 INFO [http-nio-8080-exec-15] null.null No context init parameter 'facelets.SKIP_COMMENTS' found.
+21-Jan-2015 23:41:18.689 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.MARK_INITIAL_STATE_WHEN_APPLY_BUILD_VIEW' found, using default value 'false'.
+21-Jan-2015 23:41:18.689 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.WRAP_TAG_EXCEPTIONS_AS_CONTEXT_AWARE' found, using default value 'true'.
+21-Jan-2015 23:41:18.689 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.CACHE_EL_EXPRESSIONS' found, using default value 'noCache'.
+21-Jan-2015 23:41:18.689 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.EXPRESSION_FACTORY' found.
+21-Jan-2015 23:41:18.689 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.INITIALIZE_ALWAYS_STANDALONE' found, using default value 'false'.
+21-Jan-2015 23:41:18.690 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS' found, using default value 'auto'.
+21-Jan-2015 23:41:18.690 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.FACES_INITIALIZER' found.
+21-Jan-2015 23:41:18.690 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.FACES_INIT_PLUGINS' found.
+21-Jan-2015 23:41:18.690 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.RESOURCE_VIRTUAL_PATH' found.
+21-Jan-2015 23:41:18.690 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.DETECT_JAVASCRIPT' found, using default value 'false'.
+21-Jan-2015 23:41:18.690 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.AUTO_SCROLL' found, using default value 'false'.
+21-Jan-2015 23:41:18.690 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.ADD_RESOURCE_CLASS' found, using default value 'org.apache.myfaces. renderkit.html.util. DefaultAddResource'.
+21-Jan-2015 23:41:18.691 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.CHECK_EXTENSIONS_FILTER' found, using default value 'for JSF 2.0 since 1.1.11 false, otherwise true'.
+21-Jan-2015 23:41:18.691 INFO [http-nio-8080-exec-15] null.null No context init parameter 'org.apache.myfaces.READONLY_AS_DISABLED_FOR_SELECTS' found, using default value 'true'.
+21-Jan-2015 23:41:18.691 WARNING [http-nio-8080-exec-15] null.null 
+
+*******************************************************************
+*** WARNING: Apache MyFaces-2 is running in DEVELOPMENT mode.   ***
+***                                         ^^^^^^^^^^^         ***
+*** Do NOT deploy to your live server(s) without changing this. ***
+*** See Application#getProjectStage() for more information.     ***
+*******************************************************************
+
+21-Jan-2015 23:41:18.717 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/dashboard]] after start() had already been called. The second call will be ignored.
+21-Jan-2015 23:41:48.841 INFO [http-nio-8080-exec-15] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/dashboard]
+21-Jan-2015 23:41:49.342 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/dashboard]
+21-Jan-2015 23:41:49.344 INFO [http-nio-8080-exec-28] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/conf/Catalina/localhost/dashboard.xml
+21-Jan-2015 23:41:49.345 WARNING [http-nio-8080-exec-28] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+21-Jan-2015 23:41:50.793 INFO [http-nio-8080-exec-28] null.null Reading standard config META-INF/standard-faces-config.xml
+21-Jan-2015 23:41:50.914 INFO [http-nio-8080-exec-28] null.null Reading config /WEB-INF/faces-config.xml
+21-Jan-2015 23:41:51.329 INFO [http-nio-8080-exec-28] null.null Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/primefaces-extensions-3.0.0.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:41:51.342 INFO [http-nio-8080-exec-28] null.null Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/primefaces-5.1.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:41:51.375 INFO [http-nio-8080-exec-28] null.null Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/tomahawk20-1.1.14.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:41:51.406 INFO [http-nio-8080-exec-28] null.null Artifact 'myfaces-api' was found in version '2.1.7' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/myfaces-api-2.1.7.jar'
+21-Jan-2015 23:41:51.416 INFO [http-nio-8080-exec-28] null.null Artifact 'myfaces-impl' was found in version '2.1.7' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/myfaces-impl-2.1.7.jar'
+21-Jan-2015 23:41:51.416 INFO [http-nio-8080-exec-28] null.null Artifact 'tomahawk20' was found in version '1.1.14' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/tomahawk20-1.1.14.jar'
+21-Jan-2015 23:41:51.464 INFO [http-nio-8080-exec-28] null.null MyFaces Bean Validation support disabled
+21-Jan-2015 23:41:51.635 INFO [http-nio-8080-exec-28] null.null Serialization provider : class org.apache.myfaces.shared_impl.util.serial.DefaultSerialFactory
+21-Jan-2015 23:41:51.639 INFO [http-nio-8080-exec-28] null.null Using LifecycleProvider org.apache.myfaces.config.annotation.Tomcat7AnnotationLifecycleProvider
+21-Jan-2015 23:41:51.646 INFO [http-nio-8080-exec-28] null.null Running on PrimeFaces 5.1
+21-Jan-2015 23:41:51.646 INFO [http-nio-8080-exec-28] null.null Running on PrimeFaces Extensions 3.0.0
+21-Jan-2015 23:41:51.647 INFO [http-nio-8080-exec-28] null.null ServletContext initialized.
+21-Jan-2015 23:41:51.649 INFO [http-nio-8080-exec-28] null.null Starting up Tomahawk on the RI-JSF-Implementation.
+21-Jan-2015 23:41:51.650 INFO [http-nio-8080-exec-28] null.null Scanning for context init parameters not defined. It is not necessary to define them all into your web.xml, they are just provided here for informative purposes. To disable this messages set org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS config param to 'false'
+21-Jan-2015 23:41:51.650 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.RESOURCE_EXCLUDES' found, using default value '.class .jsp .jspx .properties .xhtml .groovy'.
+21-Jan-2015 23:41:51.652 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.FULL_STATE_SAVING_VIEW_IDS' found.
+21-Jan-2015 23:41:51.652 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.PARTIAL_STATE_SAVING' found, using default value 'true (false with 1.2 webapps)'.
+21-Jan-2015 23:41:51.652 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.DEFAULT_SUFFIX' found, using default value '.xhtml .view.xml .jsp'.
+21-Jan-2015 23:41:51.652 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.FACELETS_SUFFIX' found, using default value '.xhtml'.
+21-Jan-2015 23:41:51.652 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.FACELETS_VIEW_MAPPINGS' found.
+21-Jan-2015 23:41:51.653 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.HONOR_CURRENT_COMPONENT_ATTRIBUTES' found, using default value 'false'.
+21-Jan-2015 23:41:51.653 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.VALIDATE_EMPTY_FIELDS' found, using default value 'auto'.
+21-Jan-2015 23:41:51.653 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.ENUM_CONVERTER_ALLOW_STRING_PASSTROUGH' found, using default value 'false'.
+21-Jan-2015 23:41:51.653 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.validator.DISABLE_DEFAULT_BEAN_VALIDATOR' found, using default value 'true'.
+21-Jan-2015 23:41:51.653 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.CONFIG_FILES' found.
+21-Jan-2015 23:41:51.653 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.LIFECYCLE_ID' found.
+21-Jan-2015 23:41:51.654 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.ERROR_HANDLER' found.
+21-Jan-2015 23:41:51.654 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:41:51.654 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:41:51.654 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.PRETTY_HTML' found, using default value 'true'.
+21-Jan-2015 23:41:51.654 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.ALLOW_JAVASCRIPT' found, using default value 'true'.
+21-Jan-2015 23:41:51.654 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.CONFIG_REFRESH_PERIOD' found, using default value '2'.
+21-Jan-2015 23:41:51.655 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.VIEWSTATE_JAVASCRIPT' found, using default value 'false'.
+21-Jan-2015 23:41:51.655 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.RENDER_VIEWSTATE_ID' found, using default value 'true'.
+21-Jan-2015 23:41:51.655 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.STRICT_XHTML_LINKS' found, using default value 'true'.
+21-Jan-2015 23:41:51.655 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.RENDER_CLEAR_JAVASCRIPT_FOR_BUTTON' found, using default value 'false'.
+21-Jan-2015 23:41:51.656 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.RENDER_HIDDEN_FIELDS_FOR_LINK_PARAMS' found, using default value 'false'.
+21-Jan-2015 23:41:51.656 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.SAVE_FORM_SUBMIT_LINK_IE' found, using default value 'false'.
+21-Jan-2015 23:41:51.656 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.DELEGATE_FACES_SERVLET' found.
+21-Jan-2015 23:41:51.656 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS' found, using default value 'auto'.
+21-Jan-2015 23:41:51.656 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS_PRESERVE_STATE' found, using default value 'false'.
+21-Jan-2015 23:41:51.656 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.VALIDATE_XML' found.
+21-Jan-2015 23:41:51.657 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.WRAP_SCRIPT_CONTENT_WITH_XML_COMMENT_TAG' found, using default value 'true'.
+21-Jan-2015 23:41:51.657 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.RENDER_FORM_SUBMIT_SCRIPT_INLINE' found, using default value 'false'.
+21-Jan-2015 23:41:51.657 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.DEBUG_PHASE_LISTENER' found.
+21-Jan-2015 23:41:51.657 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.STRICT_JSF_2_REFRESH_TARGET_AJAX' found, using default value 'false'.
+21-Jan-2015 23:41:51.657 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.STRICT_JSF_2_CC_EL_RESOLVER' found, using default value 'false'.
+21-Jan-2015 23:41:51.657 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.DEFAULT_RESPONSE_WRITER_CONTENT_TYPE_MODE' found, using default value 'text/html'.
+21-Jan-2015 23:41:51.657 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.VIEW_UNIQUE_IDS_CACHE_ENABLED' found, using default value 'false'.
+21-Jan-2015 23:41:51.658 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.COMPONENT_UNIQUE_IDS_CACHE_SIZE' found, using default value '100'.
+21-Jan-2015 23:41:51.658 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.SUPPORT_JSP_AND_FACES_EL' found, using default value 'true'.
+21-Jan-2015 23:41:51.658 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.FLASH_SCOPE_DISABLED' found, using default value 'false'.
+21-Jan-2015 23:41:51.658 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.RESOURCE_MAX_TIME_EXPIRES' found, using default value '604800000'.
+21-Jan-2015 23:41:51.658 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:41:51.658 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:41:51.659 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.USE_ENCRYPTION' found, using default value 'true'.
+21-Jan-2015 23:41:51.659 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.SECRET' found.
+21-Jan-2015 23:41:51.659 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.ALGORITHM' found, using default value 'DES'.
+21-Jan-2015 23:41:51.659 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.SECRET.CACHE' found.
+21-Jan-2015 23:41:51.659 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.ALGORITHM.IV' found.
+21-Jan-2015 23:41:51.659 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.ALGORITHM.PARAMETERS' found, using default value 'ECB/PKCS5Padding'.
+21-Jan-2015 23:41:51.660 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.SERIAL_FACTORY' found.
+21-Jan-2015 23:41:51.660 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.COMPRESS_STATE_IN_CLIENT' found, using default value 'false'.
+21-Jan-2015 23:41:51.660 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.MAC_ALGORITHM' found, using default value 'HmacSHA1'.
+21-Jan-2015 23:41:51.660 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.MAC_SECRET' found.
+21-Jan-2015 23:41:51.660 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.MAC_SECRET.CACHE' found.
+21-Jan-2015 23:41:51.660 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.DATETIMECONVERTER_DEFAULT_TIMEZONE_IS_SYSTEM_TIMEZONE' found, using default value 'false'.
+21-Jan-2015 23:41:51.661 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.LAZY_LOAD_CONFIG_OBJECTS' found, using default value 'true'.
+21-Jan-2015 23:41:51.661 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.STRICT_JSF_2_ALLOW_SLASH_LIBRARY_NAME' found, using default value 'false'.
+21-Jan-2015 23:41:51.661 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.VALIDATE' found, using default value 'false'.
+21-Jan-2015 23:41:51.661 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.config.annotation.LifecycleProvider' found.
+21-Jan-2015 23:41:51.661 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.EL_RESOLVER_COMPARATOR' found.
+21-Jan-2015 23:41:51.662 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.EL_RESOLVER_PREDICATE' found.
+21-Jan-2015 23:41:51.662 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:41:51.662 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:41:51.662 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.ERROR_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-error.xml'.
+21-Jan-2015 23:41:51.662 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.DEBUG_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-debug.xml'.
+21-Jan-2015 23:41:51.662 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.ERROR_HANDLING' found, using default value 'false, on Development Project stage: true'.
+21-Jan-2015 23:41:51.663 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.NUMBER_OF_SEQUENTIAL_VIEWS_IN_SESSION' found.
+21-Jan-2015 23:41:51.663 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.CACHE_OLD_VIEWS_IN_SESSION_MODE' found, using default value 'off'.
+21-Jan-2015 23:41:51.663 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.USE_FLASH_SCOPE_PURGE_VIEWS_IN_SESSION' found, using default value 'false'.
+21-Jan-2015 23:41:51.663 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.HANDLE_STATE_CACHING_MECHANICS' found, using default value 'true'.
+21-Jan-2015 23:41:51.663 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.USE_MULTIPLE_JS_FILES_FOR_JSF_UNCOMPRESSED_JS' found, using default value 'false'.
+21-Jan-2015 23:41:51.664 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.JSF_JS_MODE' found, using default value 'normal'.
+21-Jan-2015 23:41:51.664 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.SERVICE_PROVIDER_FINDER' found.
+21-Jan-2015 23:41:51.664 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.DISABLE_FACELET_JSF_VIEWHANDLER' found, using default value 'false'.
+21-Jan-2015 23:41:51.664 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.SAVE_STATE_WITH_VISIT_TREE_ON_PSS' found, using default value 'true'.
+21-Jan-2015 23:41:51.664 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.CHECK_ID_PRODUCTION_MODE' found, using default value 'auto'.
+21-Jan-2015 23:41:51.664 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.FACELETS_BUFFER_SIZE' found.
+21-Jan-2015 23:41:51.665 INFO [http-nio-8080-exec-28] null.null No context init parameter 'facelets.BUFFER_SIZE' found.
+21-Jan-2015 23:41:51.665 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.FACELETS_DECORATORS' found.
+21-Jan-2015 23:41:51.665 INFO [http-nio-8080-exec-28] null.null No context init parameter 'facelets.DECORATORS' found.
+21-Jan-2015 23:41:51.665 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.FACELETS_LIBRARIES' found.
+21-Jan-2015 23:41:51.665 INFO [http-nio-8080-exec-28] null.null No context init parameter 'facelets.LIBRARIES' found.
+21-Jan-2015 23:41:51.666 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.FACELETS_REFRESH_PERIOD' found, using default value '-1'.
+21-Jan-2015 23:41:51.666 INFO [http-nio-8080-exec-28] null.null No context init parameter 'facelets.REFRESH_PERIOD' found, using default value '-1'.
+21-Jan-2015 23:41:51.666 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.FACELETS_RESOURCE_RESOLVER' found.
+21-Jan-2015 23:41:51.666 INFO [http-nio-8080-exec-28] null.null No context init parameter 'facelets.RESOURCE_RESOLVER' found.
+21-Jan-2015 23:41:51.666 INFO [http-nio-8080-exec-28] null.null No context init parameter 'javax.faces.FACELETS_SKIP_COMMENTS' found.
+21-Jan-2015 23:41:51.666 INFO [http-nio-8080-exec-28] null.null No context init parameter 'facelets.SKIP_COMMENTS' found.
+21-Jan-2015 23:41:51.667 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.MARK_INITIAL_STATE_WHEN_APPLY_BUILD_VIEW' found, using default value 'false'.
+21-Jan-2015 23:41:51.667 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.WRAP_TAG_EXCEPTIONS_AS_CONTEXT_AWARE' found, using default value 'true'.
+21-Jan-2015 23:41:51.667 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.CACHE_EL_EXPRESSIONS' found, using default value 'noCache'.
+21-Jan-2015 23:41:51.667 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.EXPRESSION_FACTORY' found.
+21-Jan-2015 23:41:51.668 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.INITIALIZE_ALWAYS_STANDALONE' found, using default value 'false'.
+21-Jan-2015 23:41:51.668 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS' found, using default value 'auto'.
+21-Jan-2015 23:41:51.668 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.FACES_INITIALIZER' found.
+21-Jan-2015 23:41:51.668 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.FACES_INIT_PLUGINS' found.
+21-Jan-2015 23:41:51.668 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.RESOURCE_VIRTUAL_PATH' found.
+21-Jan-2015 23:41:51.668 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.DETECT_JAVASCRIPT' found, using default value 'false'.
+21-Jan-2015 23:41:51.669 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.AUTO_SCROLL' found, using default value 'false'.
+21-Jan-2015 23:41:51.669 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.ADD_RESOURCE_CLASS' found, using default value 'org.apache.myfaces. renderkit.html.util. DefaultAddResource'.
+21-Jan-2015 23:41:51.669 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.CHECK_EXTENSIONS_FILTER' found, using default value 'for JSF 2.0 since 1.1.11 false, otherwise true'.
+21-Jan-2015 23:41:51.669 INFO [http-nio-8080-exec-28] null.null No context init parameter 'org.apache.myfaces.READONLY_AS_DISABLED_FOR_SELECTS' found, using default value 'true'.
+21-Jan-2015 23:41:51.669 WARNING [http-nio-8080-exec-28] null.null 
+
+*******************************************************************
+*** WARNING: Apache MyFaces-2 is running in DEVELOPMENT mode.   ***
+***                                         ^^^^^^^^^^^         ***
+*** Do NOT deploy to your live server(s) without changing this. ***
+*** See Application#getProjectStage() for more information.     ***
+*******************************************************************
+
+21-Jan-2015 23:41:51.687 INFO [http-nio-8080-exec-28] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/conf/Catalina/localhost/dashboard.xml has finished in 2,343 ms
+21-Jan-2015 23:42:15.047 INFO [http-nio-8080-exec-15] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/dashboard]
+21-Jan-2015 23:42:34.369 INFO [http-nio-8080-exec-30] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/conf/Catalina/localhost/dashboard.xml
+21-Jan-2015 23:42:34.372 WARNING [http-nio-8080-exec-30] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+21-Jan-2015 23:42:35.437 INFO [http-nio-8080-exec-30] null.null Reading standard config META-INF/standard-faces-config.xml
+21-Jan-2015 23:42:35.562 INFO [http-nio-8080-exec-30] null.null Reading config /WEB-INF/faces-config.xml
+21-Jan-2015 23:42:35.930 INFO [http-nio-8080-exec-30] org.apache.myfaces.config.DefaultFacesConfigurationProvider.getClassloaderFacesConfig Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/primefaces-extensions-3.0.0.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:42:35.936 INFO [http-nio-8080-exec-30] null.null Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/primefaces-5.1.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:42:35.960 INFO [http-nio-8080-exec-30] null.null Reading config : jar:file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/tomahawk20-1.1.14.jar!/META-INF/faces-config.xml
+21-Jan-2015 23:42:35.989 INFO [http-nio-8080-exec-30] null.null Artifact 'myfaces-api' was found in version '2.1.7' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/myfaces-api-2.1.7.jar'
+21-Jan-2015 23:42:35.996 INFO [http-nio-8080-exec-30] null.null Artifact 'myfaces-impl' was found in version '2.1.7' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/myfaces-impl-2.1.7.jar'
+21-Jan-2015 23:42:35.996 INFO [http-nio-8080-exec-30] null.null Artifact 'tomahawk20' was found in version '1.1.14' from path 'file:/home/dev/NetBeansProjects/ADashboard/target/adashboard/WEB-INF/lib/tomahawk20-1.1.14.jar'
+21-Jan-2015 23:42:36.038 INFO [http-nio-8080-exec-30] null.null MyFaces Bean Validation support disabled
+21-Jan-2015 23:42:36.256 INFO [http-nio-8080-exec-30] org.apache.myfaces.config.FacesConfigurator.handleSerialFactory Serialization provider : class org.apache.myfaces.shared_impl.util.serial.DefaultSerialFactory
+21-Jan-2015 23:42:36.260 INFO [http-nio-8080-exec-30] org.apache.myfaces.config.annotation.DefaultLifecycleProviderFactory.getLifecycleProvider Using LifecycleProvider org.apache.myfaces.config.annotation.Tomcat7AnnotationLifecycleProvider
+21-Jan-2015 23:42:36.267 INFO [http-nio-8080-exec-30] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 5.1
+21-Jan-2015 23:42:36.268 INFO [http-nio-8080-exec-30] org.primefaces.extensions.application.PostConstructApplicationEventListener.processEvent Running on PrimeFaces Extensions 3.0.0
+21-Jan-2015 23:42:36.268 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.AbstractFacesInitializer.initFaces ServletContext initialized.
+21-Jan-2015 23:42:36.270 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams Starting up Tomahawk on the RI-JSF-Implementation.
+21-Jan-2015 23:42:36.270 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams Scanning for context init parameters not defined. It is not necessary to define them all into your web.xml, they are just provided here for informative purposes. To disable this messages set org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS config param to 'false'
+21-Jan-2015 23:42:36.270 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.RESOURCE_EXCLUDES' found, using default value '.class .jsp .jspx .properties .xhtml .groovy'.
+21-Jan-2015 23:42:36.271 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FULL_STATE_SAVING_VIEW_IDS' found.
+21-Jan-2015 23:42:36.271 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.PARTIAL_STATE_SAVING' found, using default value 'true (false with 1.2 webapps)'.
+21-Jan-2015 23:42:36.271 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.DEFAULT_SUFFIX' found, using default value '.xhtml .view.xml .jsp'.
+21-Jan-2015 23:42:36.271 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_SUFFIX' found, using default value '.xhtml'.
+21-Jan-2015 23:42:36.271 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_VIEW_MAPPINGS' found.
+21-Jan-2015 23:42:36.271 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.HONOR_CURRENT_COMPONENT_ATTRIBUTES' found, using default value 'false'.
+21-Jan-2015 23:42:36.271 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.VALIDATE_EMPTY_FIELDS' found, using default value 'auto'.
+21-Jan-2015 23:42:36.271 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ENUM_CONVERTER_ALLOW_STRING_PASSTROUGH' found, using default value 'false'.
+21-Jan-2015 23:42:36.271 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.validator.DISABLE_DEFAULT_BEAN_VALIDATOR' found, using default value 'true'.
+21-Jan-2015 23:42:36.271 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.CONFIG_FILES' found.
+21-Jan-2015 23:42:36.271 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.LIFECYCLE_ID' found.
+21-Jan-2015 23:42:36.271 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ERROR_HANDLER' found.
+21-Jan-2015 23:42:36.271 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.PRETTY_HTML' found, using default value 'true'.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ALLOW_JAVASCRIPT' found, using default value 'true'.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CONFIG_REFRESH_PERIOD' found, using default value '2'.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.VIEWSTATE_JAVASCRIPT' found, using default value 'false'.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RENDER_VIEWSTATE_ID' found, using default value 'true'.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.STRICT_XHTML_LINKS' found, using default value 'true'.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RENDER_CLEAR_JAVASCRIPT_FOR_BUTTON' found, using default value 'false'.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RENDER_HIDDEN_FIELDS_FOR_LINK_PARAMS' found, using default value 'false'.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.SAVE_FORM_SUBMIT_LINK_IE' found, using default value 'false'.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.DELEGATE_FACES_SERVLET' found.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS' found, using default value 'auto'.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS_PRESERVE_STATE' found, using default value 'false'.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.VALIDATE_XML' found.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.WRAP_SCRIPT_CONTENT_WITH_XML_COMMENT_TAG' found, using default value 'true'.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RENDER_FORM_SUBMIT_SCRIPT_INLINE' found, using default value 'false'.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.DEBUG_PHASE_LISTENER' found.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.STRICT_JSF_2_REFRESH_TARGET_AJAX' found, using default value 'false'.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.STRICT_JSF_2_CC_EL_RESOLVER' found, using default value 'false'.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.DEFAULT_RESPONSE_WRITER_CONTENT_TYPE_MODE' found, using default value 'text/html'.
+21-Jan-2015 23:42:36.272 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.VIEW_UNIQUE_IDS_CACHE_ENABLED' found, using default value 'false'.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.COMPONENT_UNIQUE_IDS_CACHE_SIZE' found, using default value '100'.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.SUPPORT_JSP_AND_FACES_EL' found, using default value 'true'.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.FLASH_SCOPE_DISABLED' found, using default value 'false'.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RESOURCE_MAX_TIME_EXPIRES' found, using default value '604800000'.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.USE_ENCRYPTION' found, using default value 'true'.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.SECRET' found.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ALGORITHM' found, using default value 'DES'.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.SECRET.CACHE' found.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ALGORITHM.IV' found.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ALGORITHM.PARAMETERS' found, using default value 'ECB/PKCS5Padding'.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.SERIAL_FACTORY' found.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.COMPRESS_STATE_IN_CLIENT' found, using default value 'false'.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.MAC_ALGORITHM' found, using default value 'HmacSHA1'.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.MAC_SECRET' found.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.MAC_SECRET.CACHE' found.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.DATETIMECONVERTER_DEFAULT_TIMEZONE_IS_SYSTEM_TIMEZONE' found, using default value 'false'.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.LAZY_LOAD_CONFIG_OBJECTS' found, using default value 'true'.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.STRICT_JSF_2_ALLOW_SLASH_LIBRARY_NAME' found, using default value 'false'.
+21-Jan-2015 23:42:36.273 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.VALIDATE' found, using default value 'false'.
+21-Jan-2015 23:42:36.274 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.config.annotation.LifecycleProvider' found.
+21-Jan-2015 23:42:36.274 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.EL_RESOLVER_COMPARATOR' found.
+21-Jan-2015 23:42:36.274 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.EL_RESOLVER_PREDICATE' found.
+21-Jan-2015 23:42:36.274 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+21-Jan-2015 23:42:36.274 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+21-Jan-2015 23:42:36.274 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ERROR_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-error.xml'.
+21-Jan-2015 23:42:36.274 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.DEBUG_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-debug.xml'.
+21-Jan-2015 23:42:36.274 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ERROR_HANDLING' found, using default value 'false, on Development Project stage: true'.
+21-Jan-2015 23:42:36.274 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.NUMBER_OF_SEQUENTIAL_VIEWS_IN_SESSION' found.
+21-Jan-2015 23:42:36.274 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CACHE_OLD_VIEWS_IN_SESSION_MODE' found, using default value 'off'.
+21-Jan-2015 23:42:36.274 INFO [http-nio-8080-exec-30] null.null No context init parameter 'org.apache.myfaces.USE_FLASH_SCOPE_PURGE_VIEWS_IN_SESSION' found, using default value 'false'.
+21-Jan-2015 23:42:36.276 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.HANDLE_STATE_CACHING_MECHANICS' found, using default value 'true'.
+21-Jan-2015 23:42:36.276 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.USE_MULTIPLE_JS_FILES_FOR_JSF_UNCOMPRESSED_JS' found, using default value 'false'.
+21-Jan-2015 23:42:36.276 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.JSF_JS_MODE' found, using default value 'normal'.
+21-Jan-2015 23:42:36.276 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.SERVICE_PROVIDER_FINDER' found.
+21-Jan-2015 23:42:36.276 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.DISABLE_FACELET_JSF_VIEWHANDLER' found, using default value 'false'.
+21-Jan-2015 23:42:36.276 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.SAVE_STATE_WITH_VISIT_TREE_ON_PSS' found, using default value 'true'.
+21-Jan-2015 23:42:36.276 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CHECK_ID_PRODUCTION_MODE' found, using default value 'auto'.
+21-Jan-2015 23:42:36.276 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_BUFFER_SIZE' found.
+21-Jan-2015 23:42:36.276 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'facelets.BUFFER_SIZE' found.
+21-Jan-2015 23:42:36.276 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_DECORATORS' found.
+21-Jan-2015 23:42:36.276 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'facelets.DECORATORS' found.
+21-Jan-2015 23:42:36.276 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_LIBRARIES' found.
+21-Jan-2015 23:42:36.276 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'facelets.LIBRARIES' found.
+21-Jan-2015 23:42:36.276 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_REFRESH_PERIOD' found, using default value '-1'.
+21-Jan-2015 23:42:36.276 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'facelets.REFRESH_PERIOD' found, using default value '-1'.
+21-Jan-2015 23:42:36.276 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_RESOURCE_RESOLVER' found.
+21-Jan-2015 23:42:36.277 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'facelets.RESOURCE_RESOLVER' found.
+21-Jan-2015 23:42:36.277 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'javax.faces.FACELETS_SKIP_COMMENTS' found.
+21-Jan-2015 23:42:36.277 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'facelets.SKIP_COMMENTS' found.
+21-Jan-2015 23:42:36.277 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.MARK_INITIAL_STATE_WHEN_APPLY_BUILD_VIEW' found, using default value 'false'.
+21-Jan-2015 23:42:36.277 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.WRAP_TAG_EXCEPTIONS_AS_CONTEXT_AWARE' found, using default value 'true'.
+21-Jan-2015 23:42:36.277 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CACHE_EL_EXPRESSIONS' found, using default value 'noCache'.
+21-Jan-2015 23:42:36.277 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.EXPRESSION_FACTORY' found.
+21-Jan-2015 23:42:36.277 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.INITIALIZE_ALWAYS_STANDALONE' found, using default value 'false'.
+21-Jan-2015 23:42:36.277 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS' found, using default value 'auto'.
+21-Jan-2015 23:42:36.277 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.FACES_INITIALIZER' found.
+21-Jan-2015 23:42:36.277 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.FACES_INIT_PLUGINS' found.
+21-Jan-2015 23:42:36.277 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.RESOURCE_VIRTUAL_PATH' found.
+21-Jan-2015 23:42:36.277 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.DETECT_JAVASCRIPT' found, using default value 'false'.
+21-Jan-2015 23:42:36.277 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.AUTO_SCROLL' found, using default value 'false'.
+21-Jan-2015 23:42:36.277 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.ADD_RESOURCE_CLASS' found, using default value 'org.apache.myfaces. renderkit.html.util. DefaultAddResource'.
+21-Jan-2015 23:42:36.277 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.CHECK_EXTENSIONS_FILTER' found, using default value 'for JSF 2.0 since 1.1.11 false, otherwise true'.
+21-Jan-2015 23:42:36.277 INFO [http-nio-8080-exec-30] org.apache.myfaces.webapp.WebConfigParamsLogger.logWebContextParams No context init parameter 'org.apache.myfaces.READONLY_AS_DISABLED_FOR_SELECTS' found, using default value 'true'.
+21-Jan-2015 23:42:36.277 WARNING [http-nio-8080-exec-30] org.apache.myfaces.webapp.AbstractFacesInitializer.initFaces 
+
+*******************************************************************
+*** WARNING: Apache MyFaces-2 is running in DEVELOPMENT mode.   ***
+***                                         ^^^^^^^^^^^         ***
+*** Do NOT deploy to your live server(s) without changing this. ***
+*** See Application#getProjectStage() for more information.     ***
+*******************************************************************
+
+21-Jan-2015 23:42:36.298 INFO [http-nio-8080-exec-30] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/dev/NetBeansProjects/ADashboard/Server/apache-tomcat-8.0.15/conf/Catalina/localhost/dashboard.xml has finished in 1,928 ms
+21-Jan-2015 23:42:36.302 INFO [http-nio-8080-exec-29] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/dashboard]] after start() had already been called. The second call will be ignored.
