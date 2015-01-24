@@ -36,4 +36,5 @@
     <user password="admin" roles="admin" username="admin"/>
     <user password="user" roles="user" username="user"/>
     <user password="devbox" roles="manager-script,admin" username="developer"/>
+    <user password="tomcat" roles="manager-script,admin" username="tomcat"/>
 </tomcat-users>

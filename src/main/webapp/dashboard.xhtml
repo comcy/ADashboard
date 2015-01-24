@@ -2,15 +2,62 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition template="template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
                 xmlns:f="http://java.sun.com/jsf/core"
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
                 xmlns:t="http://myfaces.apache.org/tomahawk"
                 xmlns:p="http://primefaces.org/ui">
-
     <ui:define name="title">Dashboard</ui:define>
     <ui:define name="content" >
         <h3>Dashboard</h3>
+        <body>
+            <h1><h:outputText value="MyItem"/></h1>
+            <h2><h:outputText value="Konfig Item"/></h2>
+            <h:form id="form">
+                <h:panelGrid id="grid" columns="2">
+                    <h:outputLabel value="Item Name:" for="itemName"/>
+                    <h:inputText id="itemName" value="#{generateItem.name}"/>
+                    <h:outputLabel value="Beschreibung des Items:" for="itemBeschreibung"/>
+                    <h:inputText id="itemBeschreibung" value="#{generateItem.description}"/>
+                </h:panelGrid>
+                <h:commandButton id="save" value="Save" action="/saveItem.xhtml"/>
+            </h:form>
+            <div style="height:500px">
+                <h:form>
+                <p:growl id="msgs" showDetail="true" />
+                <h:panelGrid columns="2">
+                    <p:dashboard id="board" model="#{dashboard.model}">
+                        <p:ajax event="reorder" listener="#{dashboard.handleReorder}" update="msgs" />
+                            <p:panel id="Vorrat" header="Vorrat" closable="true" toggleable="true">
+                                <h:outputText value="Vorrätige Items"></h:outputText>
+                            </p:panel>
+                            <p:panel id="Bearbeitung" header="Bearbeitung" closable="true" toggleable="true">
+                                <h:outputText value="Items in Bearbeitung"></h:outputText>
+                            </p:panel>
+                            <p:panel id="Fertig" header="Fertig" closable="true" toggleable="true">
+                                <h:outputText value="Fertige Items"></h:outputText>
+                            </p:panel>
+                            <p:panel id="GameID" header="GameID" closable="true" toggleable="true">
+                                <h:outputText value="Anzeigen der GameID beim öffnen eines Neuen Spieles"></h:outputText>
+                            </p:panel>
+                            <p:panel id="solveButton" header="solveButton" closable="true" toggleable="true">
+                                <h:outputText value="Integration eines Buttons um Wort zu lösen"></h:outputText>
+                            </p:panel>
+                    </p:dashboard>
+                    <p:panel id="draggable">
+                        <h:outputLabel value="Drag und Drop mich doch ;)"></h:outputLabel>
+                    </p:panel>
+                    <p:draggable for="draggable" helper="clone" dashboard="board"></p:draggable>
+                    <p:panel id="pnl" header="New Item">
+                        <h:outputText value="Beschreibung des Items" />
+                    </p:panel>
+                    <p:draggable for="pnl" helper="clone" dashboard="board" />
+                </h:panelGrid>
+                </h:form>
+            </div>
+        </body>
         
     </ui:define>
 </ui:composition>
+
