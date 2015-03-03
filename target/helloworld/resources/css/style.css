@@ -11,7 +11,7 @@ body {
 }
 
 #informationbar {
-    background-color: darkgrey;
+    background-color: greenyellow;
     height:20px;
     width:auto;
     padding-left: 15px;
@@ -46,4 +46,12 @@ body {
     width:100%;
     clear: both;
     text-align: center;
+}
+
+.completed {
+    background: pink;
+}
+
+#accordianPanel{
+    background-color: greenyellow;
 }
