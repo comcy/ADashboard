@@ -12,19 +12,20 @@
     <ui:define name="content" >
         <h3>Dashboard</h3>
         <body>
+            <h:outputStylesheet library="css" name="style.css"/>
             <h:outputScript library="js" name="help.js" />
             <div style="height:500px">
                 <h:form>
                     <p:growl id="growl" showDetail="true" />
                     <p:dashboard id="board" model="#{dashboard.model}" reorderListener ="#{dashboard.handleReorder}" onReorderUpdate="growl">  
 
-                        <p:panel id="Vorrat" header="Vorrat">
+                        <p:panel id="Vorrat" header="Vorrat" styleClass="completed">
                             <h:outputText value="Vorraetige Items"></h:outputText>
                         </p:panel>
-                        <p:panel id="Bearbeitung" header="Bearbeitung" >
+                        <p:panel id="Bearbeitung" header="Bearbeitung" styleClass="completed2" >
                             <h:outputText value="Items in Bearbeitung"></h:outputText>
                         </p:panel>
-                        <p:panel id="Fertig" header="Fertig" >
+                        <p:panel id="Fertig" header="Fertig" styleClass="completed3" >
                             <h:outputText value="Fertige Items"></h:outputText>
                         </p:panel>
                         
@@ -50,17 +51,14 @@
                         <p:panel id="GameID" header="GameID" closable="true" toggleable="true">
                             <h:outputText value="Anzeigen der GameID beim oeffnen eines Neuen Spieles"></h:outputText>
                         </p:panel>
-                        <p:draggable for="GameID" dashboard="board" ghost="true"/>
+                        <p:draggable for="GameID" dashboard="board"/>
                         
                         <p:panel id="solveButton" header="solveButton" closable="true" toggleable="true">
                             <h:outputText value="Integration eines Buttons um Wort zu loesen"></h:outputText>
                         </p:panel>
-                        <p:draggable for="solveButton" dashboard="board" ghost="true"/>
+                        <p:draggable for="solveButton" dashboard="board"/>
                         
-                        <p:panel id="draggable">
-                            <h:outputLabel value="Drag Panel Into Your Dashboard"></h:outputLabel>
-                        </p:panel>
-                        <p:draggable for="draggable" helper="clone" dashboard="board"></p:draggable>
+                        
                     </h:panelGrid>  
                     
                     <div style="clear:both" />  
@@ -74,24 +72,18 @@
                         <h:outputLabel value="Beschreibung des Items:" for="itemBeschreibung"/>
                         <h:inputText id="itemBeschreibung" value="#{generateItem.description}"/>
                     </h:panelGrid>
-                    <h:commandButton id="save" value="Save" action="/saveItem.xhtml"/>
+                    <p:panel id="draggable">
+                            <h:outputLabel value="#{generateItem.name}"></h:outputLabel>
+                        </p:panel>
+                        <p:draggable for="draggable" helper="clone" dashboard="board"></p:draggable>
+                        <h:commandButton id="save" value="Save"/>
                     
+                    <p:button outcome="dashboard" value="Save" />
                     
                     
                 </h:form>  
             </div>
             
-            <h:form id="formsTab">
-                <h:inputHidden id="hiddenButton" value="#{genItem.buttonValue}"/>
- 
-                <p:remoteCommand name="remoteChangeCommand" process="hiddenButton"/>
-                <input type="radio" name="Opt1" value="1" onclick="changedValues('1');"/>
-                <input type="radio" name="Opt2" value="2" onclick="changedValues('2');"/>
-            
-                <!--h:commandButton onclick="showMessage();" /-->
-                <h:commandButton onclick="showMessage();" />
-           
-            </h:form>
         </body>
         
     </ui:define>

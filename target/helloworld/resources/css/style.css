@@ -49,9 +49,16 @@ body {
 }
 
 .completed {
-    background: pink;
+    background: lightpink;
+}
+.completed2 {
+    background: lightcyan;
+}
+.completed3 {
+    background: palegreen;
 }
 
 #accordianPanel{
     background-color: greenyellow;
 }
+

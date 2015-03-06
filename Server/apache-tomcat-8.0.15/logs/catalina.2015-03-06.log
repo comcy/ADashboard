@@ -1,0 +1,12 @@
+06-Mar-2015 00:00:10.763 WARNING [http-nio-8080-exec-16] org.apache.myfaces.shared.renderkit.html.HtmlGridRendererBase.renderChildren PanelGrid {Component-Path : [Class: javax.faces.component.UIViewRoot,ViewId: /dashboard.xhtml][Class: javax.faces.component.html.HtmlBody,Id: j_id_7][Class: org.apache.myfaces.custom.div.Div,Id: content][Class: javax.faces.component.html.HtmlForm,Id: j_id_m][Class: javax.faces.component.html.HtmlPanelGrid,Id: j_id_y] Location: /dashboard.xhtml at line 40 and column 46} has not enough children. Child count should be a multiple of the columns attribute.
+06-Mar-2015 00:00:10.779 WARNING [http-nio-8080-exec-16] org.apache.myfaces.renderkit.html.HtmlLabelRenderer.encodeBegin Attribute 'for' of label component with id j_id_m:j_id_1m is not defined
+06-Mar-2015 00:16:06.952 WARNING [http-nio-8080-exec-19] null.null PanelGrid {Component-Path : [Class: javax.faces.component.UIViewRoot,ViewId: /dashboard.xhtml][Class: javax.faces.component.html.HtmlBody,Id: j_id_7][Class: org.apache.myfaces.custom.div.Div,Id: content][Class: javax.faces.component.html.HtmlForm,Id: j_id_m][Class: javax.faces.component.html.HtmlPanelGrid,Id: j_id_y] Location: /dashboard.xhtml at line 40 and column 46} has not enough children. Child count should be a multiple of the columns attribute.
+06-Mar-2015 00:16:06.952 WARNING [http-nio-8080-exec-19] null.null Attribute 'for' of label component with id j_id_m:j_id_1m is not defined
+06-Mar-2015 03:32:54.029 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+06-Mar-2015 03:32:54.030 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-Mar-2015 03:32:54.082 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+06-Mar-2015 03:32:54.132 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+06-Mar-2015 03:32:54.166 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-Mar-2015 03:32:54.167 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+06-Mar-2015 03:32:54.168 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-Mar-2015 03:32:54.168 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
