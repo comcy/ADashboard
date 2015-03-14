@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<ui:composition template="template.xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:t="http://myfaces.apache.org/tomahawk">
+
+    <ui:define name="title">
+        Login fehlgeschlage!
+    </ui:define>
+
+    <ui:define name="content">
+
+        <h3>Der Login-Prozess ist fehlgeschlagen.</h3>
+        Du bist leider nicht angemeldet.
+        Versuch's, nochmal oder kontaktiere einen Admin!
+        <h:link outcome="login">Zurück zu Anmelde-Seite</h:link>
+       
+    </ui:define>
+
+</ui:composition>

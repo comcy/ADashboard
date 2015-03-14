@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html   xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:t="http://myfaces.apache.org/tomahawk"
+        xmlns:p="http://primefaces.org/ui">
+    <head>
+      <title>MyItem - Show Generated Item</title>
+    </head>
+    <body>
+        <h1><h:outputText value="MyItem"/></h1>
+        <h2><h:outputText value="Show Generated Item"/></h2>
+        <h:panelGrid id="grid" columns="2">
+            <h:outputText value="Item Name:"/>
+            <h:outputText value="#{generateItem.name}"/>
+            <h:outputText value="Beschreibung des Items:"/>
+            <h:outputText value="#{generateItem.description}"/>
+<!--            <p:panel id="draggable">
+                <h:outputLabel value="#{generateItem.name}"></h:outputLabel>
+            </p:panel>
+            <p:draggable for="draggable" helper="clone" dashboard="board"></p:draggable>-->
+        </h:panelGrid>
+        <h:outputText value="Item saved successfully!"/>
+    </body>
+</html>

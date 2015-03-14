@@ -27,10 +27,10 @@ body {
     padding-left: 20px;
     z-index:-1;
     min-height: 650px;
-    background-image: -webkit-linear-gradient(white 0%, lightgray 100%);
+/*    background-image: -webkit-linear-gradient(white 0%, lightgray 100%);
     background-image: -moz-linear-gradient(white 0%, lightgray 100%);
     background-image: -o-linear-gradient(white 0%, lightgray 100%);
-    background-image: linear-gradient(white 0%, lightgray 100%);
+    background-image: linear-gradient(white 0%, lightgray 100%);*/
 }
 
 #footerbar { 

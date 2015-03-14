@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition template="template.xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:t="http://myfaces.apache.org/tomahawk"
+                xmlns:p="http://primefaces.org/ui">
+
+    <ui:define name="title">Agenda</ui:define>
+    <ui:define name="content" >
+        <h3>Agenda</h3>
+        <h:outputStylesheet library="css" name="style.css"/>
+        <p:accordionPanel dynamic="true">
+            <p:tab id="accordianPanel" title="First Issue">
+                <h:outputText value= "Lorem...Hier steht mehr:"/>
+            </p:tab>
+            <p:tab title="Second Issue">
+                <h:outputText value="Ipsum" />
+            </p:tab>
+            <p:tab title="Third Issue">
+                <h:outputText value= "I sauf mi voll"/>
+            Stroh80 vs. Tomatensuppe
+            Stroh80 vs. Tomatensuppe
+            </p:tab>
+            <p:tab title="Fourth Issue">
+                <h:outputText value="I sauf mi hee" />
+            </p:tab>
+        </p:accordionPanel>
+    </ui:define>
+</ui:composition>

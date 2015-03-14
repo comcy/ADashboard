@@ -17,17 +17,16 @@
             <div style="height:500px">
                 <h:form>
                     <p:growl id="growl" showDetail="true" />
-                    <p:dashboard id="board" model="#{dashboard.model}" reorderListener ="#{dashboard.handleReorder}" onReorderUpdate="growl">  
-
-                        <p:panel id="Vorrat" header="Vorrat" styleClass="completed">
+                    <p:dashboard id="dynamic_dashboard" binding="#{dashboardBacker.dashboard}">            
+<!--                        <p:panel id="Vorrat" header="Vorrat" styleClass="completed">
                             <h:outputText value="Vorraetige Items"></h:outputText>
-                        </p:panel>
-                        <p:panel id="Bearbeitung" header="Bearbeitung" styleClass="completed2" >
+                        </p:panel>-->
+<!--                        <p:panel id="Bearbeitung" header="Bearbeitung" styleClass="completed2" >
                             <h:outputText value="Items in Bearbeitung"></h:outputText>
                         </p:panel>
                         <p:panel id="Fertig" header="Fertig" styleClass="completed3" >
                             <h:outputText value="Fertige Items"></h:outputText>
-                        </p:panel>
+                        </p:panel>-->
                         
                     </p:dashboard>  
 
@@ -41,22 +40,22 @@
                         <p:panel id="DB" header="DB" closable="true" toggleable="true">  
                             <h:outputText value="MongoDB anlegen" ></h:outputText> 
                         </p:panel>  
-                        <p:draggable for="DB" dashboard="board"/>  
+                        <p:draggable for="DB" dashboard="dynamic_dashboard"/>  
 
                         <p:panel id="drei" header="???" closable="true" toggleable="true">  
                             <h:outputText value="Anzeigen der drei zu beantworteten fragen" ></h:outputText>
                         </p:panel>  
-                        <p:draggable for="drei" dashboard="board"/>
+                        <p:draggable for="drei" dashboard="dynamic_dashboard"/>
                         
                         <p:panel id="GameID" header="GameID" closable="true" toggleable="true">
                             <h:outputText value="Anzeigen der GameID beim oeffnen eines Neuen Spieles"></h:outputText>
                         </p:panel>
-                        <p:draggable for="GameID" dashboard="board"/>
+                        <p:draggable for="GameID" dashboard="dynamic_dashboard"/>
                         
                         <p:panel id="solveButton" header="solveButton" closable="true" toggleable="true">
                             <h:outputText value="Integration eines Buttons um Wort zu loesen"></h:outputText>
                         </p:panel>
-                        <p:draggable for="solveButton" dashboard="board"/>
+                        <p:draggable for="solveButton" dashboard="dynamic_dashboard"/>
                         
                         
                     </h:panelGrid>  
@@ -73,12 +72,12 @@
                         <h:inputText id="itemBeschreibung" value="#{generateItem.description}"/>
                     </h:panelGrid>
                     <p:panel id="draggable">
-                            <h:outputLabel value="#{generateItem.name}"></h:outputLabel>
-                        </p:panel>
-                        <p:draggable for="draggable" helper="clone" dashboard="board"></p:draggable>
-                        <h:commandButton id="save" value="Save"/>
+                        <h:outputLabel value="#{generateItem.name}"></h:outputLabel>
+                    </p:panel>
+                    <p:draggable for="draggable" helper="clone" dashboard="dynamic_dashboard"></p:draggable>
+                        
+                    <p:commandButton value="SAVE ITEM" id="withIcon" actionListener="#{duHure.dashboard}" update="growl" icon="ui-icon-disk" />
                     
-                    <p:button outcome="dashboard" value="Save" />
                     
                     
                 </h:form>  

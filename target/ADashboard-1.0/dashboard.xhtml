@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition template="template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:t="http://myfaces.apache.org/tomahawk"
+                xmlns:p="http://primefaces.org/ui">
+    <ui:define name="title">Dashboard</ui:define>
+    <ui:define name="content" >
+        <h3>Dashboard</h3>
+        <body>
+            <h:outputStylesheet library="css" name="style.css"/>
+            <h:outputScript library="js" name="help.js" />
+            <div style="height:500px">
+                <h:form>
+                    <p:growl id="growl" showDetail="true" />
+                    <p:dashboard id="dynamic_dashboard" binding="#{dashboardBacker.dashboard}">            
+<!--                        <p:panel id="Vorrat" header="Vorrat" styleClass="completed">
+                            <h:outputText value="Vorraetige Items"></h:outputText>
+                        </p:panel>-->
+<!--                        <p:panel id="Bearbeitung" header="Bearbeitung" styleClass="completed2" >
+                            <h:outputText value="Items in Bearbeitung"></h:outputText>
+                        </p:panel>
+                        <p:panel id="Fertig" header="Fertig" styleClass="completed3" >
+                            <h:outputText value="Fertige Items"></h:outputText>
+                        </p:panel>-->
+                        
+                    </p:dashboard>  
+
+                    <div style="clear:both" />  
+
+                    <p:separator />  
+
+                    <h3>Available Items</h3>  
+                    <p>Draggable Items</p>
+                    <h:panelGrid columns="3">  
+                        <p:panel id="DB" header="DB" closable="true" toggleable="true">  
+                            <h:outputText value="MongoDB anlegen" ></h:outputText> 
+                        </p:panel>  
+                        <p:draggable for="DB" dashboard="dynamic_dashboard"/>  
+
+                        <p:panel id="drei" header="???" closable="true" toggleable="true">  
+                            <h:outputText value="Anzeigen der drei zu beantworteten fragen" ></h:outputText>
+                        </p:panel>  
+                        <p:draggable for="drei" dashboard="dynamic_dashboard"/>
+                        
+                        <p:panel id="GameID" header="GameID" closable="true" toggleable="true">
+                            <h:outputText value="Anzeigen der GameID beim oeffnen eines Neuen Spieles"></h:outputText>
+                        </p:panel>
+                        <p:draggable for="GameID" dashboard="dynamic_dashboard"/>
+                        
+                        <p:panel id="solveButton" header="solveButton" closable="true" toggleable="true">
+                            <h:outputText value="Integration eines Buttons um Wort zu loesen"></h:outputText>
+                        </p:panel>
+                        <p:draggable for="solveButton" dashboard="dynamic_dashboard"/>
+                        
+                        
+                    </h:panelGrid>  
+                    
+                    <div style="clear:both" />  
+
+                    <p:separator />  
+                    
+                    <h1><h:outputText value="Create a Item"/></h1>
+                    <h:panelGrid id="grid" columns="2">
+                        <h:outputLabel value="Item Name:" for="itemName"/>
+                        <h:inputText id="itemName" value="#{generateItem.name}"/>
+                        <h:outputLabel value="Beschreibung des Items:" for="itemBeschreibung"/>
+                        <h:inputText id="itemBeschreibung" value="#{generateItem.description}"/>
+                    </h:panelGrid>
+                    <p:panel id="draggable">
+                        <h:outputLabel value="#{generateItem.name}"></h:outputLabel>
+                    </p:panel>
+                    <p:draggable for="draggable" helper="clone" dashboard="dynamic_dashboard"></p:draggable>
+                        
+                    <p:commandButton value="SAVE ITEM" id="withIcon" actionListener="#{duHure.dashboard}" update="growl" icon="ui-icon-disk" />
+                    
+                    
+                    
+                </h:form>  
+            </div>
+            
+        </body>
+        
+    </ui:define>
+</ui:composition>
+
