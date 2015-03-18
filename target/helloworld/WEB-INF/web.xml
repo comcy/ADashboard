@@ -4,12 +4,6 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
         version="2.5">
-
-    <!-- Theme -->
-    <context-param>  
-        <param-name>primefaces.THEME</param-name>  
-        <param-value>sunny</param-value>  
-    </context-param>
     
     <!-- JSF standard parameters -->
     <context-param>

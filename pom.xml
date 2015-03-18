@@ -39,55 +39,50 @@
     </properties>
     
     <build>
-      <finalName>helloworld</finalName>
-      <plugins>
-         <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>2.3.1</version>
-            <configuration>
-               <source>1.6</source>
-               <target>1.6</target>
-            </configuration>
-         </plugin>
-         <plugin>
-            <artifactId>maven-resources-plugin</artifactId>
-            <version>2.6</version>
-            <executions>
-               <execution>
-                  <id>copy-resources</id>
-                  <phase>validate</phase>
-                  <goals>
-                     <goal>copy-resources</goal>
-                  </goals>
-                  <configuration>
-                     <outputDirectory>${basedir}/target/helloworld/resources
-                        </outputDirectory>
-                     <resources>          
-                        <resource>
-                           <directory>src/main/resources</directory>
-                           <filtering>true</filtering>
-                        </resource>
-                     </resources>              
-                  </configuration>            
-               </execution>
-            </executions>
-         </plugin>
-      </plugins>
-   </build>
+        <finalName>helloworld</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.1</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${basedir}/target/helloworld/resources
+                            </outputDirectory>
+                            <resources>          
+                                <resource>
+                                    <directory>src/main/resources</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>              
+                        </configuration>            
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
     <!-- Project dependencies -->
     <dependencies>
+        
         <!-- All Themes -->
-        
-        <dependency>  
-            <groupId>org.primefaces.themes</groupId>  
-            <artifactId>all-themes</artifactId>  
-            <version>1.0.10</version>  
-        </dependency> 
-        
+
         <!-- XXX -->
-        
+      
         <!-- Apache MyFaces -->
         <dependency>
             <groupId>org.apache.myfaces.core</groupId>
@@ -131,7 +126,12 @@
             <artifactId>jaxb-impl</artifactId>
             <version>2.1</version>
         </dependency>
-
+        <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.1-901-1.jdbc4</version>
+        </dependency>
+        
         <!-- XXX -->
                 
         <dependency>
@@ -285,6 +285,13 @@
                 <repository>
                     <id>java.net</id>
                     <url>http://download.java.net/maven/2</url>
+                </repository>
+            
+                <repository>
+                    <id>prime-repo</id>
+                    <name>PrimeFaces Maven Repository</name>
+                    <url>http://repository.primefaces.org</url>
+                    <layout>default</layout>
                 </repository>
             </repositories>
         </profile>
