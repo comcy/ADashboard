@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition template="template.xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:t="http://myfaces.apache.org/tomahawk"
+                xmlns:p="http://primefaces.org/ui">
+
+    <ui:define name="title">Items</ui:define>
+    <ui:define name="content" >
+        <h3>Home</h3>
+
+        <h3>All Items</h3>
+        <h:form>
+
+            <p:dataTable id="data" styleClass="standardTable"
+                         var="item"
+                         paginator="true"
+                         style="max-width: 1400px;"
+                         value="#{itemBean.allItems}" 
+                         rows="8" >
+
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText style="float: left;" value="ID" />
+                    </f:facet>
+                    <h:outputText value="#{item._id}" />
+                </p:column>
+
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText style="float: left;" value="Name" />
+                    </f:facet>
+                    <h:outputText value="#{item._name}" />
+                </p:column>
+
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText style="float: left;" value="Beschreibung" />
+                    </f:facet>
+                    <h:outputText value="#{item._beschreibung}" />
+                </p:column>
+
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText style="float: left;" value="Details" />
+                    </f:facet>
+                    <h:outputText value="#{item._datum}" />
+                </p:column>
+
+            </p:dataTable>
+            <br/>
+
+        </h:form>
+
+    </ui:define>
+</ui:composition>
