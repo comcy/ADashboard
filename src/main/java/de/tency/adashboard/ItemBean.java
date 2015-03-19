@@ -37,8 +37,10 @@ public class ItemBean implements Serializable {
     private String prioritaet;
     private String aufwand;
     private String datum;
-    private String ersteller;
+    private String bearbeiter;
 
+    private List<Item> allItems = new ArrayList<Item>();
+    
     public int getId() {
         return id;
     }
@@ -63,8 +65,8 @@ public class ItemBean implements Serializable {
         return datum;
     }
 
-    public String getErsteller() {
-        return ersteller;
+    public String getBearbeiter() {
+        return bearbeiter;
     }
 
     public void setId(int id) {
@@ -91,11 +93,9 @@ public class ItemBean implements Serializable {
         this.datum = datum;
     }
 
-    public void setErsteller(String ersteller) {
-        this.ersteller = ersteller;
+    public void setBearbeiter(String bearbeiter) {
+        this.bearbeiter = bearbeiter;
     }
-
-    private List<Item> allItems = new ArrayList<Item>();
 
     public ItemBean() {
     }
@@ -106,33 +106,40 @@ public class ItemBean implements Serializable {
     
     public String sendItemUpdate(String name, String beschreibung, String aufwand, String prioritaet) {
 
-        String username = "";// --> Abfrage für aktuellen User einbauen
+        String bearbeiter = "";// --> Abfrage für aktuellen User einbauen
 
-        dbh.sendItemUpdate(name, beschreibung, aufwand, prioritaet, username);
+        dbh.sendItemUpdate(name, beschreibung, aufwand, prioritaet, bearbeiter);
 
         logger.info("Item succefully sent to DashboardDB!");
         return "items";
     }
     
-    public void setAllItems( List<Item> allItems ) {
+
+    /**
+     * Listen
+     * @param allItems 
+     */
+    public void setAllItems(List<Item> allItems) {
+        
         this.allItems = allItems;
     }
-
+ 
     public List<Item> getAllItems() {
         return dbh.listAllItems();
     }
-
-    public void addToAllItemsList(Item i) {
+ 
+    public void addToAllItems(Item i) {
         allItems.add(i);
     }
-
-    public void emptyAllItemsList() {
+ 
+    public void emptyAllItems() {
         allItems.clear();
     }
-
-    public static class Item implements Serializable {
+    
+   public static class Item implements Serializable {
 
         private static final long serialVersionUID = 1L;
+        
         DatabaseHandler dbh = new DatabaseHandler();
 
         private int _id;
@@ -140,7 +147,7 @@ public class ItemBean implements Serializable {
         private String _name;
         private String _beschreibung;
         private String _aufwand;
-        private String _ersteller;
+        private String _bearbeiter;
         private String _prioritaet;
 
         public Item(
@@ -150,7 +157,7 @@ public class ItemBean implements Serializable {
                 String beschreibung,
                 String prioritaet,
                 String aufwand,
-                String ersteller) {
+                String bearbeiter) {
             System.out.println("Item-list Constructor");
             _id = id;
             _datum = datum;
@@ -158,7 +165,7 @@ public class ItemBean implements Serializable {
             _beschreibung = beschreibung;
             _prioritaet = prioritaet;
             _aufwand = aufwand;
-            _ersteller = ersteller;
+            _bearbeiter = bearbeiter;
         }
 
         public void set_id(int _id) {
@@ -209,12 +216,12 @@ public class ItemBean implements Serializable {
             return _aufwand;
         }
 
-        public void set_ersteller(String _ersteller) {
-            this._ersteller = _ersteller;
+        public void set_bearbeiter(String _bearbeiter) {
+            this._bearbeiter = _bearbeiter;
         }
 
-        public String get_ersteller() {
-            return _ersteller;
+        public String get_bearbeiter() {
+            return _bearbeiter;
         }
     }
 }

@@ -103,6 +103,7 @@
         <web-resource-collection>
             <web-resource-name>dashboard</web-resource-name>
             <url-pattern>/home.jsf</url-pattern>
+            <url-pattern>/items.jsf</url-pattern>
             <url-pattern>/template.jsf</url-pattern>
         </web-resource-collection>
         <auth-constraint>

@@ -114,7 +114,7 @@ public class DatabaseHandler implements Serializable {
             DataSource ds = (DataSource) cxt
                     .lookup("java:/comp/env/jdbc/postgres");
             connection4 = ds.getConnection();
-            System.out.println("        DB4 open");
+            System.out.println("DB4 open");
             statement4 = connection4.createStatement();
             result4 = statement4.executeQuery("SELECT VERSION()");
             if (result4.next()) {
@@ -218,10 +218,11 @@ public class DatabaseHandler implements Serializable {
 
     /**
      * List all items
+     *
      * @return List<Item> allItems
      */
     public List<Item> listAllItems() {
-        System.out.println("Petition"); // DEBUG
+        System.out.println("Item"); // DEBUG
         List<Item> allItems = new ArrayList<Item>();
         SQLConnection4();
         try {
@@ -236,7 +237,7 @@ public class DatabaseHandler implements Serializable {
                         result4.getString("beschreibung"),
                         result4.getString("prioritaet"),
                         result4.getString("aufwand"),
-                        result4.getString("ersteller")));
+                        result4.getString("bearbeiter")));
             }
         } catch (SQLException e) {
             e.printStackTrace();
