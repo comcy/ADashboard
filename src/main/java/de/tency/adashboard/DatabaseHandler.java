@@ -1,29 +1,26 @@
 package de.tency.adashboard;
- 
+
+import de.tency.adashboard.ItemBean.Item;
 import java.io.Serializable;
- 
-import javax.sql.*;
- 
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
- 
 import java.util.ArrayList;
 import java.util.List;
- 
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
- 
+
 import javax.faces.application.FacesMessage;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.faces.model.SelectItem;
- 
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.*;
+
 public class DatabaseHandler implements Serializable {
- 
+
     private static final long serialVersionUID = 3L;
     Connection connection;
     Connection connection2;
@@ -37,13 +34,13 @@ public class DatabaseHandler implements Serializable {
     ResultSet result2;
     ResultSet result3;
     ResultSet result4;
- 
+
     /**
      * SQL connections initializing
      */
     public void SQLConnection() {
         try {
- 
+
             InitialContext cxt = new InitialContext();
             DataSource ds = (DataSource) cxt
                     .lookup("java:/comp/env/jdbc/postgres");
@@ -63,10 +60,10 @@ public class DatabaseHandler implements Serializable {
             ex.printStackTrace();
         }
     }
- 
+
     public void SQLConnection2() {
         try {
- 
+
             InitialContext cxt = new InitialContext();
             DataSource ds = (DataSource) cxt
                     .lookup("java:/comp/env/jdbc/postgres");
@@ -86,10 +83,10 @@ public class DatabaseHandler implements Serializable {
             ex.printStackTrace();
         }
     }
- 
+
     public void SQLConnection3() {
         try {
- 
+
             InitialContext cxt = new InitialContext();
             DataSource ds = (DataSource) cxt
                     .lookup("java:/comp/env/jdbc/postgres");
@@ -109,10 +106,10 @@ public class DatabaseHandler implements Serializable {
             ex.printStackTrace();
         }
     }
- 
+
     public void SQLConnection4() {
         try {
- 
+
             InitialContext cxt = new InitialContext();
             DataSource ds = (DataSource) cxt
                     .lookup("java:/comp/env/jdbc/postgres");
@@ -132,7 +129,7 @@ public class DatabaseHandler implements Serializable {
             ex.printStackTrace();
         }
     }
- 
+
     /*
      * SQL connection closing
      */
@@ -145,7 +142,7 @@ public class DatabaseHandler implements Serializable {
             ex.printStackTrace();
         }
     }
- 
+
     public void SQLConnectionClose2() {
         try {
             connection2.close();
@@ -155,7 +152,7 @@ public class DatabaseHandler implements Serializable {
             ex.printStackTrace();
         }
     }
- 
+
     public void SQLConnectionClose3() {
         try {
             connection3.close();
@@ -165,7 +162,7 @@ public class DatabaseHandler implements Serializable {
             ex.printStackTrace();
         }
     }
- 
+
     public void SQLConnectionClose4() {
         try {
             connection4.close();
@@ -175,7 +172,7 @@ public class DatabaseHandler implements Serializable {
             ex.printStackTrace();
         }
     }
- 
+
     // USER DATA //
     /**
      * Shows the first- and lastname of the user based on his username.
@@ -185,22 +182,22 @@ public class DatabaseHandler implements Serializable {
     public int getAgendaId() {
         System.out.println("schowUserFullName");
         SQLConnection();
- 
+
         FacesContext fc = FacesContext.getCurrentInstance();
         ExternalContext externalContext = fc.getExternalContext();
- 
+
         ResultSet rs = null;
         PreparedStatement pst = null;
- 
+
         String stm;
         stm = "Select id from agenda;";
         int id = 0;
-        
+
         try {
             pst = connection2.prepareStatement(stm);
             pst.execute();
             rs = pst.getResultSet();
- 
+
             while (rs.next()) {
                 id = rs.getInt(1);
             }
@@ -209,5 +206,42 @@ public class DatabaseHandler implements Serializable {
         }
         SQLConnectionClose();
         return id;
+    }
+
+    int getItemCount() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void sendItemUpdate(String name, String beschreibung, String aufwand, String prioritaet, String username) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    /**
+     * List all items
+     * @return List<Item> allItems
+     */
+    public List<Item> listAllItems() {
+        System.out.println("Petition"); // DEBUG
+        List<Item> allItems = new ArrayList<Item>();
+        SQLConnection4();
+        try {
+            statement4 = connection4.createStatement();
+            result4 = statement4.executeQuery(
+                    "SELECT * FROM items ORDER BY id;");
+            while (result4.next()) {
+                allItems.add(new ItemBean.Item(
+                        result4.getInt("id"),
+                        result4.getString("datum"),
+                        result4.getString("name"),
+                        result4.getString("beschreibung"),
+                        result4.getString("prioritaet"),
+                        result4.getString("aufwand"),
+                        result4.getString("ersteller")));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        SQLConnectionClose4();
+        return allItems;
     }
 }
