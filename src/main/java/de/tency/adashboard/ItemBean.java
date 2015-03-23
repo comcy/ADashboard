@@ -13,6 +13,7 @@ import javax.faces.context.FacesContext;
 
 import java.sql.Date;
 import java.sql.Timestamp;
+import javax.faces.bean.SessionScoped;
 import javax.faces.event.ActionEvent;
 import org.apache.myfaces.custom.datascroller.ScrollerActionEvent;
 
@@ -29,43 +30,45 @@ public class ItemBean implements Serializable {
             .getCanonicalName());
     private static final long serialVersionUID = 2L;
 
-    DatabaseHandler dbh = new DatabaseHandler();
-
-    private int id;
-    private String name;
-    private String beschreibung;
-    private String prioritaet;
-    private String aufwand;
-    private String datum;
-    private String bearbeiter;
-
-    private List<Item> allItems = new ArrayList<Item>();
+    static DatabaseHandler dbh = new DatabaseHandler();
     
-    public int getId() {
+    static GenerateItem gI = new GenerateItem();
+
+    public static int id;
+    public static String name;
+    public static String beschreibung;
+    public static String prioritaet;
+    public static String aufwand;
+    public static String datum;
+    public static String bearbeiter;
+
+    public static List<Item> allItems = new ArrayList<Item>();
+    
+    public static int getId() {
         return id;
     }
 
-    public String getName() {
+    public static String getName() {
         return name;
     }
 
-    public String getBeschreibung() {
+    public static String getBeschreibung() {
         return beschreibung;
     }
 
-    public String getPrioritaet() {
+    public static String getPrioritaet() {
         return prioritaet;
     }
 
-    public String getAufwand() {
+    public static String getAufwand() {
         return aufwand;
     }
 
-    public String getDatum() {
+    public static String getDatum() {
         return datum;
     }
 
-    public String getBearbeiter() {
+    public static String getBearbeiter() {
         return bearbeiter;
     }
 
@@ -100,18 +103,19 @@ public class ItemBean implements Serializable {
     public ItemBean() {
     }
 
-    public int itemCount() {
+    public static int itemCount() {
         return dbh.getItemCount();
     }
     
-    public String sendItemUpdate(String name, String beschreibung, String aufwand, String prioritaet) {
+    public String sendItemUpdate(String name, String description, String prioritaet, String aufwand, String datum, String bearbeiter) {
+            dbh.sendItemUpdate(name, description, prioritaet, aufwand, datum, bearbeiter);
+        return "dashboard.jsf";
+//        String bearbeiter = "";// --> Abfrage für aktuellen User einbauen
 
-        String bearbeiter = "";// --> Abfrage für aktuellen User einbauen
+//        dbh.sendItemUpdate(name, beschreibung, aufwand, prioritaet, bearbeiter);
 
-        dbh.sendItemUpdate(name, beschreibung, aufwand, prioritaet, bearbeiter);
-
-        logger.info("Item succefully sent to DashboardDB!");
-        return "items";
+//        logger.info("Item succefully sent to DashboardDB!");
+//        return "items";
     }
     
 
@@ -124,8 +128,8 @@ public class ItemBean implements Serializable {
         this.allItems = allItems;
     }
  
-    public List<Item> getAllItems() {
-        return dbh.listAllItems();
+    public static String[][] getAllItems(int count) {
+        return dbh.listAllItems(count);
     }
  
     public void addToAllItems(Item i) {
@@ -142,13 +146,13 @@ public class ItemBean implements Serializable {
         
         DatabaseHandler dbh = new DatabaseHandler();
 
-        private int _id;
-        private String _datum;
-        private String _name;
-        private String _beschreibung;
-        private String _aufwand;
-        private String _bearbeiter;
-        private String _prioritaet;
+        public static int _id;
+        public static String _datum;
+        public static String _name;
+        public static String _beschreibung;
+        public static String _aufwand;
+        public static String _bearbeiter;
+        public static String _prioritaet;
 
         public Item(
                 int id,
@@ -167,6 +171,8 @@ public class ItemBean implements Serializable {
             _aufwand = aufwand;
             _bearbeiter = bearbeiter;
         }
+
+        
 
         public void set_id(int _id) {
             this._id = _id;
@@ -188,7 +194,7 @@ public class ItemBean implements Serializable {
             this._name = _name;
         }
 
-        public String get_name() {
+        public static String get_name() {
             return _name;
         }
 

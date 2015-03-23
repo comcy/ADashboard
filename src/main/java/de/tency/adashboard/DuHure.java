@@ -15,7 +15,7 @@ import org.primefaces.model.DefaultDashboardModel;
  
 @ManagedBean
 @SessionScoped
-public class DuHure {
+public class DuHure extends ItemBean {
  
     public static final int DEFAULT_COLUMN_COUNT = 3;
     private int columnCount = DEFAULT_COLUMN_COUNT;
@@ -42,13 +42,13 @@ public class DuHure {
          
         for( int i = 0, n = items; i < n; i++ ) {
             Panel panel = (Panel) application.createComponent(fc, "org.primefaces.component.Panel", "org.primefaces.component.PanelRenderer");
-            panel.setId("measure_" + i);
+            panel.setId("measure_" + ItemBean.allItems.get(i));
             panel.setHeader("Item " + GetItemsFromDB.itemNames.get(i));
             panel.setClosable(true);
             panel.setToggleable(true);
             
             System.out.println("Sauf mi voll");
-            
+            System.out.println(ItemBean.allItems.get(i));
 //            for(String ausgabe : iNames){
 //                System.out.println(ausgabe);
 //            }

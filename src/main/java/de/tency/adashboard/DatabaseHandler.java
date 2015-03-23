@@ -2,6 +2,7 @@ package de.tency.adashboard;
 
 import de.tency.adashboard.ItemBean.Item;
 import java.io.Serializable;
+import java.sql.Array;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
@@ -22,18 +23,19 @@ import javax.sql.*;
 public class DatabaseHandler implements Serializable {
 
     private static final long serialVersionUID = 3L;
-    Connection connection;
-    Connection connection2;
-    Connection connection3;
-    Connection connection4;
-    Statement statement;
-    Statement statement2;
-    Statement statement3;
-    Statement statement4;
-    ResultSet result;
-    ResultSet result2;
-    ResultSet result3;
-    ResultSet result4;
+    public static Connection connection;
+    static Connection connection2;
+    static Connection connection3;
+    static Connection connection4;
+    static Statement statement;
+    static Statement statement2;
+    static Statement statement3;
+    static Statement statement4;
+    static ResultSet result;
+    static ResultSet result2;
+    static ResultSet result3;
+    static ResultSet result4;
+    static PreparedStatement ps;
 
     /**
      * SQL connections initializing
@@ -107,7 +109,7 @@ public class DatabaseHandler implements Serializable {
         }
     }
 
-    public void SQLConnection4() {
+    public static void SQLConnection4() {
         try {
 
             InitialContext cxt = new InitialContext();
@@ -163,7 +165,7 @@ public class DatabaseHandler implements Serializable {
         }
     }
 
-    public void SQLConnectionClose4() {
+    public static void SQLConnectionClose4() {
         try {
             connection4.close();
             System.out.println("        DB4 close");
@@ -209,11 +211,46 @@ public class DatabaseHandler implements Serializable {
     }
 
     int getItemCount() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        int count = 0; 
+        SQLConnection4();
+        try {
+            statement4 = connection4.createStatement();
+            result4 = statement4.executeQuery(
+                    "SELECT * FROM items ORDER BY id;");
+            while (result4.next()) {
+                count++;        
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        SQLConnectionClose4();
+        return count;
     }
 
-    void sendItemUpdate(String name, String beschreibung, String aufwand, String prioritaet, String username) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    String sendItemUpdate(String name, String beschreibung, String prioritaet, String aufwand, String datum, String bearbeiter) {
+        String str = "dashboard.jsf";
+        SQLConnection4();
+        try {
+            String newItem = "insert into items (name, beschreibung, prioritaet, aufwand, datum, bearbeiter) values ( ?, ?, ?, ?, ?, ? )";
+                ps = connection4.prepareStatement(newItem);
+                ps.setString(1, name);
+                ps.setString(2, beschreibung);
+                ps.setString(3, "Sehr hoch");
+                ps.setString(4, "kaum");
+                ps.setString(5, "12");
+            
+//            ps.setString(1, "MessageBoard");
+//            ps.setString(2, "Anzeigen des aktuellen Status eines Spielers");
+//            ps.setString(3, "Sehr hoch");
+//            ps.setString(4, "kaum");
+//            ps.setString(5, "");
+                ps.setString(6, "admin");
+                ps.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        SQLConnectionClose4();
+        return str;
     }
 
     /**
@@ -221,14 +258,17 @@ public class DatabaseHandler implements Serializable {
      *
      * @return List<Item> allItems
      */
-    public List<Item> listAllItems() {
+    public String[][] listAllItems(int i) {
         System.out.println("Item"); // DEBUG
         List<Item> allItems = new ArrayList<Item>();
+        String[][] itemNameBeschreibung = new String[i][i+1];
+        int c = 0;
         SQLConnection4();
         try {
             statement4 = connection4.createStatement();
             result4 = statement4.executeQuery(
                     "SELECT * FROM items ORDER BY id;");
+            System.out.println(result4);
             while (result4.next()) {
                 allItems.add(new ItemBean.Item(
                         result4.getInt("id"),
@@ -238,11 +278,17 @@ public class DatabaseHandler implements Serializable {
                         result4.getString("prioritaet"),
                         result4.getString("aufwand"),
                         result4.getString("bearbeiter")));
+                itemNameBeschreibung[c][c] = result4.getString("name");
+                itemNameBeschreibung[c][c+1] = result4.getString("beschreibung");
+                System.out.println(itemNameBeschreibung[c][c]);
+                System.out.println(itemNameBeschreibung[c][c+1]);
+                c++;
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
         SQLConnectionClose4();
-        return allItems;
+        
+        return itemNameBeschreibung;
     }
 }

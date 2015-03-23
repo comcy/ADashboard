@@ -11,13 +11,17 @@
     <ui:define name="title">Dashboard</ui:define>
     <ui:define name="content" >
         <h3>Dashboard</h3>
-        <body>
+        <h:head>
+            
+        </h:head>
+        <h:body>
             <h:outputStylesheet library="css" name="style.css"/>
             <h:outputScript library="js" name="help.js" />
             <div style="height:500px">
-                <h:form>
-                    <p:growl id="growl" showDetail="true" />
-                    <p:dashboard id="dynamic_dashboard" binding="#{dashboardBacker.dashboard}">            
+                <h:form >
+                    <p:growl id="growl" showDetail="true"/>
+                    <p:dashboard id="dynamic_dashboard" binding="#{dashboardBacker.dashboard}" >
+                        
 <!--                        <p:panel id="Vorrat" header="Vorrat" styleClass="completed">
                             <h:outputText value="Vorraetige Items"></h:outputText>
                         </p:panel>-->
@@ -29,7 +33,7 @@
                         </p:panel>-->
                         
                     </p:dashboard>  
-
+                    
                     <div style="clear:both" />  
 
                     <p:separator />  
@@ -76,14 +80,16 @@
                     </p:panel>
                     <p:draggable for="draggable" helper="clone" dashboard="dynamic_dashboard"></p:draggable>
                         
-                    <p:commandButton value="SAVE ITEM" id="withIcon" actionListener="#{duHure.dashboard}" update="growl" icon="ui-icon-disk" />
-                    
+                    <p:commandButton value="SAVE ITEM" id="withIcon" actionListener="#{itemBean.sendItemUpdate(generateItem.name, generateItem.description, generateItem.name, generateItem.description, generateItem.name, generateItem.description)}" update="growl"  icon="ui-icon-disk" >
+                        <p:poll id="penis" interval="1" update="dynamic_dashboard"/>
+                    </p:commandButton>
                     
                     
                 </h:form>  
             </div>
             
-        </body>
+        </h:body>
+        
         
     </ui:define>
 </ui:composition>

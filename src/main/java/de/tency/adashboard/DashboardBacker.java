@@ -5,8 +5,10 @@
  */
 package de.tency.adashboard;
 
+import de.tency.adashboard.ItemBean.Item;
 import javax.faces.application.Application;
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
 import javax.faces.bean.SessionScoped;
 import javax.faces.component.html.HtmlOutputText;
 import javax.faces.context.FacesContext;
@@ -18,16 +20,21 @@ import org.primefaces.model.DefaultDashboardColumn;
 import org.primefaces.model.DefaultDashboardModel;
  
 @ManagedBean
-@SessionScoped
+@RequestScoped
 public class DashboardBacker extends Dashboard {
  
     public static final int DEFAULT_COLUMN_COUNT = 3;
     private int columnCount = DEFAULT_COLUMN_COUNT;
-     
+    
     private Dashboard dashboard;
     
     GetItemsFromDB iNames = new GetItemsFromDB();
-    final int itemLength = iNames.getItemNames().size();
+//    final int itemLength = ItemBean.itemCount();
+    final int itemLength = 1;
+    
+    DatabaseHandler dbHandler = new DatabaseHandler();
+    
+    String[][] iNB;
     
     public DashboardBacker() {
         FacesContext fc = FacesContext.getCurrentInstance();
@@ -43,22 +50,26 @@ public class DashboardBacker extends Dashboard {
         }
         dashboard.setModel(model);
         
-        for( int i = 0; i < itemLength; i++ ) {
-            System.out.println(iNames.getItemNames().size());
+//        System.out.println("YIEHH");
+//        dbHandler.sendItemUpdate();
+//        System.out.println("II WORKS");
+        
+        iNB = ItemBean.getAllItems(dbHandler.getItemCount());
+        
+        for( int i = 0; i < dbHandler.getItemCount(); i++ ) {
             Panel panel = (Panel) application.createComponent(fc, "org.primefaces.component.Panel", "org.primefaces.component.PanelRenderer");
             panel.setId("Item" + i);
-            panel.setHeader("Item: " + iNames.getItemNames().get(i));
+            panel.setHeader("Item: " + iNB[i][i]);
             panel.setClosable(true);
             panel.setToggleable(true);
             
             System.out.println("Sauf mi voll");
-            System.out.println(iNames.getItemNames().size());
 
             getDashboard().getChildren().add(panel);
             DashboardColumn column = model.getColumn(i%getColumnCount());
             column.addWidget(panel.getId());
             HtmlOutputText text = new HtmlOutputText();
-            text.setValue("Beschreibung des Items" );
+            text.setValue( iNB[i][i+1] );
  
             panel.getChildren().add(text);
         }

@@ -3,17 +3,13 @@
     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html   xmlns="http://www.w3.org/1999/xhtml"
-        xmlns:f="http://java.sun.com/jsf/core"
         xmlns:h="http://java.sun.com/jsf/html"
-        xmlns:ui="http://java.sun.com/jsf/facelets"
-        xmlns:t="http://myfaces.apache.org/tomahawk"
         xmlns:p="http://primefaces.org/ui">
     <head>
       <title>MyItem - Show Generated Item</title>
     </head>
     <body>
-        <h1><h:outputText value="MyItem"/></h1>
-        <h2><h:outputText value="Show Generated Item"/></h2>
+        <h1><h:outputText value="My New Generated Item"/></h1>
         <h:panelGrid id="grid" columns="2">
             <h:outputText value="Item Name:"/>
             <h:outputText value="#{generateItem.name}"/>
@@ -25,5 +21,10 @@
             <p:draggable for="draggable" helper="clone" dashboard="board"></p:draggable>-->
         </h:panelGrid>
         <h:outputText value="Item saved successfully!"/>
+        
+        <div style="clear:both" /> 
+        <p:separator />  
+        
+        <p:commandButton value="Back to Dashboard" id="withIcon" action="dashboard.jsf"/>
     </body>
 </html>
