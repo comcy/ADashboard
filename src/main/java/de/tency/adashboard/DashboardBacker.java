@@ -59,7 +59,9 @@ public class DashboardBacker extends Dashboard {
         for( int i = 0; i < dbHandler.getItemCount(); i++ ) {
             Panel panel = (Panel) application.createComponent(fc, "org.primefaces.component.Panel", "org.primefaces.component.PanelRenderer");
             panel.setId("Item" + i);
-            panel.setHeader("Item: " + iNB[i][i]);
+            panel.setHeader("Item: " + iNB[i][0]);
+            panel.setFooter("Prioritaet: " + iNB[i][2]);
+            panel.setInView(true);
             panel.setClosable(true);
             panel.setToggleable(true);
             
@@ -69,7 +71,7 @@ public class DashboardBacker extends Dashboard {
             DashboardColumn column = model.getColumn(i%getColumnCount());
             column.addWidget(panel.getId());
             HtmlOutputText text = new HtmlOutputText();
-            text.setValue( iNB[i][i+1] );
+            text.setValue( iNB[i][1] );
  
             panel.getChildren().add(text);
         }

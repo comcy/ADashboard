@@ -235,16 +235,16 @@ public class DatabaseHandler implements Serializable {
                 ps = connection4.prepareStatement(newItem);
                 ps.setString(1, name);
                 ps.setString(2, beschreibung);
-                ps.setString(3, "Sehr hoch");
-                ps.setString(4, "kaum");
-                ps.setString(5, "12");
+                ps.setString(3, prioritaet);
+                ps.setString(4, aufwand);
+                ps.setString(5, datum);
             
 //            ps.setString(1, "MessageBoard");
 //            ps.setString(2, "Anzeigen des aktuellen Status eines Spielers");
 //            ps.setString(3, "Sehr hoch");
 //            ps.setString(4, "kaum");
 //            ps.setString(5, "");
-                ps.setString(6, "admin");
+                ps.setString(6, bearbeiter);
                 ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -272,14 +272,19 @@ public class DatabaseHandler implements Serializable {
             while (result4.next()) {
                 allItems.add(new ItemBean.Item(
                         result4.getInt("id"),
-                        result4.getString("datum"),
                         result4.getString("name"),
                         result4.getString("beschreibung"),
                         result4.getString("prioritaet"),
                         result4.getString("aufwand"),
+                        result4.getString("datum"),
                         result4.getString("bearbeiter")));
-                itemNameBeschreibung[c][c] = result4.getString("name");
-                itemNameBeschreibung[c][c+1] = result4.getString("beschreibung");
+                itemNameBeschreibung[c][0] = result4.getString("name");
+                itemNameBeschreibung[c][1] = result4.getString("beschreibung");
+                itemNameBeschreibung[c][2] = result4.getString("prioritaet");
+                itemNameBeschreibung[c][3] = result4.getString("aufwand");
+                itemNameBeschreibung[c][4] = result4.getString("datum");
+                itemNameBeschreibung[c][5] = result4.getString("bearbeiter");
+                
                 System.out.println(itemNameBeschreibung[c][c]);
                 System.out.println(itemNameBeschreibung[c][c+1]);
                 c++;

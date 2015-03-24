@@ -34,8 +34,7 @@
                         
                     </p:dashboard>  
                     
-                    <div style="clear:both" />  
-
+                    <div style="clear:both" />
                     <p:separator />  
 
                     <h3>Available Items</h3>  
@@ -64,8 +63,7 @@
                         
                     </h:panelGrid>  
                     
-                    <div style="clear:both" />  
-
+                    <div style="clear:both" />
                     <p:separator />  
                     
                     <h1><h:outputText value="Create a Item"/></h1>
@@ -74,16 +72,23 @@
                         <h:inputText id="itemName" value="#{generateItem.name}"/>
                         <h:outputLabel value="Beschreibung des Items:" for="itemBeschreibung"/>
                         <h:inputText id="itemBeschreibung" value="#{generateItem.description}"/>
+                        <h:outputLabel value="Prioritaet:" for="itemPrioritaet"/>
+                        <h:inputText id="itemPrioritaet" value="#{generateItem.prioritaet}"/>
+                        <h:outputLabel value="Aufwandseinschaetzung:" for="itemAufwandseinschaetzung"/>
+                        <h:inputText id="itemAufwandseinschaetzung" value="#{generateItem.aufwandseinschaetzung}"/>
+                        <h:outputLabel value="Startdatum:" for="itemStartDatum"/>
+                        <h:inputText id="itemStartDatum" value="#{generateItem.startdatum}"/>
+                        <h:outputLabel value="Bearbeiter:" for="itemBearbeiter"/>
+                        <h:inputText id="itemBearbeiter" value="#{generateItem.bearbeiter}"/>
                     </h:panelGrid>
                     <p:panel id="draggable">
                         <h:outputLabel value="#{generateItem.name}"></h:outputLabel>
                     </p:panel>
                     <p:draggable for="draggable" helper="clone" dashboard="dynamic_dashboard"></p:draggable>
                         
-                    <p:commandButton value="SAVE ITEM" id="withIcon" actionListener="#{itemBean.sendItemUpdate(generateItem.name, generateItem.description, generateItem.name, generateItem.description, generateItem.name, generateItem.description)}" update="growl"  icon="ui-icon-disk" >
-                        <p:poll id="penis" interval="1" update="dynamic_dashboard"/>
+                    <p:commandButton value="SAVE ITEM" id="withIcon" actionListener="#{itemBean.sendItemUpdate(generateItem.name, generateItem.description, generateItem.prioritaet, generateItem.aufwandseinschaetzung, generateItem.startdatum, generateItem.bearbeiter)}" update="growl"  icon="ui-icon-disk" >
+                        <p:poll id="pollit" interval="1" update="dynamic_dashboard"/>
                     </p:commandButton>
-                    
                     
                 </h:form>  
             </div>
