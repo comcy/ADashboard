@@ -1,6 +1,7 @@
 
 package de.tency.adashboard;
 
+import static de.tency.adashboard.ItemBean.Item._status;
 import java.io.Serializable;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -15,6 +16,8 @@ public class GenerateItem implements Serializable {
     private String aufwandseinschaetzung;
     private String startdatum;
     private String bearbeiter;
+    private int status;
+    
     
     public String getDescription() {
         return description;
@@ -40,7 +43,6 @@ public class GenerateItem implements Serializable {
     public String getAufwandseinschaetzung() {
         return aufwandseinschaetzung;
     }
-
     public void setAufwandseinschaetzung(String aufwandseinschaetzung) {
         this.aufwandseinschaetzung = aufwandseinschaetzung;
     }
@@ -48,7 +50,6 @@ public class GenerateItem implements Serializable {
     public String getStartdatum() {
         return startdatum;
     }
-
     public void setStartdatum(String startdatum) {
         this.startdatum = startdatum;
     }
@@ -56,10 +57,17 @@ public class GenerateItem implements Serializable {
     public String getBearbeiter() {
         return bearbeiter;
     }
-
     public void setBearbeiter(String bearbeiter) {
         this.bearbeiter = bearbeiter;
     }
+    
+    public int get_status() {
+        return status;
+    }
+    public void set_status(int status) {
+        this.status = status;
+    }
+    
     
     public void check(){
         if(name.equals("")){

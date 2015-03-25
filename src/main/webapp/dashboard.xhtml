@@ -86,10 +86,13 @@
                     </p:panel>
                     <p:draggable for="draggable" helper="clone" dashboard="dynamic_dashboard"></p:draggable>
                         
-                    <p:commandButton value="SAVE ITEM" id="withIcon" actionListener="#{itemBean.sendItemUpdate(generateItem.name, generateItem.description, generateItem.prioritaet, generateItem.aufwandseinschaetzung, generateItem.startdatum, generateItem.bearbeiter)}" update="growl"  icon="ui-icon-disk" >
-                        <p:poll id="pollit" interval="1" update="dynamic_dashboard"/>
-                    </p:commandButton>
+                    <p:commandButton value="SAVE ITEM" id="withIcon" actionListener="#{itemBean.sendItemUpdate(generateItem.name, generateItem.description, generateItem.prioritaet, generateItem.aufwandseinschaetzung, generateItem.startdatum, generateItem.bearbeiter)}" update="growl"  icon="ui-icon-disk" />
+                   
+                    <p:commandButton value="REFRESH" id="with" update="growl"  onclick="PF('poll')." />
                     
+<!--                    <p:commandButton value="REFRESH" id="with" icon="ui-icon-disk" >
+                        <p:poll id="pollit" interval="1" update="dynamic_dashboard"/>
+                    </p:commandButton>-->
                 </h:form>  
             </div>
             

@@ -231,7 +231,7 @@ public class DatabaseHandler implements Serializable {
         String str = "dashboard.jsf";
         SQLConnection4();
         try {
-            String newItem = "insert into items (name, beschreibung, prioritaet, aufwand, datum, bearbeiter) values ( ?, ?, ?, ?, ?, ? )";
+            String newItem = "insert into items (name, beschreibung, prioritaet, aufwand, datum, bearbeiter, status) values ( ?, ?, ?, ?, ?, ?, ? )";
                 ps = connection4.prepareStatement(newItem);
                 ps.setString(1, name);
                 ps.setString(2, beschreibung);
@@ -245,6 +245,8 @@ public class DatabaseHandler implements Serializable {
 //            ps.setString(4, "kaum");
 //            ps.setString(5, "");
                 ps.setString(6, bearbeiter);
+                ps.setInt(7, 0);
+                
                 ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -261,7 +263,7 @@ public class DatabaseHandler implements Serializable {
     public String[][] listAllItems(int i) {
         System.out.println("Item"); // DEBUG
         List<Item> allItems = new ArrayList<Item>();
-        String[][] itemNameBeschreibung = new String[i][i+1];
+        String[][] itemNameBeschreibung = new String[i][8];
         int c = 0;
         SQLConnection4();
         try {
@@ -277,16 +279,18 @@ public class DatabaseHandler implements Serializable {
                         result4.getString("prioritaet"),
                         result4.getString("aufwand"),
                         result4.getString("datum"),
-                        result4.getString("bearbeiter")));
+                        result4.getString("bearbeiter"),
+                        result4.getInt("status")));
                 itemNameBeschreibung[c][0] = result4.getString("name");
                 itemNameBeschreibung[c][1] = result4.getString("beschreibung");
                 itemNameBeschreibung[c][2] = result4.getString("prioritaet");
                 itemNameBeschreibung[c][3] = result4.getString("aufwand");
                 itemNameBeschreibung[c][4] = result4.getString("datum");
                 itemNameBeschreibung[c][5] = result4.getString("bearbeiter");
-                
-                System.out.println(itemNameBeschreibung[c][c]);
-                System.out.println(itemNameBeschreibung[c][c+1]);
+                String s = Integer.toString(result4.getInt("status"));
+                itemNameBeschreibung[c][6] = s;
+//                System.out.println(itemNameBeschreibung[c][c]);
+//                System.out.println(itemNameBeschreibung[c][c+1]);
                 c++;
             }
         } catch (SQLException e) {

@@ -5,6 +5,7 @@
  */
 package de.tency.adashboard;
 
+import static de.tency.adashboard.DatabaseHandler.result4;
 import de.tency.adashboard.ItemBean.Item;
 import javax.faces.application.Application;
 import javax.faces.bean.ManagedBean;
@@ -35,6 +36,7 @@ public class DashboardBacker extends Dashboard {
     DatabaseHandler dbHandler = new DatabaseHandler();
     
     String[][] iNB;
+    int[][] statusiNB;
     
     public DashboardBacker() {
         FacesContext fc = FacesContext.getCurrentInstance();
@@ -66,9 +68,11 @@ public class DashboardBacker extends Dashboard {
             panel.setToggleable(true);
             
             System.out.println("Sauf mi voll");
-
+            
             getDashboard().getChildren().add(panel);
-            DashboardColumn column = model.getColumn(i%getColumnCount());
+            
+            Integer columnChooser = Integer.parseInt(iNB[i][6]);
+            DashboardColumn column = model.getColumn(columnChooser%getColumnCount());
             column.addWidget(panel.getId());
             HtmlOutputText text = new HtmlOutputText();
             text.setValue( iNB[i][1] );

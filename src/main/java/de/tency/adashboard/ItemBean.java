@@ -41,7 +41,8 @@ public class ItemBean implements Serializable {
     public static String aufwand;
     public static String datum;
     public static String bearbeiter;
-
+    public static int status;
+    
     public static List<Item> allItems = new ArrayList<Item>();
     
     public static int getId() {
@@ -99,6 +100,14 @@ public class ItemBean implements Serializable {
     public void setBearbeiter(String bearbeiter) {
         this.bearbeiter = bearbeiter;
     }
+    
+    public void set_status(int status) {
+        this.status = status;
+    }
+    public int get_status() {
+        return status;
+    }
+    
 
     public ItemBean() {
     }
@@ -153,6 +162,8 @@ public class ItemBean implements Serializable {
         public static String _aufwand;
         public static String _bearbeiter;
         public static String _prioritaet;
+        public static int _status;
+        
 
         public Item(
                 int id,
@@ -161,7 +172,8 @@ public class ItemBean implements Serializable {
                 String beschreibung,
                 String prioritaet,
                 String aufwand,
-                String bearbeiter) {
+                String bearbeiter,
+                int status) {
             System.out.println("Item-list Constructor");
             _id = id;
             _datum = datum;
@@ -170,6 +182,7 @@ public class ItemBean implements Serializable {
             _prioritaet = prioritaet;
             _aufwand = aufwand;
             _bearbeiter = bearbeiter;
+            _status = status;
         }
 
         
@@ -177,7 +190,6 @@ public class ItemBean implements Serializable {
         public void set_id(int _id) {
             this._id = _id;
         }
-
         public int get_id() {
             return _id;
         }
@@ -185,7 +197,6 @@ public class ItemBean implements Serializable {
         public void set_datum(String _datum) {
             this._datum = _datum;
         }
-
         public String get_datum() {
             return _datum;
         }
@@ -193,7 +204,6 @@ public class ItemBean implements Serializable {
         public void set_name(String _name) {
             this._name = _name;
         }
-
         public static String get_name() {
             return _name;
         }
@@ -201,7 +211,6 @@ public class ItemBean implements Serializable {
         public void set_beschreibung(String _beschreibung) {
             this._beschreibung = _beschreibung;
         }
-
         public String get_beschreibung() {
             return _beschreibung;
         }
@@ -209,7 +218,6 @@ public class ItemBean implements Serializable {
         public void set_prioritaet(String _prioritaet) {
             this._prioritaet = _prioritaet;
         }
-
         public String get_prioritaet() {
             return _prioritaet;
         }
@@ -217,7 +225,6 @@ public class ItemBean implements Serializable {
         public void set_aufwand(String _aufwand) {
             this._aufwand = _aufwand;
         }
-
         public String get_aufwand() {
             return _aufwand;
         }
@@ -225,9 +232,15 @@ public class ItemBean implements Serializable {
         public void set_bearbeiter(String _bearbeiter) {
             this._bearbeiter = _bearbeiter;
         }
-
         public String get_bearbeiter() {
             return _bearbeiter;
+        }
+        
+        public void set_status(int _status) {
+            this._status = _status;
+        }
+        public int get_status() {
+            return _status;
         }
     }
 }
