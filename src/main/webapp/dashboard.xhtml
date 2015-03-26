@@ -21,7 +21,7 @@
                 <h:form >
                     <p:growl id="growl" showDetail="true"/>
                     <p:dashboard id="dynamic_dashboard" binding="#{dashboardBacker.dashboard}" >
-                        
+                        <p:ajax event="reorder" listener="#{dashboardBacker.handleReorder}" update="growl" />
 <!--                        <p:panel id="Vorrat" header="Vorrat" styleClass="completed">
                             <h:outputText value="Vorraetige Items"></h:outputText>
                         </p:panel>-->

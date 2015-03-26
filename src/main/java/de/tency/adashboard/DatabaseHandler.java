@@ -31,6 +31,8 @@ public class DatabaseHandler implements Serializable {
     static Statement statement2;
     static Statement statement3;
     static Statement statement4;
+    static Statement changeColumnStatus;
+    
     static ResultSet result;
     static ResultSet result2;
     static ResultSet result3;
@@ -281,14 +283,17 @@ public class DatabaseHandler implements Serializable {
                         result4.getString("datum"),
                         result4.getString("bearbeiter"),
                         result4.getInt("status")));
-                itemNameBeschreibung[c][0] = result4.getString("name");
-                itemNameBeschreibung[c][1] = result4.getString("beschreibung");
-                itemNameBeschreibung[c][2] = result4.getString("prioritaet");
-                itemNameBeschreibung[c][3] = result4.getString("aufwand");
-                itemNameBeschreibung[c][4] = result4.getString("datum");
-                itemNameBeschreibung[c][5] = result4.getString("bearbeiter");
-                String s = Integer.toString(result4.getInt("status"));
-                itemNameBeschreibung[c][6] = s;
+                
+                String sID = Integer.toString(result4.getInt("id"));
+                itemNameBeschreibung[c][0] = sID;
+                itemNameBeschreibung[c][1] = result4.getString("name");
+                itemNameBeschreibung[c][2] = result4.getString("beschreibung");
+                itemNameBeschreibung[c][3] = result4.getString("prioritaet");
+                itemNameBeschreibung[c][4] = result4.getString("aufwand");
+                itemNameBeschreibung[c][5] = result4.getString("datum");
+                itemNameBeschreibung[c][6] = result4.getString("bearbeiter");
+                String sStatus = Integer.toString(result4.getInt("status"));
+                itemNameBeschreibung[c][7] = sStatus;
 //                System.out.println(itemNameBeschreibung[c][c]);
 //                System.out.println(itemNameBeschreibung[c][c+1]);
                 c++;
@@ -299,5 +304,36 @@ public class DatabaseHandler implements Serializable {
         SQLConnectionClose4();
         
         return itemNameBeschreibung;
+    }
+    
+    int changeColumnStatus(int id, int newStatus) {
+        String str = "UPDATE items SET status = " + newStatus + " WHERE id = " + id;
+        SQLConnection4();
+        try {
+            changeColumnStatus = connection4.createStatement();
+            changeColumnStatus.execute(str);
+                    
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        SQLConnectionClose4();
+        return id;
+    }
+    
+    String getCurrentName(int id) {
+        String str = "SELECT name FROM items where id = " + id;
+        String sName = null;
+        SQLConnection4();
+        try {
+            statement4 = connection4.createStatement();
+            result4 = statement4.executeQuery(str);
+            
+            result4.next();
+            sName = result4.getString("name");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        SQLConnectionClose4();
+        return sName;
     }
 }

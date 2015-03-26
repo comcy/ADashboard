@@ -8,6 +8,7 @@ package de.tency.adashboard;
 import static de.tency.adashboard.DatabaseHandler.result4;
 import de.tency.adashboard.ItemBean.Item;
 import javax.faces.application.Application;
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.faces.bean.SessionScoped;
@@ -15,6 +16,7 @@ import javax.faces.component.html.HtmlOutputText;
 import javax.faces.context.FacesContext;
 import org.primefaces.component.dashboard.Dashboard;
 import org.primefaces.component.panel.Panel;
+import org.primefaces.event.DashboardReorderEvent;
 import org.primefaces.model.DashboardColumn;
 import org.primefaces.model.DashboardModel;
 import org.primefaces.model.DefaultDashboardColumn;
@@ -34,6 +36,8 @@ public class DashboardBacker extends Dashboard {
     final int itemLength = 1;
     
     DatabaseHandler dbHandler = new DatabaseHandler();
+    DatabaseHandler dbColumnStatusChanger = new DatabaseHandler();
+    DatabaseHandler dbGetCurrentItemName = new DatabaseHandler();
     
     String[][] iNB;
     int[][] statusiNB;
@@ -60,9 +64,11 @@ public class DashboardBacker extends Dashboard {
         
         for( int i = 0; i < dbHandler.getItemCount(); i++ ) {
             Panel panel = (Panel) application.createComponent(fc, "org.primefaces.component.Panel", "org.primefaces.component.PanelRenderer");
-            panel.setId("Item" + i);
-            panel.setHeader("Item: " + iNB[i][0]);
-            panel.setFooter("Prioritaet: " + iNB[i][2]);
+            
+            
+            panel.setId("_" + iNB[i][0]);
+            panel.setHeader("Item: " + iNB[i][1]);
+            panel.setFooter("Prioritaet: " + iNB[i][3]);
             panel.setInView(true);
             panel.setClosable(true);
             panel.setToggleable(true);
@@ -71,13 +77,15 @@ public class DashboardBacker extends Dashboard {
             
             getDashboard().getChildren().add(panel);
             
-            Integer columnChooser = Integer.parseInt(iNB[i][6]);
+            Integer columnChooser = Integer.parseInt(iNB[i][7]);
             DashboardColumn column = model.getColumn(columnChooser%getColumnCount());
             column.addWidget(panel.getId());
             HtmlOutputText text = new HtmlOutputText();
-            text.setValue( iNB[i][1] );
+            text.setValue( iNB[i][2] );
  
             panel.getChildren().add(text);
+            
+            
         }
     }
  
@@ -95,5 +103,24 @@ public class DashboardBacker extends Dashboard {
  
     public void setColumnCount(int columnCount) {
         this.columnCount = columnCount;
+    }
+    
+    public void handleReorder(DashboardReorderEvent event) {
+        String s = event.getWidgetId();
+        Integer itemID = Integer.parseInt(s.substring(1));
+        String currentItemName = dbGetCurrentItemName.getCurrentName(itemID);
+        FacesMessage message = new FacesMessage();
+        message.setSeverity(FacesMessage.SEVERITY_INFO);
+        message.setSummary("Neuordnung: Item " + "'" + currentItemName + "'");
+        
+        message.setDetail("von Spalte " + event.getSenderColumnIndex()
+                + ", zu Spalte " + event.getColumnIndex());
+ 
+        addMessage(message);
+        dbColumnStatusChanger.changeColumnStatus(itemID, event.getColumnIndex());
+    }
+    
+    private void addMessage(FacesMessage message) {
+        FacesContext.getCurrentInstance().addMessage(null, message);
     }
 }
