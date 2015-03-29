@@ -29,6 +29,8 @@ public class DashboardBacker extends Dashboard {
     public static final int DEFAULT_COLUMN_COUNT = 3;
     private int columnCount = DEFAULT_COLUMN_COUNT;
     
+    private DashboardModel model;
+    
     private Dashboard dashboard;
     
     GetItemsFromDB iNames = new GetItemsFromDB();
@@ -43,40 +45,48 @@ public class DashboardBacker extends Dashboard {
     int[][] statusiNB;
     
     public DashboardBacker() {
+        
+        model = new DefaultDashboardModel();
+        DashboardColumn column1 = new DefaultDashboardColumn();
+        DashboardColumn column2 = new DefaultDashboardColumn();
+        DashboardColumn column3 = new DefaultDashboardColumn();
+         
+        column1.addWidget("Vorrat");
+        column2.addWidget("Bearbeitung");
+        column3.addWidget("Fertig");
+ 
+        model.addColumn(column1);
+        model.addColumn(column2);
+        model.addColumn(column3);
+        
         FacesContext fc = FacesContext.getCurrentInstance();
         Application application = fc.getApplication();
         
         dashboard = (Dashboard) application.createComponent(fc, "org.primefaces.component.Dashboard", "org.primefaces.component.DashboardRenderer");
         dashboard.setId("dashboard");
  
-        DashboardModel model = new DefaultDashboardModel();
+//        DashboardModel model = new DefaultDashboardModel();
         for( int i = 0, n = getColumnCount(); i < n; i++ ) {
             DashboardColumn column = new DefaultDashboardColumn();
             model.addColumn(column);
         }
         dashboard.setModel(model);
         
-//        System.out.println("YIEHH");
-//        dbHandler.sendItemUpdate();
-//        System.out.println("II WORKS");
-        
         iNB = ItemBean.getAllItems(dbHandler.getItemCount());
         
         for( int i = 0; i < dbHandler.getItemCount(); i++ ) {
             Panel panel = (Panel) application.createComponent(fc, "org.primefaces.component.Panel", "org.primefaces.component.PanelRenderer");
-            
-            
             panel.setId("_" + iNB[i][0]);
             panel.setHeader("Item: " + iNB[i][1]);
             panel.setFooter("Prioritaet: " + iNB[i][3]);
             panel.setInView(true);
             panel.setClosable(true);
             panel.setToggleable(true);
+            panel.setStyleClass("items");
             
             System.out.println("Sauf mi voll");
             
             getDashboard().getChildren().add(panel);
-            
             Integer columnChooser = Integer.parseInt(iNB[i][7]);
             DashboardColumn column = model.getColumn(columnChooser%getColumnCount());
             column.addWidget(panel.getId());
@@ -84,8 +94,6 @@ public class DashboardBacker extends Dashboard {
             text.setValue( iNB[i][2] );
  
             panel.getChildren().add(text);
-            
-            
         }
     }
  

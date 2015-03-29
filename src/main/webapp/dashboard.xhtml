@@ -10,34 +10,34 @@
                 xmlns:p="http://primefaces.org/ui">
     <ui:define name="title">Dashboard</ui:define>
     <ui:define name="content" >
-        <h3>Dashboard</h3>
+<!--        <h3>Dashboard</h3>-->
         <h:head>
             
         </h:head>
         <h:body>
             <h:outputStylesheet library="css" name="style.css"/>
             <h:outputScript library="js" name="help.js" />
-            <div style="height:500px">
+            <div style="height:1000px">
                 <h:form >
                     <p:growl id="growl" showDetail="true"/>
                     <p:dashboard id="dynamic_dashboard" binding="#{dashboardBacker.dashboard}" >
                         <p:ajax event="reorder" listener="#{dashboardBacker.handleReorder}" update="growl" />
-<!--                        <p:panel id="Vorrat" header="Vorrat" styleClass="completed">
-                            <h:outputText value="Vorraetige Items"></h:outputText>
-                        </p:panel>-->
-<!--                        <p:panel id="Bearbeitung" header="Bearbeitung" styleClass="completed2" >
-                            <h:outputText value="Items in Bearbeitung"></h:outputText>
+                        <p:panel id="Vorrat" header="Vorrat" styleClass="completed" >
+                            <!--<h:outputText value="Vorraetige Items"></h:outputText>-->
+                        </p:panel>
+                        <p:panel id="Bearbeitung" header="Bearbeitung" styleClass="completed2" >
+                            <!--<h:outputText value="Items in Bearbeitung"></h:outputText>-->
                         </p:panel>
                         <p:panel id="Fertig" header="Fertig" styleClass="completed3" >
-                            <h:outputText value="Fertige Items"></h:outputText>
-                        </p:panel>-->
+                            <!--<h:outputText value="Fertige Items"></h:outputText>-->
+                        </p:panel>
                         
                     </p:dashboard>  
                     
                     <div style="clear:both" />
                     <p:separator />  
 
-                    <h3>Available Items</h3>  
+<!--                    <h3>Available Items</h3>  
                     <p>Draggable Items</p>
                     <h:panelGrid columns="3">  
                         <p:panel id="DB" header="DB" closable="true" toggleable="true">  
@@ -61,7 +61,7 @@
                         <p:draggable for="solveButton" dashboard="dynamic_dashboard"/>
                         
                         
-                    </h:panelGrid>  
+                    </h:panelGrid>  -->
                     
                     <div style="clear:both" />
                     <p:separator />  

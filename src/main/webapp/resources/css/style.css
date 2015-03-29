@@ -49,13 +49,35 @@ body {
 }
 
 .completed {
-    background: lightpink;
+    background: lightpink!important;
+    font: monospace!important;
+    font-family: Arial, Helvetica, sans-serif!important;
+    font-style: oblique!important;
+    font-size: 30px!important;
+    /*border-bottom: 1px!important;*/
+    /*padding-bottom: 0.01px!important;*/
+    margin-bottom: -20px!important;
+    text-align: center!important;
+    
 }
 .completed2 {
-    background: lightcyan;
+    background: lightcyan!important;
+    font-family: Arial, Helvetica, sans-serif!important;
+    font-style: oblique!important;
+    font-size: 30px!important;
+    margin-bottom: -20px!important;
+    text-align: center!important;
 }
 .completed3 {
-    background: palegreen;
+    background: palegreen!important;
+    font-family: Arial, Helvetica, sans-serif!important;
+    font-style: oblique!important;
+    font-size: 30px!important;
+    margin-bottom: -20px!important;
+    text-align: center!important;
+}
+.items .fc-event-inner {
+    color: #ffff15!important;
 }
 
 #accordianPanel{

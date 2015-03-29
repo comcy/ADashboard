@@ -5,6 +5,11 @@
         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
         version="2.5">
     
+    <!-- Einbinden eines bestimmten Themes -->
+    <context-param>  
+        <param-name>primefaces.THEME</param-name>  
+        <param-value>mint-choc</param-value>  
+    </context-param>  
     <!-- JSF standard parameters -->
     <context-param>
         <description>Project stage for the application (new in 2.0). Expects one of
