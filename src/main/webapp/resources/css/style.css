@@ -8,6 +8,11 @@ body {
     color: rgb(90, 90, 90);
     padding-right:2px;
     padding-left:2px;
+    
+    background-image: url(img_flwr.gif), url(paper.gif);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
 }
 
 #informationbar {

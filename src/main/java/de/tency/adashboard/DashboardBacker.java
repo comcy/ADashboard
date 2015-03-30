@@ -7,6 +7,9 @@ package de.tency.adashboard;
 
 import static de.tency.adashboard.DatabaseHandler.result4;
 import de.tency.adashboard.ItemBean.Item;
+import javax.el.ELContext;
+import javax.el.ExpressionFactory;
+import javax.el.MethodExpression;
 import javax.faces.application.Application;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
@@ -14,8 +17,13 @@ import javax.faces.bean.RequestScoped;
 import javax.faces.bean.SessionScoped;
 import javax.faces.component.html.HtmlOutputText;
 import javax.faces.context.FacesContext;
+import javax.faces.event.AjaxBehaviorEvent;
+import javax.faces.event.BehaviorEvent;
+import org.primefaces.behavior.ajax.AjaxBehavior;
+import org.primefaces.behavior.ajax.AjaxBehaviorListenerImpl;
 import org.primefaces.component.dashboard.Dashboard;
 import org.primefaces.component.panel.Panel;
+import org.primefaces.event.CloseEvent;
 import org.primefaces.event.DashboardReorderEvent;
 import org.primefaces.model.DashboardColumn;
 import org.primefaces.model.DashboardModel;
@@ -43,6 +51,8 @@ public class DashboardBacker extends Dashboard {
     
     String[][] iNB;
     int[][] statusiNB;
+    
+    MethodExpression listener;
     
     public DashboardBacker() {
         
@@ -78,11 +88,24 @@ public class DashboardBacker extends Dashboard {
             Panel panel = (Panel) application.createComponent(fc, "org.primefaces.component.Panel", "org.primefaces.component.PanelRenderer");
             panel.setId("_" + iNB[i][0]);
             panel.setHeader("Item: " + iNB[i][1]);
-            panel.setFooter("Prioritaet: " + iNB[i][3]);
+            panel.setFooter("Bearbeiter: " + iNB[i][6]);
             panel.setInView(true);
             panel.setClosable(true);
             panel.setToggleable(true);
             panel.setStyleClass("items");
+            
+            Panel tp = new Panel();
+            FacesContext context = FacesContext.getCurrentInstance();
+            final ELContext elContext = context.getELContext();
+            
+            
+            ExpressionFactory ef = application.getExpressionFactory();
+            MethodExpression me = ef.createMethodExpression(fc.getELContext(), "#{dashboardBacker.handleClose}", null, new Class<?>[]{BehaviorEvent.class});
+            AjaxBehavior ajaxBehavior = (AjaxBehavior) application.createBehavior(AjaxBehavior.BEHAVIOR_ID);
+            ajaxBehavior.setProcess("@this");
+            ajaxBehavior.addAjaxBehaviorListener(new AjaxBehaviorListenerImpl(me, me));
+            panel.addClientBehavior("close", ajaxBehavior);
+            
             
             System.out.println("Sauf mi voll");
             
@@ -92,8 +115,11 @@ public class DashboardBacker extends Dashboard {
             column.addWidget(panel.getId());
             HtmlOutputText text = new HtmlOutputText();
             text.setValue( iNB[i][2] );
- 
+            
+            
+            
             panel.getChildren().add(text);
+            
         }
     }
  
@@ -131,4 +157,10 @@ public class DashboardBacker extends Dashboard {
     private void addMessage(FacesMessage message) {
         FacesContext.getCurrentInstance().addMessage(null, message);
     }
+    
+     public void handleClose(CloseEvent event) {  
+        FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_INFO, "Panel Closed", "Closed panel id:'" + event.getComponent().getId() + "'");  
+          
+        addMessage(message);  
+    }  
 }
