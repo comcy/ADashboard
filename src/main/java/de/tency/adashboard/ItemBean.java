@@ -11,12 +11,6 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 
-import java.sql.Date;
-import java.sql.Timestamp;
-import javax.faces.bean.SessionScoped;
-import javax.faces.event.ActionEvent;
-import org.apache.myfaces.custom.datascroller.ScrollerActionEvent;
-
 /**
  *
  * @author Christian Silfang
@@ -31,7 +25,7 @@ public class ItemBean implements Serializable {
     private static final long serialVersionUID = 2L;
 
     static DatabaseHandler dbh = new DatabaseHandler();
-    
+
     static GenerateItem gI = new GenerateItem();
 
     public static int id;
@@ -42,9 +36,9 @@ public class ItemBean implements Serializable {
     public static String datum;
     public static String bearbeiter;
     public static int status;
-    
+
     public static List<Item> allItems = new ArrayList<Item>();
-    
+
     public static int getId() {
         return id;
     }
@@ -100,14 +94,14 @@ public class ItemBean implements Serializable {
     public void setBearbeiter(String bearbeiter) {
         this.bearbeiter = bearbeiter;
     }
-    
+
     public void set_status(int status) {
         this.status = status;
     }
+
     public int get_status() {
         return status;
     }
-    
 
     public ItemBean() {
     }
@@ -115,44 +109,42 @@ public class ItemBean implements Serializable {
     public static int itemCount() {
         return dbh.getItemCount();
     }
-    
-    public String sendItemUpdate(String name, String description, String prioritaet, String aufwand, String datum, String bearbeiter) {
-            dbh.sendItemUpdate(name, description, prioritaet, aufwand, datum, bearbeiter);
+
+    public String sendItemUpdate(String name, String description, String prioritaet, String aufwand, String datum) {
+
+        String bearbeiter = dbh.getUsername();
+        dbh.sendItemUpdate(name, description, prioritaet, aufwand, datum, bearbeiter);
         return "dashboard.jsf";
-//        String bearbeiter = "";// --> Abfrage für aktuellen User einbauen
-
-//        dbh.sendItemUpdate(name, beschreibung, aufwand, prioritaet, bearbeiter);
-
 //        logger.info("Item succefully sent to DashboardDB!");
-//        return "items";
+
     }
-    
 
     /**
      * Listen
-     * @param allItems 
+     *
+     * @param allItems
      */
     public void setAllItems(List<Item> allItems) {
-        
+
         this.allItems = allItems;
     }
- 
+
     public static String[][] getAllItems(int count) {
         return dbh.listAllItems(count);
     }
- 
+
     public void addToAllItems(Item i) {
         allItems.add(i);
     }
- 
+
     public void emptyAllItems() {
         allItems.clear();
     }
-    
-   public static class Item implements Serializable {
+
+    public static class Item implements Serializable {
 
         private static final long serialVersionUID = 1L;
-        
+
         DatabaseHandler dbh = new DatabaseHandler();
 
         public static int _id;
@@ -163,7 +155,6 @@ public class ItemBean implements Serializable {
         public static String _bearbeiter;
         public static String _prioritaet;
         public static int _status;
-        
 
         public Item(
                 int id,
@@ -185,11 +176,10 @@ public class ItemBean implements Serializable {
             _status = status;
         }
 
-        
-
         public void set_id(int _id) {
             this._id = _id;
         }
+
         public int get_id() {
             return _id;
         }
@@ -197,6 +187,7 @@ public class ItemBean implements Serializable {
         public void set_datum(String _datum) {
             this._datum = _datum;
         }
+
         public String get_datum() {
             return _datum;
         }
@@ -204,6 +195,7 @@ public class ItemBean implements Serializable {
         public void set_name(String _name) {
             this._name = _name;
         }
+
         public static String get_name() {
             return _name;
         }
@@ -211,6 +203,7 @@ public class ItemBean implements Serializable {
         public void set_beschreibung(String _beschreibung) {
             this._beschreibung = _beschreibung;
         }
+
         public String get_beschreibung() {
             return _beschreibung;
         }
@@ -218,6 +211,7 @@ public class ItemBean implements Serializable {
         public void set_prioritaet(String _prioritaet) {
             this._prioritaet = _prioritaet;
         }
+
         public String get_prioritaet() {
             return _prioritaet;
         }
@@ -225,6 +219,7 @@ public class ItemBean implements Serializable {
         public void set_aufwand(String _aufwand) {
             this._aufwand = _aufwand;
         }
+
         public String get_aufwand() {
             return _aufwand;
         }
@@ -232,13 +227,15 @@ public class ItemBean implements Serializable {
         public void set_bearbeiter(String _bearbeiter) {
             this._bearbeiter = _bearbeiter;
         }
+
         public String get_bearbeiter() {
             return _bearbeiter;
         }
-        
+
         public void set_status(int _status) {
             this._status = _status;
         }
+
         public int get_status() {
             return _status;
         }

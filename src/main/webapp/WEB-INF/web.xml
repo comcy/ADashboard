@@ -10,6 +10,7 @@
         <param-name>primefaces.THEME</param-name>  
         <param-value>mint-choc</param-value>  
     </context-param>  
+    
     <!-- JSF standard parameters -->
     <context-param>
         <description>Project stage for the application (new in 2.0). Expects one of
