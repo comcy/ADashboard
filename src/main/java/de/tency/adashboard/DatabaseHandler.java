@@ -48,7 +48,7 @@ public class DatabaseHandler implements Serializable {
             DataSource ds = (DataSource) cxt
                     .lookup("java:/comp/env/jdbc/postgres");
             connection = ds.getConnection();
-            System.out.println("DB open");
+//            System.out.println("DB open");
             statement = connection.createStatement();
             result = statement.executeQuery("SELECT VERSION()");
             if (result.next()) {
@@ -56,10 +56,10 @@ public class DatabaseHandler implements Serializable {
                 // Connection
             }
         } catch (SQLException ex) {
-            System.out.println("Error during DB connection " + ex);
+//            System.out.println("Error during DB connection " + ex);
             ex.printStackTrace();
         } catch (NamingException ex) {
-            System.out.println("Error during DB connection " + ex);
+//            System.out.println("Error during DB connection " + ex);
             ex.printStackTrace();
         }
     }
@@ -71,7 +71,7 @@ public class DatabaseHandler implements Serializable {
             DataSource ds = (DataSource) cxt
                     .lookup("java:/comp/env/jdbc/postgres");
             connection2 = ds.getConnection();
-            System.out.println("   DB2 open");
+//            System.out.println("   DB2 open");
             statement2 = connection2.createStatement();
             result2 = statement2.executeQuery("SELECT VERSION()");
             if (result2.next()) {
@@ -79,10 +79,10 @@ public class DatabaseHandler implements Serializable {
                 // Connection
             }
         } catch (SQLException ex) {
-            System.out.println("Error during DB2 connection " + ex);
+//            System.out.println("Error during DB2 connection " + ex);
             ex.printStackTrace();
         } catch (NamingException ex) {
-            System.out.println("Error during DB2 connection " + ex);
+//            System.out.println("Error during DB2 connection " + ex);
             ex.printStackTrace();
         }
     }
@@ -94,7 +94,7 @@ public class DatabaseHandler implements Serializable {
             DataSource ds = (DataSource) cxt
                     .lookup("java:/comp/env/jdbc/postgres");
             connection3 = ds.getConnection();
-            System.out.println("      DB3 open");
+//            System.out.println("      DB3 open");
             statement3 = connection3.createStatement();
             result3 = statement3.executeQuery("SELECT VERSION()");
             if (result3.next()) {
@@ -102,10 +102,10 @@ public class DatabaseHandler implements Serializable {
                 // Connection
             }
         } catch (SQLException ex) {
-            System.out.println("Error during DB3 connection " + ex);
+//            System.out.println("Error during DB3 connection " + ex);
             ex.printStackTrace();
         } catch (NamingException ex) {
-            System.out.println("Error during DB3 connection " + ex);
+//            System.out.println("Error during DB3 connection " + ex);
             ex.printStackTrace();
         }
     }
@@ -117,7 +117,7 @@ public class DatabaseHandler implements Serializable {
             DataSource ds = (DataSource) cxt
                     .lookup("java:/comp/env/jdbc/postgres");
             connection4 = ds.getConnection();
-            System.out.println("DB4 open");
+//            System.out.println("DB4 open");
             statement4 = connection4.createStatement();
             result4 = statement4.executeQuery("SELECT VERSION()");
             if (result4.next()) {
@@ -125,10 +125,10 @@ public class DatabaseHandler implements Serializable {
                 // Connection
             }
         } catch (SQLException ex) {
-            System.out.println("Error during DB4 connection " + ex);
+//            System.out.println("Error during DB4 connection " + ex);
             ex.printStackTrace();
         } catch (NamingException ex) {
-            System.out.println("Error during DB4 connection " + ex);
+//            System.out.println("Error during DB4 connection " + ex);
             ex.printStackTrace();
         }
     }
@@ -139,9 +139,9 @@ public class DatabaseHandler implements Serializable {
     public void SQLConnectionClose() {
         try {
             connection.close();
-            System.out.println("DB close");
+//            System.out.println("DB close");
         } catch (SQLException ex) {
-            System.out.println("Error during DB connection " + ex);
+//            System.out.println("Error during DB connection " + ex);
             ex.printStackTrace();
         }
     }
@@ -149,9 +149,9 @@ public class DatabaseHandler implements Serializable {
     public void SQLConnectionClose2() {
         try {
             connection2.close();
-            System.out.println("   DB2 close");
+//            System.out.println("   DB2 close");
         } catch (SQLException ex) {
-            System.out.println("Error during DB2 connection " + ex);
+//            System.out.println("Error during DB2 connection " + ex);
             ex.printStackTrace();
         }
     }
@@ -159,9 +159,9 @@ public class DatabaseHandler implements Serializable {
     public void SQLConnectionClose3() {
         try {
             connection3.close();
-            System.out.println("      DB3 close");
+//            System.out.println("      DB3 close");
         } catch (SQLException ex) {
-            System.out.println("Error during DB3 connection " + ex);
+//            System.out.println("Error during DB3 connection " + ex);
             ex.printStackTrace();
         }
     }
@@ -169,9 +169,9 @@ public class DatabaseHandler implements Serializable {
     public static void SQLConnectionClose4() {
         try {
             connection4.close();
-            System.out.println("        DB4 close");
+//            System.out.println("        DB4 close");
         } catch (SQLException ex) {
-            System.out.println("Error during DB4 connection " + ex);
+//            System.out.println("Error during DB4 connection " + ex);
             ex.printStackTrace();
         }
     }
@@ -188,7 +188,7 @@ public class DatabaseHandler implements Serializable {
         ExternalContext ec = fc.getExternalContext();
   
         String username = ec.getUserPrincipal().getName();
-        System.out.println("username");
+//        System.out.println("username");
         
         return username;
     }
@@ -208,7 +208,7 @@ public class DatabaseHandler implements Serializable {
      * @return first- and lastname
      */
     public int getAgendaId() {
-        System.out.println("schowUserFullName");
+//        System.out.println("schowUserFullName");
         SQLConnection();
 
         FacesContext fc = FacesContext.getCurrentInstance();
@@ -281,7 +281,7 @@ public class DatabaseHandler implements Serializable {
      * @return List<Item> allItems
      */
     public String[][] listAllItems(int i) {
-        System.out.println("Item"); // DEBUG
+//        System.out.println("Item"); // DEBUG
         List<Item> allItems = new ArrayList<Item>();
         String[][] itemNameBeschreibung = new String[i][8];
         int c = 0;
@@ -290,7 +290,7 @@ public class DatabaseHandler implements Serializable {
             statement4 = connection4.createStatement();
             result4 = statement4.executeQuery(
                     "SELECT * FROM items ORDER BY id;");
-            System.out.println(result4);
+//            System.out.println(result4);
             while (result4.next()) {
                 allItems.add(new ItemBean.Item(
                         result4.getInt("id"),
@@ -353,5 +353,36 @@ public class DatabaseHandler implements Serializable {
         }
         SQLConnectionClose4();
         return sName;
+    }
+    
+    String getCurrentItemBearbeiter(int id) {
+        String str = "SELECT bearbeiter FROM items where id = " + id;
+        String sBearbeiter = null;
+        SQLConnection4();
+        try {
+            statement4 = connection4.createStatement();
+            result4 = statement4.executeQuery(str);
+
+            result4.next();
+            sBearbeiter = result4.getString("bearbeiter");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        SQLConnectionClose4();
+        return sBearbeiter;
+    }
+    
+    int changeItemBearbeiter(int id, String newBearbeiter) {
+        String str = "UPDATE items SET bearbeiter = '" + newBearbeiter + "' WHERE id = " + id;
+        SQLConnection4();
+        try {
+            changeColumnStatus = connection4.createStatement();
+            changeColumnStatus.execute(str);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        SQLConnectionClose4();
+        return id;
     }
 }

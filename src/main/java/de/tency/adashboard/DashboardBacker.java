@@ -48,6 +48,11 @@ public class DashboardBacker extends Dashboard {
     DatabaseHandler dbHandler = new DatabaseHandler();
     DatabaseHandler dbColumnStatusChanger = new DatabaseHandler();
     DatabaseHandler dbGetCurrentItemName = new DatabaseHandler();
+    DatabaseHandler dbGetCurrentItemBearbeiter = new DatabaseHandler();
+    DatabaseHandler dbChangeCurrentItemBearbeiter = new DatabaseHandler();
+    
+    
+    
     
     String[][] iNB;
     int[][] statusiNB;
@@ -92,19 +97,19 @@ public class DashboardBacker extends Dashboard {
             panel.setInView(true);
             panel.setClosable(true);
             panel.setToggleable(true);
-            panel.setStyleClass("items");
+//            panel.setStyleClass("items");
             
-            Panel tp = new Panel();
-            FacesContext context = FacesContext.getCurrentInstance();
-            final ELContext elContext = context.getELContext();
-            
-            
-            ExpressionFactory ef = application.getExpressionFactory();
-            MethodExpression me = ef.createMethodExpression(fc.getELContext(), "#{dashboardBacker.handleClose}", null, new Class<?>[]{BehaviorEvent.class});
-            AjaxBehavior ajaxBehavior = (AjaxBehavior) application.createBehavior(AjaxBehavior.BEHAVIOR_ID);
-            ajaxBehavior.setProcess("@this");
-            ajaxBehavior.addAjaxBehaviorListener(new AjaxBehaviorListenerImpl(me, me));
-            panel.addClientBehavior("close", ajaxBehavior);
+//            Panel tp = new Panel();
+//            FacesContext context = FacesContext.getCurrentInstance();
+//            final ELContext elContext = context.getELContext();
+//            
+//            
+//            ExpressionFactory ef = application.getExpressionFactory();
+//            MethodExpression me = ef.createMethodExpression(fc.getELContext(), "#{dashboardBacker.handleClose}", null, new Class<?>[]{BehaviorEvent.class});
+//            AjaxBehavior ajaxBehavior = (AjaxBehavior) application.createBehavior(AjaxBehavior.BEHAVIOR_ID);
+//            ajaxBehavior.setProcess("@this");
+//            ajaxBehavior.addAjaxBehaviorListener(new AjaxBehaviorListenerImpl(me, me));
+//            panel.addClientBehavior("close", ajaxBehavior);
             
             
             System.out.println("Sauf mi voll");
@@ -152,6 +157,14 @@ public class DashboardBacker extends Dashboard {
  
         addMessage(message);
         dbColumnStatusChanger.changeColumnStatus(itemID, event.getColumnIndex());
+//        System.out.println(iNB[0][6]);
+        System.out.println(dbGetCurrentItemBearbeiter.getCurrentItemBearbeiter(itemID));
+        System.out.println(dbGetCurrentItemBearbeiter.getUsername());
+        if(dbGetCurrentItemBearbeiter.getCurrentItemBearbeiter(itemID).equals(dbGetCurrentItemBearbeiter.getUsername()) || event.getSenderColumnIndex() >= 1) {
+            System.out.println("Aktueller User und Bearbeiter, der Item angelegt hat, sind gleich");
+        } else {
+            dbChangeCurrentItemBearbeiter.changeItemBearbeiter(itemID, dbGetCurrentItemBearbeiter.getUsername());
+        }
     }
     
     private void addMessage(FacesMessage message) {

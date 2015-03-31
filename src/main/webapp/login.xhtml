@@ -5,7 +5,8 @@
                 xmlns:f="http://java.sun.com/jsf/core"
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
-                xmlns:t="http://myfaces.apache.org/tomahawk">
+                xmlns:t="http://myfaces.apache.org/tomahawk"
+                xmlns:p="http://primefaces.org/ui">
 
     <ui:define name="title">
         Login
@@ -24,7 +25,7 @@
                 <h:inputSecret id="j_password" autocomplete="off"/>
                 <div/>
                 <h:panelGroup>
-                    <h:commandButton type="submit" value="Login"/>
+                    <p:commandButton type="submit" value="Login" process="@this"/>
                 </h:panelGroup>
             </h:panelGrid>
             

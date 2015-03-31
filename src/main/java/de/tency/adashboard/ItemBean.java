@@ -165,7 +165,7 @@ public class ItemBean implements Serializable {
                 String aufwand,
                 String bearbeiter,
                 int status) {
-            System.out.println("Item-list Constructor");
+//            System.out.println("Item-list Constructor");
             _id = id;
             _datum = datum;
             _name = name;
