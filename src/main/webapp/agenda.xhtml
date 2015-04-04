@@ -10,23 +10,52 @@
 
     <ui:define name="title">Agenda</ui:define>
     <ui:define name="content" >
-        <h3>Agenda</h3>
+        <!--<h3>Agenda</h3>-->
+        <h:body>
         <h:outputStylesheet library="css" name="style.css"/>
-        <p:accordionPanel dynamic="true">
-            <p:tab id="accordianPanel" title="First Issue">
-                <h:outputText value= "Lorem...Hier steht mehr:"/>
-            </p:tab>
-            <p:tab title="Second Issue">
-                <h:outputText value="Ipsum" />
-            </p:tab>
-            <p:tab title="Third Issue">
-                <h:outputText value= "I sauf mi voll"/>
-            Stroh80 vs. Tomatensuppe
-            Stroh80 vs. Tomatensuppe
-            </p:tab>
-            <p:tab title="Fourth Issue">
-                <h:outputText value="I sauf mi hee" />
-            </p:tab>
-        </p:accordionPanel>
+        <h:form >
+            <p:growl id="growl" showDetail="true"/>
+            <p:tabView id="dynamic_accordionPanel" binding="#{agendaBacker.accordionPanel}" dynamic="true" orientation="left">
+    <!--            <p:tab id="accordianPanel" title="First Issue">
+                    <h:outputText value= "Lorem...Hier steht mehr:"/>
+                </p:tab>
+                <p:tab title="Second Issue">
+                    <h:outputText value="Ipsum" />
+                </p:tab>
+                <p:tab title="Third Issue">
+                    <h:outputText value= "I sauf mi voll"/>
+                Stroh80 vs. Tomatensuppe
+                Stroh80 vs. Tomatensuppe
+                </p:tab>
+                <p:tab title="Fourth Issue">
+                    <h:outputText value="I sauf mi hee" />
+                </p:tab>-->
+            </p:tabView>
+
+            <div style="clear:both" />
+            <p:separator />  
+
+            <h1><h:outputText value="Create Issue" styleClass="createItem"/></h1>
+            <h:panelGrid id="grid" columns="2">
+                <h:outputLabel value="Name:" for="itemName"/>
+                <h:inputText id="itemName" value="#{generateItem.name}"/>
+                <h:outputLabel value="Beschreibung des Issue:" for="itemBeschreibung"/>
+                <h:inputText id="Beschreibung" value="#{generateItem.description}"/>
+                <h:outputLabel value="Datum:" for="itemStartDatum"/>
+                <h:inputText id="itemStartDatum" value="#{generateItem.startdatum}"/>
+            </h:panelGrid>
+<!--                    <p:panel id="draggable">
+                <h:outputLabel value="#{generateItem.name}"></h:outputLabel>
+            </p:panel>
+            <p:draggable for="draggable" helper="clone" dashboard="dynamic_dashboard"></p:draggable>-->
+
+            <div style="clear:both" />
+            <p:separator />  
+
+            <p:commandButton value="SAVE ISSUE" id="withIcon" actionListener="#{issueBean.sendIssueUpdate(generateItem.name, generateItem.description, generateItem.startdatum)}" update="growl"  icon="ui-icon-disk" />
+
+            <p:commandButton value="REFRESH" id="with" update="growl" onclick="PF('poll')." />
+        </h:form>
+        </h:body>
     </ui:define>
 </ui:composition>

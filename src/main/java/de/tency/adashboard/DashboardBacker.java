@@ -32,7 +32,7 @@ import org.primefaces.model.DefaultDashboardModel;
  
 @ManagedBean
 @RequestScoped
-public class DashboardBacker extends Dashboard {
+public class DashboardBacker extends ItemBean {
  
     public static final int DEFAULT_COLUMN_COUNT = 3;
     private int columnCount = DEFAULT_COLUMN_COUNT;
@@ -46,10 +46,6 @@ public class DashboardBacker extends Dashboard {
     final int itemLength = 1;
     
     DatabaseHandler dbHandler = new DatabaseHandler();
-    DatabaseHandler dbColumnStatusChanger = new DatabaseHandler();
-    DatabaseHandler dbGetCurrentItemName = new DatabaseHandler();
-    DatabaseHandler dbGetCurrentItemBearbeiter = new DatabaseHandler();
-    DatabaseHandler dbChangeCurrentItemBearbeiter = new DatabaseHandler();
     
     
     
@@ -81,10 +77,10 @@ public class DashboardBacker extends Dashboard {
         dashboard.setId("dashboard");
  
 //        DashboardModel model = new DefaultDashboardModel();
-        for( int i = 0, n = getColumnCount(); i < n; i++ ) {
-            DashboardColumn column = new DefaultDashboardColumn();
-            model.addColumn(column);
-        }
+//        for( int i = 0, n = getColumnCount(); i < n; i++ ) {
+//            DashboardColumn column = new DefaultDashboardColumn();
+//            model.addColumn(column);
+//        }
         dashboard.setModel(model);
         
         iNB = ItemBean.getAllItems(dbHandler.getItemCount());
@@ -121,8 +117,6 @@ public class DashboardBacker extends Dashboard {
             HtmlOutputText text = new HtmlOutputText();
             text.setValue( iNB[i][2] );
             
-            
-            
             panel.getChildren().add(text);
             
         }
@@ -147,7 +141,7 @@ public class DashboardBacker extends Dashboard {
     public void handleReorder(DashboardReorderEvent event) {
         String s = event.getWidgetId();
         Integer itemID = Integer.parseInt(s.substring(1));
-        String currentItemName = dbGetCurrentItemName.getCurrentName(itemID);
+        String currentItemName = dbHandler.getCurrentName(itemID);
         FacesMessage message = new FacesMessage();
         message.setSeverity(FacesMessage.SEVERITY_INFO);
         message.setSummary("Neuordnung: Item " + "'" + currentItemName + "'");
@@ -156,14 +150,11 @@ public class DashboardBacker extends Dashboard {
                 + ", zu Spalte " + event.getColumnIndex());
  
         addMessage(message);
-        dbColumnStatusChanger.changeColumnStatus(itemID, event.getColumnIndex());
-//        System.out.println(iNB[0][6]);
-        System.out.println(dbGetCurrentItemBearbeiter.getCurrentItemBearbeiter(itemID));
-        System.out.println(dbGetCurrentItemBearbeiter.getUsername());
-        if(dbGetCurrentItemBearbeiter.getCurrentItemBearbeiter(itemID).equals(dbGetCurrentItemBearbeiter.getUsername()) || event.getSenderColumnIndex() >= 1) {
+        ItemBean.changeColumnStatus(itemID, event.getColumnIndex());
+        if(ItemBean.getCurrentItemBearbeiter(itemID).equals(dbHandler.getUsername()) || event.getSenderColumnIndex() >= 1) {
             System.out.println("Aktueller User und Bearbeiter, der Item angelegt hat, sind gleich");
         } else {
-            dbChangeCurrentItemBearbeiter.changeItemBearbeiter(itemID, dbGetCurrentItemBearbeiter.getUsername());
+            ItemBean.changeItemBearbeiter(itemID, dbHandler.getUsername());
         }
     }
     

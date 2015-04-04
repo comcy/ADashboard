@@ -20,7 +20,7 @@
             <div style="height:1000px">
                 <h:form >
                     <p:growl id="growl" showDetail="true"/>
-                    <p:dashboard id="dynamic_dashboard" disabled="" binding="#{dashboardBacker.dashboard}" >
+                    <p:dashboard id="dynamic_dashboard" binding="#{dashboardBacker.dashboard}" >
                         <p:ajax event="reorder" listener="#{dashboardBacker.handleReorder}" update="growl" />
                         <p:panel id="Vorrat" header="Vorrat" styleClass="completed" >
                             <!--<h:outputText value="Vorraetige Items"></h:outputText>-->
@@ -66,7 +66,7 @@
                     <div style="clear:both" />
                     <p:separator />  
                     
-                    <h1><h:outputText value="Create a Item"/></h1>
+                    <h1><h:outputText value="Create Item" styleClass="createItem"/></h1>
                     <h:panelGrid id="grid" columns="2">
                         <h:outputLabel value="Item Name:" for="itemName"/>
                         <h:inputText id="itemName" value="#{generateItem.name}"/>
@@ -79,11 +79,14 @@
                         <h:outputLabel value="Startdatum:" for="itemStartDatum"/>
                         <h:inputText id="itemStartDatum" value="#{generateItem.startdatum}"/>
                     </h:panelGrid>
-                    <p:panel id="draggable">
+<!--                    <p:panel id="draggable">
                         <h:outputLabel value="#{generateItem.name}"></h:outputLabel>
                     </p:panel>
-                    <p:draggable for="draggable" helper="clone" dashboard="dynamic_dashboard"></p:draggable>
-                        
+                    <p:draggable for="draggable" helper="clone" dashboard="dynamic_dashboard"></p:draggable>-->
+                    
+                    <div style="clear:both" />
+                    <p:separator />  
+                    
                     <p:commandButton value="SAVE ITEM" id="withIcon" actionListener="#{itemBean.sendItemUpdate(generateItem.name, generateItem.description, generateItem.prioritaet, generateItem.aufwandseinschaetzung, generateItem.startdatum)}" update="growl"  icon="ui-icon-disk" />
                    
                     <p:commandButton value="REFRESH" id="with" update="growl" onclick="PF('poll')." />

@@ -1,6 +1,8 @@
 package de.tency.adashboard;
 
 import de.tency.adashboard.ItemBean.Item;
+import de.tency.adashboard.IssueBean.Issue;
+
 import java.io.Serializable;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -252,6 +254,23 @@ public class DatabaseHandler implements Serializable {
         SQLConnectionClose4();
         return count;
     }
+    
+    int getIssueCount() {
+        int count = 0;
+        SQLConnection4();
+        try {
+            statement4 = connection4.createStatement();
+            result4 = statement4.executeQuery(
+                    "SELECT * FROM agenda ORDER BY id;");
+            while (result4.next()) {
+                count++;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        SQLConnectionClose4();
+        return count;
+    }
 
     String sendItemUpdate(String name, String beschreibung, String prioritaet, String aufwand, String datum, String bearbeiter) {
         String str = "dashboard.jsf";
@@ -266,6 +285,25 @@ public class DatabaseHandler implements Serializable {
             ps.setString(5, datum);
             ps.setString(6, bearbeiter);
             ps.setInt(7, 0);
+
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        SQLConnectionClose4();
+        return str;
+    }
+    
+    String sendIssueUpdate(String name, String beschreibung, String datum, String bearbeiter) {
+        String str = "dashboard.jsf";
+        SQLConnection4();
+        try {
+            String newIssue = "insert into agenda (name, beschreibung, datum, ersteller) values ( ?, ?, ?, ? )";
+            ps = connection4.prepareStatement(newIssue);
+            ps.setString(1, name);
+            ps.setString(2, beschreibung);
+            ps.setString(3, datum);
+            ps.setString(4, bearbeiter);
 
             ps.executeUpdate();
         } catch (SQLException e) {
@@ -312,6 +350,43 @@ public class DatabaseHandler implements Serializable {
                 itemNameBeschreibung[c][6] = result4.getString("bearbeiter");
                 String sStatus = Integer.toString(result4.getInt("status"));
                 itemNameBeschreibung[c][7] = sStatus;
+//                System.out.println(itemNameBeschreibung[c][c]);
+//                System.out.println(itemNameBeschreibung[c][c+1]);
+                c++;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        SQLConnectionClose4();
+
+        return itemNameBeschreibung;
+    }
+    
+    public String[][] listAllIssues(int i) {
+//        System.out.println("Item"); // DEBUG
+        List<Issue> allItems = new ArrayList<Issue>();
+        String[][] itemNameBeschreibung = new String[i][5];
+        int c = 0;
+        SQLConnection4();
+        try {
+            statement4 = connection4.createStatement();
+            result4 = statement4.executeQuery(
+                    "SELECT * FROM agenda ORDER BY id;");
+//            System.out.println(result4);
+            while (result4.next()) {
+                allItems.add(new IssueBean.Issue(
+                        result4.getInt("id"),
+                        result4.getString("name"),
+                        result4.getString("beschreibung"),
+                        result4.getString("datum"),
+                        result4.getString("ersteller")));
+
+                String sID = Integer.toString(result4.getInt("id"));
+                itemNameBeschreibung[c][0] = sID;
+                itemNameBeschreibung[c][1] = result4.getString("name");
+                itemNameBeschreibung[c][2] = result4.getString("beschreibung");
+                itemNameBeschreibung[c][3] = result4.getString("datum");
+                itemNameBeschreibung[c][4] = result4.getString("ersteller");
 //                System.out.println(itemNameBeschreibung[c][c]);
 //                System.out.println(itemNameBeschreibung[c][c+1]);
                 c++;
